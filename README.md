@@ -78,7 +78,7 @@ portfolio-website/
 
 ## 🚢 Deployment
 
-This site is automatically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the main branch.
+This site is  deployed to GitHub Pages using GitHub Actions whenever the following command is executed
 
 To deploy manually:
 ```bash
