@@ -8,8 +8,8 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Irfan Syaki!r</h1>
-          <h2>Software Engineer & DevOps Enthusiast</h2>
+          <h1>Irfan Syakir</h1>
+          <h2>Inspiring Software Engineer & DevOps Enthusiast</h2>
           <p>Building innovative solutions with modern technologies</p>
           <div className="cta-buttons">
             <Link to="/projects" className="btn btn-primary">View My Work</Link>

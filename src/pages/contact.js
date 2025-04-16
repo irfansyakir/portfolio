@@ -72,16 +72,6 @@ const Contact = () => {
           
           <div className="contact-method">
             <div className="contact-icon">
-              <i className="fas fa-phone"></i>
-            </div>
-            <div className="contact-details">
-              <h3>Phone</h3>
-              <p>(+65) 9664 1005</p>
-            </div>
-          </div>
-          
-          <div className="contact-method">
-            <div className="contact-icon">
               <i className="fab fa-linkedin"></i>
             </div>
             <div className="contact-details">
