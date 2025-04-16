@@ -53,7 +53,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="contact-header">
         <h1>Get In Touch</h1>
-        <p>I'm interested in software engineering and DevOps opportunities. If you have a question or want to work together, feel free to reach out!</p>
+        <p>I'm interesteddd in software engineering and DevOps opportunities. If you have a question or want to work together, feel free to reach out!</p>
       </div>
       
       <div className="contact-content">
@@ -70,15 +70,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="contact-method">
-            <div className="contact-icon">
-              <i className="fas fa-phone"></i>
-            </div>
-            <div className="contact-details">
-              <h3>Phone</h3>
-              <p>(+65) 9664 1005</p>
-            </div>
-          </div>
+          
           
           <div className="contact-method">
             <div className="contact-icon">

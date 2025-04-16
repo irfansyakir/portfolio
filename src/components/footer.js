@@ -47,10 +47,7 @@ const Footer = () => {
                 <i className="fas fa-envelope"></i>
                 <a href="mailto:irfansyakir@gmail.com">irfansyakir@gmail.com</a>
               </li>
-              <li>
-                <i className="fas fa-phone"></i>
-                <span>(+65) 9664 1005</span>
-              </li>
+             
               <li>
                 <i className="fas fa-map-marker-alt"></i>
                 <span>Singapore</span>
