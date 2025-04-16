@@ -1,6 +1,6 @@
 # Irfan Syakir - Portfolio Website
 
-This is my personal portfolio website showcasing my skills, projects, and experience as a Software Engineer and DevOps enthusiast.
+This is my personal portfolio website showcasing my skills, projects, and experience as an aspiring Software Engineer
 
 ## 🚀 Live Website
 
@@ -17,9 +17,7 @@ Visit my portfolio at: [https://irfansyakir.github.io/portfolio](https://irfansy
 
 - Responsive design for all device sizes
 - Interactive UI components
-- Project showcase with filtering capability
-- Contact form for easy communication
-- Detailed project descriptions and technologies
+- Project showcase with live demos
 
 
 ## 🧰 Project Structure
@@ -77,7 +75,7 @@ portfolio-website/
 
 ## 🚢 Deployment
 
-This site is automaically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the main branch
+This site is automaically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the main branch.
 
 
 
