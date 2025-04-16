@@ -73,15 +73,6 @@ portfolio-website/
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
-## 🚢 Deployment
-
-This site is automaically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the main branch.
-
-
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
