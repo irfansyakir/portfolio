@@ -1,0 +1,133 @@
+import React from 'react';
+import './about.css';
+
+const About = () => {
+  return (
+    <div className="about-container">
+      <div className="about-header">
+        <h1>About Me</h1>
+        <p className="subtitle">Software Engineer & DevOps Enthusiast</p>
+      </div>
+      
+      <div className="about-content">
+        <div className="about-image-container">
+          <div className="about-image">
+            {/* Replace with your actual photo */}
+            <span>Your Photo</span>
+          </div>
+        </div>
+        
+        <div className="about-text">
+          <p>
+            Hello! I'm Irfan Syakir, a soon-to-be graduate from Nanyang Technological University 
+            with a Bachelor's degree in Information Engineering and Media. I'm passionate about
+            creating efficient, user-friendly applications and implementing effective automation solutions.
+          </p>
+          
+          <p>
+            My journey in software development began during my time at Singapore Polytechnic, 
+            where I obtained a Diploma in Computer Engineering. Since then, I've developed a diverse
+            skill set spanning full-stack development, mobile applications, and DevOps practices.
+          </p>
+          
+          <p>
+            I have professional experience as a DevOps Intern at ST Engineering, where I implemented
+            best practices to enhance collaboration between development and operations teams. I also
+            worked at Accenture as a Test Analyst Intern and later as a Business Analyst, where I
+            applied RPA techniques to automate software testing protocols.
+          </p>
+          
+          <p>
+            I enjoy tackling complex problems and continuously learning new technologies. When I'm not
+            coding, you might find me [your hobbies or interests].
+          </p>
+          
+          <div className="about-cta">
+            <a href="/contact" className="btn btn-primary">Get In Touch</a>
+            <a href="/resume.pdf" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div className="education-section">
+        <h2>Education</h2>
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>Nanyang Technological University (NTU)</h3>
+              <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
+              <p className="timeline-degree">Bachelor of Engineering, Information Engineering and Media</p>
+              <p>
+                Relevant coursework: Software Engineering, Object-Oriented Programming,
+                Data Structures and Algorithms, Artificial Intelligence & Data Mining, Web Application Design
+              </p>
+            </div>
+          </div>
+          
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>Singapore Polytechnic (SP)</h3>
+              <p className="timeline-date">Apr 2017 – Mar 2020</p>
+              <p className="timeline-degree">Diploma in Computer Engineering, GPA: 3.72</p>
+              <p>
+                Relevant coursework: Client Server Application Development, Mobile Application Development,
+                Structured Programming, Data Structures & Algorithms, Object-Oriented Programming
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="experience-section">
+        <h2>Professional Experience</h2>
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>DevOps Intern</h3>
+              <p className="timeline-company">ST Engineering</p>
+              <p className="timeline-date">May 2024 – Jul 2024</p>
+              <ul className="timeline-achievements">
+                <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
+                <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
+                <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>Business Analyst</h3>
+              <p className="timeline-company">Accenture</p>
+              <p className="timeline-date">Mar 2020 - Jun 2020</p>
+              <ul className="timeline-achievements">
+                <li>Applied RPA techniques to automate software testing protocols</li>
+                <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>Test Analyst Intern</h3>
+              <p className="timeline-company">Accenture</p>
+              <p className="timeline-date">Sep 2019 – Feb 2020</p>
+              <ul className="timeline-achievements">
+                <li>Utilised RPA to automate testing processes of a government client's computer system</li>
+                <li>Drove improvements in system reliability and operational efficiency through automation solutions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
