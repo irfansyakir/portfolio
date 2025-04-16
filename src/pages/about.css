@@ -3,6 +3,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .about-header {
@@ -14,11 +18,14 @@
   font-size: 2.5rem;
   color: #2d3748;
   margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .about-header .subtitle {
   font-size: 1.2rem;
   color: #718096;
+  letter-spacing: -0.01em;
 }
 
 .about-content {
@@ -51,6 +58,7 @@
   color: #4a5568;
   line-height: 1.8;
   font-size: 1.05rem;
+  letter-spacing: -0.01em;
 }
 
 .about-cta {
@@ -70,6 +78,8 @@
   color: #2d3748;
   margin-bottom: 40px;
   text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 /* Timeline Styling */
@@ -157,6 +167,8 @@
   margin: 0 0 10px 0;
   color: #2d3748;
   font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .timeline-date {

@@ -3,6 +3,11 @@
   background-color: #2d3748;
   color: #e2e8f0;
   padding: 60px 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
 }
 
 .footer-container {
@@ -23,6 +28,8 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   position: relative;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .footer-section h2::after {
@@ -90,41 +97,13 @@
   padding-left: 5px;
 }
 
-.contact-info {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-info li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  color: #a0aec0;
-}
-
-.contact-info i {
-  margin-right: 10px;
-  color: #4299e1;
-  width: 20px;
-  text-align: center;
-}
-
-.contact-info a {
-  color: #a0aec0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #4299e1;
-}
-
 .footer-bottom {
   border-top: 1px solid #4a5568;
   padding-top: 20px;
   text-align: center;
   color: #a0aec0;
   font-size: 0.9rem;
+  font-weight: 400;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -132,6 +111,7 @@
 
 .footer-credit {
   color: #a0aec0;
+  font-weight: 400;
 }
 
 /* Media Query for mobile devices */

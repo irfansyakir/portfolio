@@ -88,15 +88,6 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <NavLink 
-              to="/blog" 
-              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              onClick={closeMenu}
-            >
-              Blog
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink 
               to="/contact" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link contact-btn'}
               onClick={closeMenu}

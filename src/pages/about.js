@@ -1,20 +1,19 @@
 import React from 'react';
 import './about.css';
+import profileImage from '../assets/images/profile.jpg'; 
+
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-header">
         <h1>About Me</h1>
-        <p className="subtitle">Software Engineer & DevOps Enthusiast</p>
+        <p className="subtitle">Aspiring Software Engineer</p>
       </div>
       
       <div className="about-content">
-        <div className="about-image-container">
-          <div className="about-image">
-            {/* Replace with your actual photo */}
-            <span>Your Photo</span>
-          </div>
+        <div className="hero-image">
+          <img src={profileImage} alt="Irfan Syakir - Software Engineer" />
         </div>
         
         <div className="about-text">
@@ -39,13 +38,18 @@ const About = () => {
           
           <p>
             I enjoy tackling complex problems and continuously learning new technologies. When I'm not
-            coding, you might find me [your hobbies or interests].
+            coding, you might find me gaming or hiking.
           </p>
           
           <div className="about-cta">
             <a href="/contact" className="btn btn-primary">Get In Touch</a>
-            <a href="/resume.pdf" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-              Download Resume
+            <a 
+              href="/portfolio/irfan_syakir_resume.pdf" 
+              className="btn btn-secondary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              View Resume
             </a>
           </div>
         </div>

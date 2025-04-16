@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
+import profileImage from '../assets/images/profile.jpg'; 
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Irfan Syakir</h1>
-          <h2>Inspiring Software Engineer & DevOps Enthusiast!</h2>
+          <h2>Inspiring Software Engineer</h2>
           <p>Building innovative solutions with modern technologies</p>
           <div className="cta-buttons">
             <Link to="/projects" className="btn btn-primary">View My Work</Link>
@@ -17,10 +18,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-image">
-          {/* You'll add your professional photo here */}
-          <div className="placeholder-image">
-            <span>Your Photo</span>
-          </div>
+          <img src={profileImage} alt="Irfan Syakir - Software Engineer" />
         </div>
       </section>
 
@@ -41,10 +39,9 @@ const Home = () => {
           <div className="skill-category">
             <h3>Frameworks</h3>
             <ul>
-              <li>React</li>
               <li>Flutter</li>
-              <li>Node.js</li>
-              <li>Firebase</li>
+              <li>React</li>
+              <li>XAMPP</li>
             </ul>
           </div>
           <div className="skill-category">
@@ -52,8 +49,7 @@ const Home = () => {
             <ul>
               <li>CI/CD</li>
               <li>Terraform</li>
-              <li>Azure</li>
-              <li>AWS</li>
+              <li>GitHub Actions</li>
             </ul>
           </div>
         </div>
@@ -62,51 +58,17 @@ const Home = () => {
 
       {/* Featured Projects Section */}
       <section className="featured-projects">
-        <h2>Featured Projects</h2>
+        <h2>Featured Project</h2>
         <div className="projects-grid">
-          {/* Project 1 */}
+        
+          {/* Project 1*/}
           <div className="project-card">
             <div className="project-image">
-              <span>Opus-Cinemas</span>
+              <span>Fourier Forge</span>
             </div>
             <div className="project-info">
-              <h3>Opus-Cinemas</h3>
-              <p>Premium movie booking web application with real-time seat selection and secure payment processing</p>
-              <div className="project-tags">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>SQL</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Project 2 */}
-          <div className="project-card">
-            <div className="project-image">
-              <span>JamStream</span>
-            </div>
-            <div className="project-info">
-              <h3>JamStream</h3>
-              <p>Music streaming mobile application with social features including interactive chatrooms</p>
-              <div className="project-tags">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>Firebase</span>
-                <span>Spotify API</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Project 3 */}
-          <div className="project-card">
-            <div className="project-image">
-              <span>Fourier Series App</span>
-            </div>
-            <div className="project-info">
-              <h3>Fourier Series Solver</h3>
-              <p>Mobile app for solving Fourier series exam questions with step-by-step solutions</p>
+              <h3>Fourier Forge</h3>
+              <p>Educational mobile application to help engineering students master the concepts of Fourier Series</p>
               <div className="project-tags">
                 <span>Flutter</span>
                 <span>Dart</span>
@@ -114,7 +76,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+          
         </div>
+        
         <Link to="/projects" className="view-all">View All Projects →</Link>
       </section>
 

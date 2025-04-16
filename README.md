@@ -20,7 +20,7 @@ Visit my portfolio at: [https://irfansyakir.github.io/portfolio](https://irfansy
 - Project showcase with filtering capability
 - Contact form for easy communication
 - Detailed project descriptions and technologies
-- Blog section for sharing technical insights
+
 
 ## 🧰 Project Structure
 
@@ -40,7 +40,6 @@ portfolio-website/
 │   │   ├── About.js
 │   │   ├── Projects.js
 │   │   ├── Skills.js
-│   │   ├── Blog.js
 │   │   └── Contact.js
 │   ├── assets/
 │   │   ├── images/

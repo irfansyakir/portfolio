@@ -3,6 +3,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Hero Section */
@@ -23,6 +27,8 @@
   font-size: 3.5rem;
   margin-bottom: 10px;
   color: #2d3748;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .hero-content h2 {
@@ -30,6 +36,7 @@
   margin-bottom: 20px;
   color: #4a5568;
   font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
 .hero-content p {
@@ -37,6 +44,7 @@
   margin-bottom: 30px;
   color: #718096;
   line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
 .hero-image {
@@ -44,6 +52,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .placeholder-image {
@@ -101,6 +116,8 @@
   margin-bottom: 40px;
   font-size: 2rem;
   color: #2d3748;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .skills-grid {
@@ -124,6 +141,8 @@
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 2px solid #4299e1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .skill-category ul {
@@ -176,6 +195,18 @@
   justify-content: center;
   font-size: 1.5rem;
   color: #718096;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
 }
 
 .project-info {
@@ -221,6 +252,8 @@
   margin-bottom: 20px;
   font-size: 2rem;
   color: #2d3748;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .about-preview p {
@@ -228,6 +261,7 @@
   line-height: 1.8;
   font-size: 1.1rem;
   margin-bottom: 20px;
+  letter-spacing: -0.01em;
 }
 
 /* View All Link Style */

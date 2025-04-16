@@ -3,6 +3,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .projects-header {
@@ -14,6 +18,8 @@
   font-size: 2.5rem;
   color: #2d3748;
   margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .projects-header p {
@@ -21,6 +27,7 @@
   color: #718096;
   max-width: 700px;
   margin: 0 auto;
+  letter-spacing: -0.01em;
 }
 
 /* Filter Styles */
@@ -38,9 +45,11 @@
   border: none;
   border-radius: 5px;
   color: #4a5568;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  letter-spacing: -0.01em;
+  font-family: inherit;
 }
 
 .filter-btn:hover {
@@ -109,6 +118,8 @@
   font-size: 1.4rem;
   color: #2d3748;
   margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .project-year {
@@ -124,6 +135,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
   flex-grow: 1;
+  letter-spacing: -0.01em;
 }
 
 .project-tech {

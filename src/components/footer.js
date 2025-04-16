@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './footer.css';
 
 const Footer = () => {
@@ -17,13 +20,13 @@ const Footer = () => {
             </p>
             <div className="social-links">
               <a href="https://github.com/irfansyakir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i className="fab fa-github"></i>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://linkedin.com/in/irfansyakir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i className="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/irfansyakir30" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="mailto:irfansyakir@gmail.com" aria-label="Email">
-                <i className="fas fa-envelope"></i>
+                <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
           </div>
@@ -35,29 +38,13 @@ const Footer = () => {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/skills">Skills</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
-          
-          <div className="footer-section contact">
-            <h2>Contact Info</h2>
-            <ul className="contact-info">
-              <li>
-                <i className="fas fa-envelope"></i>
-                <a href="mailto:irfansyakir@gmail.com">irfansyakir@gmail.com</a>
-              </li>
-             
-              <li>
-                <i className="fas fa-map-marker-alt"></i>
-                <span>Singapore</span>
-              </li>
-            </ul>
-          </div>
+        
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Irfan Syakir. All rights reserved.</p>
           <p className="footer-credit">Designed & Built with ❤️</p>
         </div>
       </div>

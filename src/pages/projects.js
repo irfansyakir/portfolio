@@ -3,13 +3,24 @@ import './projects.css';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Web Development', 'Mobile Development', 'AI/ML', 'DevOps'];
+  const categories = ['All', 'Web Development', 'Mobile Development']; //, 'AI/ML'];
   const [activeFilter, setActiveFilter] = useState('All');
 
   // Project data
   const projectsData = [
     {
       id: 1,
+      title: 'Fourier Forge',
+      description: 'A mobile application developed for solving Fourier series exam questions, providing step-by-step solutions. The app incorporates UI/UX design principles and color theory to create an intuitive user experience.',
+      technologies: ['Flutter', 'Dart', 'Mathematics'],
+      category: 'Mobile Development',
+      image: 'placeholder-fourier.jpg',
+      link: '#',
+      github: 'https://github.com/irfansyakir/fourierforge',
+      year: '2024'
+    },
+    {
+      id: 2,
       title: 'Opus-Cinemas',
       description: 'A premium movie booking web application featuring real-time seat selection and secure payment processing with multiple options. Users can browse detailed film listings, watch trailers, and receive personalized recommendations based on preferences and viewing history.',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'XAMPP'],
@@ -20,27 +31,17 @@ const Projects = () => {
       year: '2024'
     },
     {
-      id: 2,
+      id: 3,
       title: 'JamStream',
       description: 'A music streaming mobile application similar to Spotify with added social functionalities including interactive chatrooms. The goal was to increase user engagement and satisfaction through social interaction. Integrated Spotify\'s Developer API and used Firebase for backend services.',
       technologies: ['React', 'JavaScript', 'Firebase', 'Spotify API'],
       category: 'Web Development',
       image: 'placeholder-jamstream.jpg',
       link: '#',
-      github: 'https://github.com/irfansyakir/jamstream',
+      github: 'https://github.com/irfansyakir/DIP-Group-4',
       year: '2023'
     },
-    {
-      id: 3,
-      title: 'Fourier Series Solver',
-      description: 'A mobile application developed for solving Fourier series exam questions, providing step-by-step solutions. The app incorporates UI/UX design principles and color theory to create an intuitive user experience.',
-      technologies: ['Flutter', 'Dart', 'Mathematics'],
-      category: 'Mobile Development',
-      image: 'placeholder-fourier.jpg',
-      link: '#',
-      github: 'https://github.com/irfansyakir/fourier-solver',
-      year: '2024'
-    },
+    /* Temporarily commented out AI/ML projects
     {
       id: 4,
       title: 'Dogs vs Cats Classification',
@@ -63,19 +64,9 @@ const Projects = () => {
       github: 'https://github.com/irfansyakir/cardio-prediction',
       year: '2023'
     },
+    */
     {
-      id: 6,
-      title: 'DevOps CI/CD Pipeline',
-      description: 'Designed and implemented CI/CD pipelines to automate software delivery, reducing turnaround time and accelerating the release cycle. Optimized existing automation processes using Terraform to improve reliability and performance.',
-      technologies: ['Terraform', 'Azure DevOps', 'YAML', 'CI/CD', 'Git'],
-      category: 'DevOps',
-      image: 'placeholder-devops.jpg',
-      link: '#',
-      github: 'https://github.com/irfansyakir/devops-pipeline',
-      year: '2024'
-    },
-    {
-      id: 7,
+      id: 4,  // Updated ID to maintain sequence
       title: 'OldEgg E-commerce',
       description: 'Created a web-based application for establishing an e-commerce platform specializing in the sale of computer parts. Utilized back-end programming to manage databases using MySQL.',
       technologies: ['Java Servlet', 'Apache Tomcat', 'MySQL', 'HTML', 'CSS'],
@@ -86,7 +77,7 @@ const Projects = () => {
       year: '2023'
     },
     {
-      id: 8,
+      id: 5,  // Updated ID to maintain sequence
       title: 'Bahoot! Quiz App',
       description: 'Developed a mobile application resembling Kahoot! using Java Programming. Deployed React.js with MySQL and RESTful APIs to construct a complementary web application.',
       technologies: ['Java', 'Android Studio', 'React.js', 'MySQL', 'RESTful APIs'],
@@ -97,14 +88,14 @@ const Projects = () => {
       year: '2023'
     },
     {
-      id: 9,
+      id: 6,  // Updated ID to maintain sequence
       title: 'Minesweeper Game',
       description: 'Applied Java Programming to build a Minesweeper Game with unique features including difficulty levels, sound effects, custom textures, and exporting of scores, using Object-Oriented Programming principles.',
       technologies: ['Java', 'OOP', 'GUI Development'],
       category: 'Web Development',
       image: 'placeholder-minesweeper.jpg',
       link: '#',
-      github: 'https://github.com/irfansyakir/minesweeper',
+      github: 'https://github.com/irfansyakir/OOP-Minesweeper',
       year: '2023'
     }
   ];

@@ -3,17 +3,24 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .soft-skill h3 {
   font-size: 1.3rem;
   color: #2d3748;
   margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .soft-skill p {
   color: #4a5568;
   line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
 /* Learning Section */
@@ -26,6 +33,8 @@
   color: #2d3748;
   margin-bottom: 30px;
   text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .learning-content {
@@ -65,12 +74,15 @@
   font-size: 1.3rem;
   color: #2d3748;
   margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .learning-details p {
   color: #4a5568;
   line-height: 1.6;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 
 /* CTA Section */
@@ -122,6 +134,8 @@
   font-size: 2.5rem;
   color: #2d3748;
   margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .skills-header p {
@@ -129,6 +143,7 @@
   margin: 0 auto;
   font-size: 1.1rem;
   color: #718096;
+  letter-spacing: -0.01em;
 }
 
 .skills-content {
