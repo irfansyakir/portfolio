@@ -239,6 +239,26 @@
   font-size: 0.85rem;
 }
 
+.featured-project-link {
+  margin-top: 15px;
+}
+
+.view-project {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #4299e1;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.view-project:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+}
+
 /* About Preview Section */
 .about-preview {
   padding: 80px 0;

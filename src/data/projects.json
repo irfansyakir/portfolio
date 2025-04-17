@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Fourier Forge",
+    "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
+    "longDescription": "Fourier Forge is a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
+    "technologies": ["Flutter", "Dart", "Mathematics"],
+    "category": "Mobile Development",
+    "image": "placeholder-fourier.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/fourierforge",
+    "year": "2025",
+    "challenges": "One of the main challenges was translating complex mathematical formulas into a user-friendly mobile interface while ensuring computational accuracy. Additionally, creating intuitive visualisations that properly illustrate Fourier series signals required significant research and testing.",
+    "solutions": "I used Flutter packages to render mathematical equations and to visualise waveforms and signals. These tools allowed me to create accurate, responsive visuals and present Fourier series calculations in clear, step-by-step breakdowns without building custom rendering engines or algorithms.",
+    "features": [
+      "Step-by-step solution viewer",
+      "Waveform visualisation tool",
+      "Step-by-step solution generator",
+      "Offline mode for studying without internet connection"
+    ]
+  }
+]

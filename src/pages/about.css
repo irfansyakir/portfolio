@@ -35,21 +35,17 @@
   margin-bottom: 70px;
 }
 
-.about-image-container {
+.hero-image {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.about-image {
-  width: 300px;
-  height: 300px;
+.hero-image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
-  background-color: #e2e8f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #718096;
+  object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,6 +117,7 @@
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  text-align: center;
 }
 
 .timeline-item:nth-child(odd) .timeline-content::after {
@@ -163,29 +160,63 @@
   left: -10px;
 }
 
-.timeline-content h3 {
-  margin: 0 0 10px 0;
-  color: #2d3748;
+.timeline-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-logo:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.timeline-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.timeline-title {
   font-size: 1.3rem;
   font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 15px;
   letter-spacing: -0.02em;
 }
 
 .timeline-date {
   color: #4299e1;
   font-weight: 600;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px;
 }
 
-.timeline-company,
+.timeline-company {
+  font-weight: 500;
+  color: #718096;
+  margin: 0 0 15px;
+}
+
 .timeline-degree {
   font-weight: 600;
   color: #4a5568;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
+  line-height: 1.4;
 }
 
 .timeline-achievements {
+  text-align: left;
   padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .timeline-achievements li {
@@ -234,7 +265,7 @@
     grid-template-columns: 1fr;
   }
   
-  .about-image-container {
+  .hero-image {
     margin-bottom: 30px;
   }
   
@@ -245,5 +276,14 @@
   .about-cta .btn {
     width: 100%;
     text-align: center;
+  }
+  
+  .timeline-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
   }
 }

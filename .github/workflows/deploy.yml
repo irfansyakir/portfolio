@@ -9,7 +9,6 @@ on:
       - main
 
 jobs:
-
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
@@ -21,6 +20,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false # Speed up checkout by not fetching all history
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -33,7 +34,7 @@ jobs:
 
       - name: Build the project
         run: npm run build
-
+        
       - name: Run tests
         run: npm test
 

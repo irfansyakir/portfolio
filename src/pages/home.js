@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router';
 import './home.css';
 import profileImage from '../assets/images/profile.jpg'; 
+import projectsData from '../data/projects.json';
 
 const Home = () => {
+  // Get the first project as the featured project
+  const featuredProject = projectsData[0];
+  
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -37,11 +41,13 @@ const Home = () => {
             </ul>
           </div>
           <div className="skill-category">
-            <h3>Frameworks</h3>
+            <h3>Frameworks & Libraries</h3>
             <ul>
               <li>Flutter</li>
               <li>React</li>
               <li>XAMPP</li>
+              <li>Node.js</li>
+
             </ul>
           </div>
           <div className="skill-category">
@@ -61,18 +67,21 @@ const Home = () => {
         <h2>Featured Project</h2>
         <div className="projects-grid">
         
-          {/* Project 1*/}
+          {/* Featured Project */}
           <div className="project-card">
             <div className="project-image">
-              <span>Fourier Forge</span>
+              <span>{featuredProject.title}</span>
             </div>
             <div className="project-info">
-              <h3>Fourier Forge</h3>
-              <p>Educational mobile application to help engineering students master the concepts of Fourier Series</p>
+              <h3>{featuredProject.title}</h3>
+              <p>{featuredProject.description}</p>
               <div className="project-tags">
-                <span>Flutter</span>
-                <span>Dart</span>
-                <span>Mathematics</span>
+                {featuredProject.technologies.slice(0, 3).map((tech, index) => (
+                  <span key={index}>{tech}</span>
+                ))}
+              </div>
+              <div className="featured-project-link">
+                <Link to={`/project/${featuredProject.id}`} className="view-project">View Project</Link>
               </div>
             </div>
           </div>

@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "title": "Fourier Forge",
+    "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
+    "longDescription": "Fourier Forge is a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
+    "technologies": ["Flutter", "Dart", "Mathematics"],
+    "category": "Mobile Development",
+    "image": "placeholder-fourier.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/fourierforge",
+    "year": "2025",
+    "challenges": "One of the main challenges was translating complex mathematical formulas into a user-friendly mobile interface while ensuring computational accuracy. Additionally, creating intuitive visualisations that properly illustrate Fourier series signals required significant research and testing.",
+    "solutions": "I used Flutter packages to render mathematical equations and to visualise waveforms and signals. These tools allowed me to create accurate, responsive visuals and present Fourier series calculations in clear, step-by-step breakdowns without building custom rendering engines or algorithms.",
+    "features": [
+      "Step-by-step solution viewer",
+      "Waveform visualisation tool",
+      "Step-by-step solution generator",
+      "Offline mode for studying without internet connection"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Opus-Cinemas",
+    "description": "A premium movie booking web application featuring real-time seat selection and secure payment processing with multiple options. Users can browse detailed film listings, watch trailers, and receive personalized recommendations based on preferences and viewing history.",
+    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform designed to provide a premium cinema experience from the moment users browse for movies. The application focuses on creating a seamless booking experience with attention to visual design and user flow. The system includes a customer-facing booking interface as well as an administrative backend for cinema management.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "XAMPP"],
+    "category": "Web Development",
+    "image": "placeholder-opus-cinemas.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/opus-cinemas",
+    "year": "2024",
+    "challenges": "Building a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. Additionally, creating a secure payment system that supports multiple payment methods required careful integration of various APIs.",
+    "solutions": "I implemented a WebSocket-based solution for the seat reservation system to provide real-time updates across all clients. For payment processing, I created a modular payment gateway adapter that could easily connect to different payment providers.",
+    "features": [
+      "Interactive seat selection with real-time availability updates",
+      "Multiple payment options including credit cards, e-wallets, and promo codes",
+      "Personalized movie recommendations based on viewing history",
+      "Mobile-responsive design for on-the-go bookings",
+      "Admin dashboard for cinema management and reporting"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "JamStream",
+    "description": "A music streaming mobile application similar to Spotify with added social functionalities including interactive chatrooms. The goal was to increase user engagement and satisfaction through social interaction. Integrated Spotify's Developer API and used Firebase for backend services.",
+    "longDescription": "JamStream reimagines the music streaming experience by adding robust social features that allow users to connect over shared musical interests. The application combines high-quality music streaming capabilities with interactive social elements such as real-time chatrooms, collaborative playlists, and music sharing features.",
+    "technologies": ["React", "JavaScript", "Firebase", "Spotify API"],
+    "category": "Web Development",
+    "image": "placeholder-jamstream.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/DIP-Group-4",
+    "year": "2023",
+    "challenges": "Integrating Spotify's API with our custom social features while maintaining a seamless user experience was the biggest challenge. Additionally, ensuring real-time chat and collaborative features worked smoothly required careful backend architecture planning.",
+    "solutions": "We used Firebase Realtime Database for handling all social interactions, which provided the necessary real-time capabilities. For music streaming, we created a custom wrapper around Spotify's Web Playback SDK that integrated smoothly with our social features.",
+    "features": [
+      "Genre-specific music chatrooms for discovering new music",
+      "Collaborative playlist creation and editing",
+      "Live \"listening parties\" where users can listen to the same music in sync",
+      "Profile customization with music taste highlights",
+      "Friend recommendation system based on musical compatibility"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "OldEgg E-commerce",
+    "description": "Created a web-based application for establishing an e-commerce platform specializing in the sale of computer parts. Utilized back-end programming to manage databases using MySQL.",
+    "longDescription": "OldEgg is a comprehensive e-commerce platform specializing in computer hardware and electronics, inspired by Newegg. The platform provides a complete shopping experience from browsing products with detailed specifications to checkout with multiple payment options. The backend system includes inventory management, order processing, and customer management features.",
+    "technologies": ["Java Servlet", "Apache Tomcat", "MySQL", "HTML", "CSS"],
+    "category": "Web Development",
+    "image": "placeholder-oldegg.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/oldegg",
+    "year": "2023",
+    "challenges": "Building a scalable product catalog system that could handle complex filtering and categorization for technical computer parts was challenging. Additionally, implementing a secure user authentication and order processing system required careful attention to security practices.",
+    "solutions": "I designed a normalized database schema that efficiently handled product categorization and specifications. For security, I implemented salted password hashing and session management to protect user data and prevent common web vulnerabilities.",
+    "features": [
+      "Advanced product filtering by detailed technical specifications",
+      "User reviews and rating system",
+      "Inventory management system with low-stock alerts",
+      "Order tracking and history for customers",
+      "Admin dashboard for product and order management"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Bahoot! Quiz App",
+    "description": "Developed a mobile application resembling Kahoot! using Java Programming. Deployed React.js with MySQL and RESTful APIs to construct a complementary web application.",
+    "longDescription": "Bahoot! is an interactive quiz platform that allows educators to create engaging quiz games for classroom participation. The system consists of a mobile application for student participation and a web application for educators to create and manage quizzes. Real-time participation and immediate feedback make learning more engaging and effective.",
+    "technologies": ["Java", "Android Studio", "React.js", "MySQL", "RESTful APIs"],
+    "category": "Mobile Development",
+    "image": "placeholder-bahoot.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/bahoot",
+    "year": "2023",
+    "challenges": "Creating a synchronized real-time quiz experience across multiple devices was the main challenge. Ensuring low latency and consistent state across all participants required careful consideration of the communication protocol and server architecture.",
+    "solutions": "I implemented a WebSocket-based communication system that efficiently broadcast quiz state changes to all connected devices. The server maintained the authoritative game state while clients focused on rendering and user interaction.",
+    "features": [
+      "Real-time quiz participation with immediate feedback",
+      "Multiple question types including multiple-choice, true/false, and open-ended",
+      "Custom quiz creation with images and time limits",
+      "Detailed analytics on student performance",
+      "Export functionality for quiz results and performance reports"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Minesweeper Game",
+    "description": "Applied Java Programming to build a Minesweeper Game with unique features including difficulty levels, sound effects, custom textures, and exporting of scores, using Object-Oriented Programming principles.",
+    "longDescription": "This project is a modern implementation of the classic Minesweeper game, built using Java and following object-oriented programming principles. The game features multiple difficulty levels, customization options, and additional features not found in the traditional version, such as hints, customizable themes, and a score tracking system.",
+    "technologies": ["Java", "OOP", "GUI Development"],
+    "category": "Web Development",
+    "image": "placeholder-minesweeper.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/OOP-Minesweeper",
+    "year": "2023",
+    "challenges": "Implementing an efficient algorithm for mine placement and number calculation was challenging, especially when ensuring the first click is always safe. Creating a clean, object-oriented design that separated game logic from the UI also required careful planning.",
+    "solutions": "I used the Model-View-Controller design pattern to separate game logic from the UI. For mine generation, I implemented a delayed generation algorithm that only places mines after the first click, ensuring the player always starts with a safe move.",
+    "features": [
+      "Multiple difficulty levels (Beginner, Intermediate, Expert)",
+      "Custom game mode with adjustable board size and mine count",
+      "Hint system that reveals safe cells",
+      "Customizable themes and sound effects",
+      "High score tracking and export functionality"
+    ]
+  }
+]

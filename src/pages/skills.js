@@ -21,7 +21,7 @@ const Skills = () => {
     frameworks: [
       { name: 'React', level: 85 },
       { name: 'Flutter', level: 80 },
-      { name: 'React Native', level: 75 },
+      { name: 'XAMPP', level: 75 },
       { name: 'Node.js', level: 70 },
     ],
     devOps: [
