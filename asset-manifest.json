@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.01542880.css",
-    "main.js": "/static/js/main.ae82141d.js",
+    "main.js": "/static/js/main.81171bb1.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/fourierforge-demo.mp4": "/static/media/fourierforge-demo.a14b1778dd1ce2e47ea6.mp4",
     "static/media/profile.jpg": "/static/media/profile.08baa0491ea2289305ab.jpg",
@@ -20,11 +20,11 @@
     "static/media/accenture.png": "/static/media/accenture.895996f6a6b4ced8da00.png",
     "index.html": "/index.html",
     "main.01542880.css.map": "/static/css/main.01542880.css.map",
-    "main.ae82141d.js.map": "/static/js/main.ae82141d.js.map",
+    "main.81171bb1.js.map": "/static/js/main.81171bb1.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01542880.css",
-    "static/js/main.ae82141d.js"
+    "static/js/main.81171bb1.js"
   ]
 }
