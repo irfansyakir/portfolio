@@ -6,7 +6,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
- 
   return (
     <div className="contact-container">
       <div className="contact-header">
@@ -56,8 +55,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        
-       
       </div>
       
       <div className="availability-section">

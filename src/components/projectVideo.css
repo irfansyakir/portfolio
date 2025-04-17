@@ -5,7 +5,7 @@
 
 .project-video-section h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -21,7 +21,7 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
 }
 
 .project-video-container {
@@ -33,7 +33,7 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   aspect-ratio: 9/19.5;
-  background-color: #000;
+  background-color: var(--color-black);
 }
 
 .project-video {
@@ -64,7 +64,7 @@
   background-color: rgba(66, 153, 225, 0.9);
   border: none;
   border-radius: 50%;
-  color: white;
+  color: var(--color-white);
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@
 }
 
 .play-text {
-  color: white;
+  color: var(--color-white);
   font-weight: 600;
   font-size: 1.2rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);

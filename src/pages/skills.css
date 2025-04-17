@@ -11,14 +11,14 @@
 
 .soft-skill h3 {
   font-size: 1.3rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .soft-skill p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
@@ -30,7 +30,7 @@
 
 .learning-section h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 30px;
   text-align: center;
   font-weight: 600;
@@ -44,7 +44,7 @@
 }
 
 .learning-item {
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 30px;
   border-radius: 10px;
   display: flex;
@@ -60,26 +60,26 @@
 .learning-icon {
   min-width: 60px;
   height: 60px;
-  background-color: #ebf8ff;
+  background-color: var(--color-primary-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  color: #4299e1;
+  color: var(--color-primary);
   font-size: 1.5rem;
 }
 
 .learning-details h3 {
   font-size: 1.3rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 10px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .learning-details p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   margin: 0;
   letter-spacing: -0.01em;
@@ -88,19 +88,19 @@
 /* CTA Section */
 .skills-cta {
   text-align: center;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 50px;
   border-radius: 10px;
 }
 
 .skills-cta h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
 }
 
 .skills-cta p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   max-width: 600px;
   margin: 0 auto 25px;
 }
@@ -132,7 +132,7 @@
 
 .skills-header h1 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -142,7 +142,7 @@
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.1rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   letter-spacing: -0.01em;
 }
 
@@ -156,7 +156,7 @@
 
 .skills-section h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 10px;
@@ -169,7 +169,7 @@
   bottom: 0;
   width: 50px;
   height: 3px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
 }
 
 .skills-list {
@@ -190,23 +190,23 @@
 
 .skill-name {
   font-weight: 600;
-  color: #2d3748;
+  color: var(--color-text-primary);
 }
 
 .skill-percentage {
-  color: #4299e1;
+  color: var(--color-primary);
 }
 
 .skill-bar {
   height: 10px;
-  background-color: #e2e8f0;
+  background-color: var(--color-background-tertiary);
   border-radius: 5px;
   overflow: hidden;
 }
 
 .skill-progress {
   height: 100%;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
   border-radius: 5px;
   transition: width 1s ease;
 }
@@ -218,7 +218,7 @@
 
 .soft-skills-section h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 30px;
   text-align: center;
 }
@@ -230,27 +230,42 @@
 }
 
 .soft-skill {
-  background-color: #f7fafc;
+  background-color: var(--color-background-primary);
   padding: 30px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--color-card-shadow);
 }
 
 .soft-skill:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--color-hover-shadow);
 }
 
 .soft-skill-icon {
   width: 60px;
   height: 60px;
-  background-color: #ebf8ff;
+  background-color: var(--color-primary-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  color: #4299e1;
+  color: var(--color-primary);
   font-size: 1.5rem;
+}
+
+.soft-skill h3 {
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.soft-skill p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }

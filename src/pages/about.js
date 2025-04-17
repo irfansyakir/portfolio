@@ -44,17 +44,7 @@ const About = () => {
             coding, you might find me gaming or hiking.
           </p>
           
-          <div className="about-cta">
-            <a href="/contact" className="btn btn-primary">Get In Touch</a>
-            <a 
-              href="/portfolio/irfan_syakir_resume.pdf" 
-              className="btn btn-secondary" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              View Resume
-            </a>
-          </div>
+         
         </div>
       </div>
       
@@ -83,7 +73,7 @@ const About = () => {
               </div>
               <h3 className="timeline-title">Singapore Polytechnic (SP)</h3>
               <p className="timeline-date">Apr 2017 – Mar 2020</p>
-              <p className="timeline-degree">Diploma in Computer Engineering,<br />GPA: 3.72</p>
+              <p className="timeline-degree">Diploma in Computer Engineering</p>
             </div>
           </div>
         </div>

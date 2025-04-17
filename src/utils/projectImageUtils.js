@@ -73,7 +73,7 @@ export const getProjectImages = (projectId) => {
       {
         src: projectImage,
         alt: "Fourier Forge Results Screen",
-        caption: "Step by Step Solutions 3"
+        caption: "Splash Screen"
       }
     ];
   } else if (projectId === 2) {

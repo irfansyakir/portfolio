@@ -16,7 +16,7 @@
 
 .contact-header h1 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -26,7 +26,7 @@
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.1rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
@@ -41,7 +41,7 @@
 
 /* Contact Information Styling */
 .contact-info {
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 30px;
   border-radius: 10px;
   height: fit-content;
@@ -55,35 +55,35 @@
 .contact-icon {
   min-width: 50px;
   height: 50px;
-  background-color: #ebf8ff;
+  background-color: var(--color-primary-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
-  color: #4299e1;
+  color: var(--color-primary);
   font-size: 1.2rem;
 }
 
 .contact-details h3 {
   font-size: 1.1rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin: 0 0 5px 0;
 }
 
 .contact-details p {
   margin: 0;
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 .contact-details a {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-details a:hover {
-  color: #4299e1;
+  color: var(--color-primary);
 }
 
 /* Contact Form Styling */
@@ -170,15 +170,16 @@
 
 /* Availability Section */
 .availability-section {
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 40px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: var(--color-card-shadow);
 }
 
 .availability-section h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 25px;
 }
 
@@ -197,19 +198,19 @@
 }
 
 .available .status-indicator {
-  background-color: #48bb78;
+  background-color: var(--color-success);
   box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.2);
 }
 
 .availability-status p {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin: 0;
 }
 
 .availability-note {
-  color: #718096;
+  color: var(--color-text-secondary);
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;

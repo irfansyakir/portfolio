@@ -16,7 +16,7 @@
 
 .about-header h1 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 10px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -24,7 +24,7 @@
 
 .about-header .subtitle {
   font-size: 1.2rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   letter-spacing: -0.01em;
 }
 
@@ -51,7 +51,7 @@
 
 .about-text p {
   margin-bottom: 20px;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
@@ -71,7 +71,7 @@
 .education-section h2,
 .experience-section h2 {
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-primary); /* Updated from #2d3748 */
   margin-bottom: 40px;
   text-align: center;
   font-weight: 600;
@@ -113,7 +113,7 @@
 
 .timeline-content {
   padding: 20px 30px;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary); /* Updated from #f7fafc */
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -127,7 +127,7 @@
   top: 20px;
   width: 20px;
   height: 20px;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary); /* Updated from #f7fafc */
   transform: rotate(45deg);
 }
 
@@ -138,14 +138,14 @@
   top: 20px;
   width: 20px;
   height: 20px;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary); /* Updated from #f7fafc */
   transform: rotate(45deg);
 }
 
 .timeline-dot {
   width: 20px;
   height: 20px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
   border-radius: 50%;
   position: absolute;
   top: 28px;
@@ -167,7 +167,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: white; /* Fixed to white instead of using theme variable */
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -188,26 +188,26 @@
 .timeline-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #2d3748;
+  color: var(--color-text-primary); /* Updated from #2d3748 */
   margin: 0 0 15px;
   letter-spacing: -0.02em;
 }
 
 .timeline-date {
-  color: #4299e1;
+  color: var(--color-primary); /* Updated from #4299e1 */
   font-weight: 600;
   margin: 0 0 10px;
 }
 
 .timeline-company {
   font-weight: 500;
-  color: #718096;
+  color: var(--color-text-tertiary); /* Updated from #718096 */
   margin: 0 0 15px;
 }
 
 .timeline-degree {
   font-weight: 600;
-  color: #4a5568;
+  color: var(--color-text-secondary); /* Updated from #4a5568 */
   margin: 0 0 10px;
   line-height: 1.4;
 }
@@ -221,13 +221,13 @@
 
 .timeline-achievements li {
   margin-bottom: 8px;
-  color: #4a5568;
+  color: var(--color-text-secondary); /* Updated from #4a5568 */
   position: relative;
 }
 
 .timeline-achievements li::before {
   content: '•';
-  color: #4299e1;
+  color: var(--color-primary); /* Updated from #4299e1 */
   position: absolute;
   left: -15px;
 }

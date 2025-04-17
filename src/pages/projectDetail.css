@@ -11,13 +11,13 @@
 .back-button {
   display: inline-flex;
   align-items: center;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   margin-bottom: 30px;
   transition: color 0.3s ease, transform 0.2s ease;
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 5px;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
 }
 
 .back-button svg {
@@ -25,8 +25,8 @@
 }
 
 .back-button:hover {
-  color: #4299e1;
-  background-color: #ebf8ff;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
   transform: translateX(-5px);
 }
 
@@ -35,21 +35,21 @@
   align-items: center;
   margin-bottom: 30px;
   justify-content: space-between;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--color-border-light);
   padding-bottom: 20px;
 }
 
 .project-detail-header h1 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin: 0;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
 
 .project-year {
-  background-color: #ebf8ff;
-  color: #4299e1;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
   padding: 6px 15px;
   border-radius: 30px;
   font-weight: 500;
@@ -59,7 +59,7 @@
 
 .project-detail-image {
   height: 350px;
-  background-color: #e2e8f0;
+  background-color: var(--color-border-light);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 40px;
@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   font-weight: 600;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -103,7 +103,7 @@
 
 .project-challenges-solutions {
   margin-bottom: 40px;
-  background-color: #f8fafc;
+  background-color: var(--color-background-secondary);
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -114,7 +114,7 @@
 .project-challenges-solutions h2,
 .other-projects h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -131,13 +131,13 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
 }
 
 .project-overview p,
 .challenges p,
 .solutions p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   letter-spacing: -0.01em;
   margin-bottom: 20px;
@@ -150,7 +150,7 @@
 
 .feature-list li {
   margin-bottom: 12px;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   position: relative;
   padding-left: 5px;
   line-height: 1.6;
@@ -158,7 +158,7 @@
 
 .feature-list li::before {
   content: '•';
-  color: #4299e1;
+  color: var(--color-primary);
   position: absolute;
   left: -15px;
   font-size: 1.2em;
@@ -183,7 +183,7 @@
 }
 
 .project-detail-sidebar {
-  background-color: #f8fafc;
+  background-color: var(--color-background-secondary);
   border-radius: 12px;
   padding: 35px;
   height: fit-content;
@@ -208,7 +208,7 @@
 .project-links h3,
 .project-category h3 {
   font-size: 1.4rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -222,8 +222,8 @@
 }
 
 .tech-tag {
-  background-color: #e6f0fd;
-  color: #3182ce;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-hover);
   padding: 10px 18px;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -233,8 +233,8 @@
 
 .tech-tag:hover {
   transform: translateY(-2px);
-  background-color: #bee3f8;
-  color: #2b6cb0;
+  background-color: var(--color-blue-100);
+  color: var(--color-blue-600);
 }
 
 .links-container {
@@ -263,12 +263,12 @@
 
 .project-link.github {
   background-color: #24292e;
-  color: white;
+  color: var(--color-white);
 }
 
 .project-link.live {
-  background-color: #3182ce;
-  color: white;
+  background-color: var(--color-primary-hover);
+  color: var(--color-white);
 }
 
 .project-link:hover {
@@ -277,8 +277,8 @@
 }
 
 .project-category p {
-  color: #4a5568;
-  background-color: #edf2f7;
+  color: var(--color-text-secondary);
+  background-color: var(--color-background-tertiary);
   padding: 10px 16px;
   border-radius: 8px;
   display: flex;
@@ -289,22 +289,22 @@
 
 .project-category p svg {
   margin-right: 10px;
-  color: #718096;
+  color: var(--color-text-tertiary);
 }
 
 .other-projects {
   text-align: center;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 40px;
   border-radius: 10px;
   margin-top: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--color-card-shadow);
 }
 
 .view-all-projects {
   display: inline-block;
-  background-color: #4299e1;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding: 14px 28px;
   border-radius: 8px;
   font-weight: 500;
@@ -314,7 +314,7 @@
 }
 
 .view-all-projects:hover {
-  background-color: #3182ce;
+  background-color: var(--color-primary-hover);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(66, 153, 225, 0.4);
 }
@@ -325,18 +325,18 @@
   align-items: center;
   min-height: 60vh;
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 .project-not-found {
   text-align: center;
   padding: 100px 0;
   font-size: 1.5rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 .project-challenges-solutions p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   letter-spacing: -0.01em;
   margin-bottom: 20px;
@@ -360,7 +360,7 @@
 .project-links-title {
   display: flex;
   font-size: 1.4rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 16px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -395,7 +395,7 @@
 }
 
 .project-link.live {
-  background-color: #3182ce;
+  background-color: var(--color-primary-hover);
   color: white;
 }
 

@@ -1,0 +1,72 @@
+:root {
+  /* Core colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Gray palette */
+  --color-gray-50: #f7fafc;
+  --color-gray-100: #edf2f7;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e0;
+  --color-gray-400: #a0aec0;
+  --color-gray-500: #718096;
+  --color-gray-600: #4a5568;
+  --color-gray-700: #2d3748;
+  --color-gray-800: #1a202c;
+  --color-gray-900: #171923;
+  
+  /* Blue palette */
+  --color-blue-50: #ebf8ff;
+  --color-blue-100: #bee3f8;
+  --color-blue-400: #4299e1;
+  --color-blue-500: #3182ce;
+  --color-blue-600: #2b6cb0;
+  
+  /* Green palette */
+  --color-green-100: #c6f6d5;
+  --color-green-400: #48bb78;
+  --color-green-600: #2f855a;
+  
+  /* Shared semantic colors (same in both themes) */  
+  --color-primary: var(--color-blue-400);
+  --color-primary-hover: var(--color-blue-500);
+  --color-primary-light: var(--color-blue-50);
+  
+  --color-success: var(--color-green-400);
+  --color-success-light: var(--color-green-100);
+  --color-success-dark: var(--color-green-600);
+  
+  /* Light theme variables (default) */
+  --color-text-primary: var(--color-gray-800);
+  --color-text-secondary: var(--color-gray-700);
+  --color-text-tertiary: var(--color-gray-600);
+  --color-text-light: var(--color-gray-500);
+  
+  --color-background-primary: var(--color-white);
+  --color-background-secondary: var(--color-gray-50);
+  --color-background-tertiary: var(--color-gray-100);
+  
+  --color-border-light: var(--color-gray-200);
+  --color-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --color-hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  --color-footer-bg: var(--color-gray-700);
+  --color-footer-text: var(--color-gray-200);
+  --color-footer-text-dim: var(--color-gray-400);
+}
+
+/* Dark mode class */
+.dark-theme {
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-200);
+  --color-text-tertiary: var(--color-gray-300);
+  --color-text-light: var(--color-gray-400);
+  
+  --color-background-primary: var(--color-gray-900);
+  --color-background-secondary: var(--color-gray-800);
+  --color-background-tertiary: var(--color-gray-700);
+  
+  --color-border-light: var(--color-gray-700);
+  --color-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --color-hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}

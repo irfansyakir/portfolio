@@ -25,17 +25,17 @@
 }
 
 .gallery-grid::-webkit-scrollbar-track {
-  background: #f7fafc;
+  background: var(--color-background-secondary);
   border-radius: 4px;
 }
 
 .gallery-grid::-webkit-scrollbar-thumb {
-  background-color: #4299e1;
+  background-color: var(--color-primary);
   border-radius: 4px;
 }
 
 .gallery-grid::-webkit-scrollbar-thumb:hover {
-  background-color: #3182ce;
+  background-color: var(--color-primary-hover);
 }
 
 .gallery-item {

@@ -1,7 +1,7 @@
 /* Footer.css */
 .footer {
-  background-color: #2d3748;
-  color: #e2e8f0;
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
   padding: 60px 0 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@
 }
 
 .footer-section h2 {
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   margin-bottom: 20px;
   position: relative;
@@ -39,7 +39,7 @@
   bottom: -8px;
   width: 50px;
   height: 2px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
 }
 
 .about .footer-logo {
@@ -51,7 +51,7 @@
 .footer-description {
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #a0aec0;
+  color: var(--color-footer-text-dim);
 }
 
 .social-links {
@@ -65,16 +65,22 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #4a5568;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter background for icons */
   border-radius: 50%;
-  color: white;
+  color: var(--color-white); /* Always white text for better visibility */
   font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  background-color: #4299e1;
+  background-color: var(--color-primary);
   transform: translateY(-3px);
+}
+
+/* Dark mode specific adjustments */
+.dark-theme .social-links a {
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly brighter background in dark mode */
+  color: var(--color-white);
 }
 
 .links ul {
@@ -87,21 +93,21 @@
 }
 
 .links a {
-  color: #a0aec0;
+  color: var(--color-footer-text-dim);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .links a:hover {
-  color: #4299e1;
+  color: var(--color-primary);
   padding-left: 5px;
 }
 
 .footer-bottom {
-  border-top: 1px solid #4a5568;
+  border-top: 1px solid var(--color-text-secondary);
   padding-top: 20px;
   text-align: center;
-  color: #a0aec0;
+  color: var(--color-footer-text-dim);
   font-size: 0.9rem;
   font-weight: 400;
   display: flex;
@@ -110,7 +116,7 @@
 }
 
 .footer-credit {
-  color: #a0aec0;
+  color: var(--color-footer-text-dim);
   font-weight: 400;
 }
 

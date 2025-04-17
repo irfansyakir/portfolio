@@ -16,7 +16,7 @@
 
 .projects-header h1 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -24,7 +24,7 @@
 
 .projects-header p {
   font-size: 1.1rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   max-width: 700px;
   margin: 0 auto;
   letter-spacing: -0.01em;
@@ -41,10 +41,10 @@
 
 .filter-btn {
   padding: 8px 16px;
-  background-color: #edf2f7;
+  background-color: var(--color-background-tertiary);
   border: none;
   border-radius: 5px;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -53,12 +53,12 @@
 }
 
 .filter-btn:hover {
-  background-color: #e2e8f0;
+  background-color: var(--color-border-light);
 }
 
 .filter-btn.active {
-  background-color: #4299e1;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 /* Projects Grid */
@@ -70,10 +70,10 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--color-background-secondary);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--color-card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -81,17 +81,17 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--color-hover-shadow);
 }
 
 .project-image {
   height: 200px;
-  background-color: #e2e8f0;
+  background-color: var(--color-border-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
 }
 
 .project-image img {
@@ -116,7 +116,7 @@
 
 .project-header h3 {
   font-size: 1.4rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin: 0;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -124,14 +124,14 @@
 
 .project-year {
   font-size: 0.9rem;
-  color: #718096;
-  background-color: #f7fafc;
+  color: var(--color-text-tertiary);
+  background-color: var(--color-background-secondary);
   padding: 3px 10px;
   border-radius: 12px;
 }
 
 .project-description {
-  color: #4a5568;
+  color: var(--color-text-tertiary); /* Changed from var(--color-text-secondary) to make it lighter */
   margin-bottom: 20px;
   line-height: 1.6;
   flex-grow: 1;
@@ -144,7 +144,7 @@
 
 .project-tech h4 {
   font-size: 1rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   margin-bottom: 10px;
 }
 
@@ -155,8 +155,8 @@
 }
 
 .tech-tags span {
-  background-color: #ebf8ff;
-  color: #4299e1;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -183,39 +183,39 @@
 }
 
 .btn-primary {
-  background-color: #4299e1;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn-primary:hover {
-  background-color: #3182ce;
+  background-color: var(--color-primary-hover);
 }
 
 .btn-secondary {
-  background-color: #edf2f7;
-  color: #4a5568;
+  background-color: var(--color-background-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .btn-secondary:hover {
-  background-color: #e2e8f0;
+  background-color: var(--color-border-light);
 }
 
 /* Call to Action */
 .projects-cta {
   text-align: center;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 50px;
   border-radius: 10px;
 }
 
 .projects-cta h2 {
   font-size: 1.8rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
 }
 
 .projects-cta p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   max-width: 600px;
   margin: 0 auto 25px;
 }

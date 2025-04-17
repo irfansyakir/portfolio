@@ -26,7 +26,7 @@
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 10px;
-  color: #2d3748;
+  color: var(--color-text-primary);
   font-weight: 600;
   letter-spacing: -0.03em;
 }
@@ -34,7 +34,7 @@
 .hero-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   font-weight: 500;
   letter-spacing: -0.02em;
 }
@@ -42,7 +42,7 @@
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #718096;
+  color: var(--color-text-tertiary);
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
@@ -65,12 +65,12 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background-color: #e2e8f0;
+  background-color: var(--color-border-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
 }
 
 .cta-buttons {
@@ -88,22 +88,22 @@
 }
 
 .btn-primary {
-  background-color: #4299e1;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn-primary:hover {
-  background-color: #3182ce;
+  background-color: var(--color-primary-hover);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #4299e1;
-  border: 2px solid #4299e1;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background-color: #ebf8ff;
+  background-color: var(--color-primary-light);
 }
 
 /* Skills Highlight Section */
@@ -115,7 +115,7 @@
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -129,7 +129,7 @@
 
 .skill-category {
   flex: 1;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -137,10 +137,10 @@
 
 .skill-category h3 {
   font-size: 1.3rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #4299e1;
+  border-bottom: 2px solid var(--color-primary);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -152,7 +152,7 @@
 
 .skill-category li {
   padding: 8px 0;
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 /* Featured Projects Section */
@@ -164,7 +164,7 @@
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
 }
 
 .projects-grid {
@@ -216,11 +216,11 @@
 .project-info h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #2d3748;
+  color: var(--color-text-primary);
 }
 
 .project-info p {
-  color: #718096;
+  color: var(--color-text-tertiary);
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -232,8 +232,8 @@
 }
 
 .project-tags span {
-  background-color: #ebf8ff;
-  color: #4299e1;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -262,7 +262,7 @@
 /* About Preview Section */
 .about-preview {
   padding: 80px 0;
-  background-color: #f7fafc;
+  background-color: var(--color-background-secondary);
   border-radius: 8px;
   padding: 40px;
   margin-bottom: 80px;
@@ -271,13 +271,13 @@
 .about-preview h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-primary);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .about-preview p {
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   font-size: 1.1rem;
   margin-bottom: 20px;

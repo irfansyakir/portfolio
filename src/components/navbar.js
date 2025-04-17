@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router';
+import ThemeToggle from './ThemeToggle';
 import './navbar.css';
 
 const Navbar = () => {
@@ -41,14 +42,6 @@ const Navbar = () => {
           <span className="logo-text">Irfan Syakir</span>
         </NavLink>
 
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className={`hamburger ${isOpen ? 'active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li className="nav-item">
             <NavLink 
@@ -87,6 +80,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
+            <ThemeToggle />
+          </li>
+          <li className="nav-item">
             <NavLink 
               to="/contact" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link contact-btn'}
@@ -96,6 +92,14 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className={`hamburger ${isOpen ? 'active' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </nav>
   );
