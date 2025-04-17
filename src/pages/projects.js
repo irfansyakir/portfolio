@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './projects.css';
+// Import Font Awesome components
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   // Filter categories
@@ -131,7 +135,17 @@ const Projects = () => {
           <div className="project-card" key={project.id}>
             <div className="project-image">
               <span>{project.title}</span>
-              {/* Replace with actual image: <img src={project.image} alt={project.title} /> */}
+              {/* Display a placeholder or actual image when available */}
+              <img 
+                src={project.image.startsWith('placeholder') 
+                  ? `${process.env.PUBLIC_URL}/images/projects/${project.image}` 
+                  : project.image} 
+                alt={project.title} 
+                onError={(e) => {
+                  e.target.onerror = null; 
+                  e.target.src = `${process.env.PUBLIC_URL}/images/projects/default-project.jpg`;
+                }} 
+              />
             </div>
             <div className="project-info">
               <div className="project-header">
@@ -150,12 +164,12 @@ const Projects = () => {
               <div className="project-links">
                 {project.github && (
                   <a href={project.github} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-github"></i> View Code
+                    <FontAwesomeIcon icon={faGithub} /> View Code
                   </a>
                 )}
-                {project.link && (
+                {project.link && project.link !== '#' && (
                   <a href={project.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    <i className="fas fa-external-link-alt"></i> Live Demo
+                    <FontAwesomeIcon icon={faExternalLink} /> Live Demo
                   </a>
                 )}
               </div>

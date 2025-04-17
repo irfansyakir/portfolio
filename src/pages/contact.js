@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './contact.css';
+// Import Font Awesome components
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   // Form state
@@ -24,30 +28,30 @@ const Contact = () => {
   };
   
   // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission - In a real application, you would send this to a backend
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setSubmitStatus('success');
-      setIsSubmitting(false);
+  //   // Simulate form submission - In a real application, you would send this to a backend
+  //   setTimeout(() => {
+  //     console.log('Form submitted:', formData);
+  //     setSubmitStatus('success');
+  //     setIsSubmitting(false);
       
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+  //     // Reset form after successful submission
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       subject: '',
+  //       message: ''
+  //     });
       
-      // Reset status after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    }, 1500);
-  };
+  //     // Reset status after 5 seconds
+  //     setTimeout(() => {
+  //       setSubmitStatus(null);
+  //     }, 5000);
+  //   }, 1500);
+  // };
   
   return (
     <div className="contact-container">
@@ -60,7 +64,7 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-method">
             <div className="contact-icon">
-              <i className="fas fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <div className="contact-details">
               <h3>Email</h3>
@@ -72,7 +76,7 @@ const Contact = () => {
           
           <div className="contact-method">
             <div className="contact-icon">
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </div>
             <div className="contact-details">
               <h3>LinkedIn</h3>
@@ -86,7 +90,7 @@ const Contact = () => {
           
           <div className="contact-method">
             <div className="contact-icon">
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </div>
             <div className="contact-details">
               <h3>GitHub</h3>
@@ -99,7 +103,7 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className="contact-form-container">
+        {/* <div className="contact-form-container">
           <h2>Send me a message</h2>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -164,14 +168,14 @@ const Contact = () => {
               </div>
             )}
           </form>
-        </div>
+        </div> */}
       </div>
       
       <div className="availability-section">
         <h2>Current Availability</h2>
         <div className="availability-status available">
           <span className="status-indicator"></span>
-          <p>I'm currently available for new opportunities starting June 2025.</p>
+          <p>I'm currently available for new opportunities starting August 2025.</p>
         </div>
         <p className="availability-note">
           I'm most interested in Software Engineering and DevOps roles, but I'm open to discussing other opportunities that match my skills and interests.

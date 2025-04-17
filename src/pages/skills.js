@@ -1,5 +1,8 @@
 import React from 'react';
 import './skills.css';
+// Import Font Awesome components
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments, faUsers, faLightbulb, faSyncAlt, faCloud, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
   // Skills data organized by categories
@@ -20,23 +23,17 @@ const Skills = () => {
       { name: 'Flutter', level: 80 },
       { name: 'React Native', level: 75 },
       { name: 'Node.js', level: 70 },
-      { name: 'Express.js', level: 65 },
-      { name: 'Firebase', level: 80 },
-      { name: 'TensorFlow', level: 60 },
     ],
     devOps: [
       { name: 'Git', level: 90 },
       { name: 'GitHub/GitLab', level: 85 },
       { name: 'CI/CD', level: 80 },
       { name: 'Terraform', level: 75 },
-      { name: 'Azure DevOps', level: 70 },
-      { name: 'AWS', level: 65 },
     ],
     others: [
       { name: 'RESTful APIs', level: 85 },
       { name: 'Database Design', level: 80 },
       { name: 'UI/UX Design', level: 75 },
-      { name: 'Agile/Scrum', level: 70 },
       { name: 'Automated Testing', level: 75 },
       { name: 'Machine Learning', level: 65 },
     ]
@@ -100,7 +97,7 @@ const Skills = () => {
         <div className="soft-skills-content">
           <div className="soft-skill">
             <div className="soft-skill-icon">
-              <i className="fas fa-comments"></i>
+              <FontAwesomeIcon icon={faComments} />
             </div>
             <h3>Communication</h3>
             <p>Effectively convey complex technical concepts to both technical and non-technical stakeholders</p>
@@ -108,7 +105,7 @@ const Skills = () => {
           
           <div className="soft-skill">
             <div className="soft-skill-icon">
-              <i className="fas fa-users"></i>
+              <FontAwesomeIcon icon={faUsers} />
             </div>
             <h3>Teamwork</h3>
             <p>Collaborate effectively in cross-functional teams to achieve project goals and deliver quality solutions</p>
@@ -116,7 +113,7 @@ const Skills = () => {
           
           <div className="soft-skill">
             <div className="soft-skill-icon">
-              <i className="fas fa-lightbulb"></i>
+              <FontAwesomeIcon icon={faLightbulb} />
             </div>
             <h3>Problem Solving</h3>
             <p>Apply analytical thinking to break down complex problems and develop efficient solutions</p>
@@ -124,7 +121,7 @@ const Skills = () => {
           
           <div className="soft-skill">
             <div className="soft-skill-icon">
-              <i className="fas fa-sync-alt"></i>
+              <FontAwesomeIcon icon={faSyncAlt} />
             </div>
             <h3>Adaptability</h3>
             <p>Quickly adapt to new technologies, environments, and project requirements</p>
@@ -137,7 +134,7 @@ const Skills = () => {
         <div className="learning-content">
           <div className="learning-item">
             <div className="learning-icon">
-              <i className="fas fa-cloud"></i>
+              <FontAwesomeIcon icon={faCloud} />
             </div>
             <div className="learning-details">
               <h3>Cloud Architecture</h3>
@@ -147,7 +144,7 @@ const Skills = () => {
           
           <div className="learning-item">
             <div className="learning-icon">
-              <i className="fas fa-robot"></i>
+              <FontAwesomeIcon icon={faRobot} />
             </div>
             <div className="learning-details">
               <h3>Advanced Machine Learning</h3>
@@ -156,12 +153,6 @@ const Skills = () => {
           </div>
         </div>
       </div> */}
-      
-      <div className="skills-cta">
-        <h2>Interested in my skills?</h2>
-        <p>Let's discuss how my expertise can contribute to your team</p>
-        <a href="/contact" className="btn btn-primary">Get In Touch</a>
-      </div>
     </div>
   );
 };
