@@ -17,7 +17,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Irfan Syakir</h1>
-          <h2>Inspiring Software Engineer</h2>
+          <h2>Aspiring Software Engineer</h2>
           <p>Building innovative solutions with modern technologies</p>
           <div className="cta-buttons">
             <Link to="/projects" className="btn btn-primary">View My Work</Link>
