@@ -74,6 +74,15 @@ portfolio-website/
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 
+## 🚢 Deployment
+
+This site is automatically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the main branch.
+
+To deploy manually:
+```bash
+npm run deploy
+```
+
 ## 📞 Contact
 
 - Email: irfansyakir@gmail.com

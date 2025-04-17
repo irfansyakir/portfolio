@@ -35,8 +35,8 @@ const Contact = () => {
             <div className="contact-details">
               <h3>LinkedIn</h3>
               <p>
-                <a href="https://linkedin.com/in/irfansyakir" target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/irfansyakir
+                <a href="https://linkedin.com/in/irfansyakir30" target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/irfansyakir30
                 </a>
               </p>
             </div>

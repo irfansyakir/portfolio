@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-section about">
             <h2 className="footer-logo">Irfan Syakir</h2>
             <p className="footer-description">
-              Software Engineer & DevOps enthusiast passionate about building efficient, 
+              Aspring Software Engineer passionate about building efficient, 
               user-friendly applications and implementing effective automation solutions.
             </p>
             <div className="social-links">

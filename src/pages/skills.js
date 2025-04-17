@@ -9,8 +9,8 @@ const Skills = () => {
   const skillsData = {
     programmingLanguages: [
       { name: 'Java', level: 90 },
-      { name: 'C/C++', level: 85 },
-      { name: 'Python', level: 80 },
+      { name: 'C/C++', level: 60 },
+      { name: 'Python', level: 75 },
       { name: 'JavaScript', level: 85 },
       { name: 'Dart', level: 75 },
       { name: 'SQL', level: 80 },
