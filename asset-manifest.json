@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f83730a4.css",
-    "main.js": "/static/js/main.e1e0b44d.js",
+    "main.css": "/static/css/main.335ba6ed.css",
+    "main.js": "/static/js/main.0184a297.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/opuscinemas-demo.mp4": "/static/media/opuscinemas-demo.6fef0bbe19f7b9ab9425.mp4",
     "static/media/fourierforge-demo.mp4": "/static/media/fourierforge-demo.a14b1778dd1ce2e47ea6.mp4",
     "static/media/profile.jpg": "/static/media/profile.08baa0491ea2289305ab.jpg",
+    "static/media/opuscinemas1.jpg": "/static/media/opuscinemas1.dc08d4dc94df5d23235b.jpg",
+    "static/media/projectImage.jpg": "/static/media/projectImage.dc08d4dc94df5d23235b.jpg",
+    "static/media/opuscinemas3.jpg": "/static/media/opuscinemas3.da4627dddef5a4d8f26b.jpg",
+    "static/media/opuscinemas5.jpg": "/static/media/opuscinemas5.0856cba535cce917f9c1.jpg",
+    "static/media/opuscinemas4.jpg": "/static/media/opuscinemas4.bf1082ead6b2c27aefe7.jpg",
+    "static/media/opuscinemas2.jpg": "/static/media/opuscinemas2.b4aef398180156622f60.jpg",
+    "static/media/opuscinemas6.jpg": "/static/media/opuscinemas6.fade6176be8fa515990b.jpg",
+    "static/media/opuscinemas7.jpg": "/static/media/opuscinemas7.eb224c796383a256b9ca.jpg",
     "static/media/fourierforge7.png": "/static/media/fourierforge7.cf7cd1f6b5f1091d228e.png",
-    "static/media/jamstream2.png": "/static/media/jamstream2.cf7cd1f6b5f1091d228e.png",
     "static/media/fourierforge5.png": "/static/media/fourierforge5.bc54c46087cc00417009.png",
-    "static/media/jamstream1.png": "/static/media/jamstream1.bc54c46087cc00417009.png",
     "static/media/fourierforge6.png": "/static/media/fourierforge6.ab80789368fb1e3f54de.png",
     "static/media/fourierforge2.png": "/static/media/fourierforge2.c4d037f8ce4f563c04a1.png",
     "static/media/fourierforge4.png": "/static/media/fourierforge4.ac0dac1d41a9537e3abb.png",
@@ -20,12 +27,12 @@
     "static/media/ste.png": "/static/media/ste.f1c9988c253a6ab934be.png",
     "static/media/accenture.png": "/static/media/accenture.895996f6a6b4ced8da00.png",
     "index.html": "/index.html",
-    "main.f83730a4.css.map": "/static/css/main.f83730a4.css.map",
-    "main.e1e0b44d.js.map": "/static/js/main.e1e0b44d.js.map",
+    "main.335ba6ed.css.map": "/static/css/main.335ba6ed.css.map",
+    "main.0184a297.js.map": "/static/js/main.0184a297.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f83730a4.css",
-    "static/js/main.e1e0b44d.js"
+    "static/css/main.335ba6ed.css",
+    "static/js/main.0184a297.js"
   ]
 }
