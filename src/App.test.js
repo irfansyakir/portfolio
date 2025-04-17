@@ -4,7 +4,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Irfan/i);
-  expect(linkElement).toBeInTheDocument();
+  const nameElement = screen.getByText(/Irfan Syakir/i, { selector: '.logo-text' });
+  expect(nameElement).toBeInTheDocument();
 });
 
