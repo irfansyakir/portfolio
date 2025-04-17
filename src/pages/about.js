@@ -1,10 +1,10 @@
 import React from 'react';
 import './about.css';
-import profileImage from '../assets/images/profile.jpg'; 
-import ntuLogo from '../assets/images/ntu.png';
-import spLogo from '../assets/images/sp.webp';
-import steLogo from '../assets/images/ste.png';
-import accentureLogo from '../assets/images/accenture.png';
+import profileImage from '../assets/images/about/profile.jpg'; 
+import ntuLogo from '../assets/images/about/ntu.png';
+import spLogo from '../assets/images/about/sp.webp';
+import steLogo from '../assets/images/about/ste.png';
+import accentureLogo from '../assets/images/about/accenture.png';
 
 const About = () => {
   return (

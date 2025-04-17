@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "Fourier Forge",
-    "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
+    "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. \n   It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
     "longDescription": "Fourier Forge is a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
     "technologies": ["Flutter", "Dart", "Mathematics"],
     "category": "Mobile Development",
     "image": "placeholder-fourier.jpg",
-    "link": "#",
+    "link": "https://fourier-forge-83jn8.ondigitalocean.app/",
     "github": "https://github.com/irfansyakir/fourierforge",
     "year": "2025",
     "challenges": "One of the main challenges was translating complex mathematical formulas into a user-friendly mobile interface while ensuring computational accuracy. Additionally, creating intuitive visualisations that properly illustrate Fourier series signals required significant research and testing.",
@@ -17,6 +17,27 @@
       "Waveform visualisation tool",
       "Step-by-step solution generator",
       "Offline mode for studying without internet connection"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "JamStream",
+    "description": "A music streaming mobile application similar to Spotify with added social functionalities including interactive chatrooms. The goal was to increase user engagement and satisfaction through social interaction. Integrated Spotify's Developer API and used Firebase for backend services.",
+    "longDescription": "JamStream reimagines the music streaming experience by adding robust social features that allow users to connect over shared musical interests. The application combines high-quality music streaming capabilities with interactive social elements such as real-time chatrooms, collaborative playlists, and music sharing features.",
+    "technologies": ["React", "JavaScript", "Firebase", "Spotify API"],
+    "category": "Mobile Development",
+    "image": "placeholder-jamstream.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/DIP-Group-4",
+    "year": "2023",
+    "challenges": "Integrating Spotify's API with our custom social features while maintaining a seamless user experience was the biggest challenge. Additionally, ensuring real-time chat and collaborative features worked smoothly required careful backend architecture planning.",
+    "solutions": "We used Firebase Realtime Database for handling all social interactions, which provided the necessary real-time capabilities. For music streaming, we created a custom wrapper around Spotify's Web Playback SDK that integrated smoothly with our social features.",
+    "features": [
+      "Genre-specific music chatrooms for discovering new music",
+      "Collaborative playlist creation and editing",
+      "Live \"listening parties\" where users can listen to the same music in sync",
+      "Profile customization with music taste highlights",
+      "Friend recommendation system based on musical compatibility"
     ]
   }
 ]

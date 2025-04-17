@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import './home.css';
-import profileImage from '../assets/images/profile.jpg'; 
+import profileImage from '../assets/images/about/profile.jpg'; 
 import projectsData from '../data/projects.json';
 
 const Home = () => {

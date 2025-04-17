@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
 
+
+
+
+
 const Projects = () => {
   // Filter categories
   const categories = ['All', 'Web Development', 'Mobile Development']; //, 'AI/ML'];

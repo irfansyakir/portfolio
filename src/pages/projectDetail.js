@@ -1,25 +1,71 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router';
 import './projectDetail.css';
+import '../components/projectGallery.css';
+import ProjectGallery from '../components/projectGallery';
+import ProjectVideo from '../components/projectVideo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLink, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLink, faArrowLeft, faFolder } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
+import { getProjectImages, getProjectVideo } from '../utils/projectImageUtils';
 
-// This component will be used to display a detailed view of a specific project
+// Format paragraph text into individual sentences on new lines
+const formatSentences = (text) => {
+  if (!text) return null;
+  
+  // Split text into sentences
+  const sentences = text.split(/(?<=[.!?])\s+/g);
+  
+  return (
+    <>
+      {sentences.map((sentence, index) => (
+        <React.Fragment key={index}>
+          {sentence}
+          {index < sentences.length - 1 && <br />}
+        </React.Fragment>
+      ))}
+    </>
+  );
+};
+
 const ProjectDetail = () => {
-  const { id } = useParams(); // Get the project ID from URL params
+  const { id } = useParams();
   const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Find the project with the matching id
     const foundProject = projectsData.find(p => p.id === parseInt(id));
-    setProject(foundProject);
+    
+    setTimeout(() => {
+      setProject(foundProject);
+      setLoading(false);
+    }, 300);
   }, [id]);
 
-  if (!project) {
-    return <div className="project-not-found">Project not found</div>;
+  if (loading) {
+    return (
+      <div className="project-detail-container">
+        <div className="project-detail-loading">Loading project details...</div>
+      </div>
+    );
   }
+
+  if (!project) {
+    return (
+      <div className="project-detail-container">
+        <Link to="/projects" className="back-button">
+          <FontAwesomeIcon icon={faArrowLeft} /> Back to Projects
+        </Link>
+        <div className="project-not-found">Project not found</div>
+      </div>
+    );
+  }
+
+  // Get the images and video for this project
+  const projectImages = getProjectImages(project.id);
+  const projectVideo = getProjectVideo(project.id);
 
   return (
     <div className="project-detail-container">
@@ -32,9 +78,19 @@ const ProjectDetail = () => {
         <span className="project-year">{project.year}</span>
       </div>
       
-      <div className="project-detail-image">
-        <span>{project.title}</span>
-      </div>
+      {/* Project Video (if available) */}
+      {projectVideo && (
+        <div className="project-video-section">
+          <h2>Demo Video</h2>
+          <ProjectVideo videoSrc={projectVideo} poster={projectImages[0]?.src} />
+        </div>
+      )}
+      
+      {/* Project Gallery */}
+      <ProjectGallery 
+        images={projectImages} 
+        projectCategory={project.category}
+      />
       
       <div className="project-detail-content">
         <div className="project-detail-main">
@@ -59,14 +115,14 @@ const ProjectDetail = () => {
               {project.challenges && (
                 <div className="challenges">
                   <h2>Challenges</h2>
-                  <p>{project.challenges}</p>
+                  <p>{formatSentences(project.challenges)}</p>
                 </div>
               )}
               
               {project.solutions && (
                 <div className="solutions">
                   <h2>Solutions</h2>
-                  <p>{project.solutions}</p>
+                  <p>{formatSentences(project.solutions)}</p>
                 </div>
               )}
             </div>
@@ -84,11 +140,11 @@ const ProjectDetail = () => {
           </div>
           
           <div className="project-links">
-            <h3>Project Links</h3>
+            <div className="project-links-title">Project Links</div>
             <div className="links-container">
               {project.github && (
                 <a href={project.github} className="project-link github" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} /> GitHub Repository
+                  <FontAwesomeIcon icon={faGithub} /> GitHub
                 </a>
               )}
               
@@ -102,7 +158,7 @@ const ProjectDetail = () => {
           
           <div className="project-category">
             <h3>Category</h3>
-            <p>{project.category}</p>
+            <p><FontAwesomeIcon icon={faFolder} /> {project.category}</p>
           </div>
         </div>
       </div>
