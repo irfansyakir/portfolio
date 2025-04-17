@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contact.css';
 // Import Font Awesome components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,53 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
-  // Form state
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  
-  // Form submission state
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-  
-  // Handle input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-  
-  // Handle form submission
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-    
-  //   // Simulate form submission - In a real application, you would send this to a backend
-  //   setTimeout(() => {
-  //     console.log('Form submitted:', formData);
-  //     setSubmitStatus('success');
-  //     setIsSubmitting(false);
-      
-  //     // Reset form after successful submission
-  //     setFormData({
-  //       name: '',
-  //       email: '',
-  //       subject: '',
-  //       message: ''
-  //     });
-      
-  //     // Reset status after 5 seconds
-  //     setTimeout(() => {
-  //       setSubmitStatus(null);
-  //     }, 5000);
-  //   }, 1500);
-  // };
-  
+ 
   return (
     <div className="contact-container">
       <div className="contact-header">
@@ -103,72 +57,7 @@ const Contact = () => {
           </div>
         </div>
         
-        {/* <div className="contact-form-container">
-          <h2>Send me a message</h2>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            
-            <button 
-              type="submit" 
-              className="submit-btn"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-            
-            {submitStatus === 'success' && (
-              <div className="form-status success">
-                <p>Your message has been sent successfully! I'll get back to you soon.</p>
-              </div>
-            )}
-          </form>
-        </div> */}
+       
       </div>
       
       <div className="availability-section">

@@ -2,7 +2,7 @@ import React from 'react';
 import './skills.css';
 // Import Font Awesome components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments, faUsers, faLightbulb, faSyncAlt, faCloud, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faComments, faUsers, faLightbulb, faSyncAlt} from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
   // Skills data organized by categories

@@ -21,7 +21,7 @@ const Projects = () => {
       image: 'placeholder-fourier.jpg',
       link: '#',
       github: 'https://github.com/irfansyakir/fourierforge',
-      year: '2024'
+      year: '2025'
     },
     {
       id: 2,
@@ -135,17 +135,8 @@ const Projects = () => {
           <div className="project-card" key={project.id}>
             <div className="project-image">
               <span>{project.title}</span>
-              {/* Display a placeholder or actual image when available */}
-              <img 
-                src={project.image.startsWith('placeholder') 
-                  ? `${process.env.PUBLIC_URL}/images/projects/${project.image}` 
-                  : project.image} 
-                alt={project.title} 
-                onError={(e) => {
-                  e.target.onerror = null; 
-                  e.target.src = `${process.env.PUBLIC_URL}/images/projects/default-project.jpg`;
-                }} 
-              />
+             
+              
             </div>
             <div className="project-info">
               <div className="project-header">
@@ -167,7 +158,7 @@ const Projects = () => {
                     <FontAwesomeIcon icon={faGithub} /> View Code
                   </a>
                 )}
-                {project.link && project.link !== '#' && (
+                {project.link && (
                   <a href={project.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faExternalLink} /> Live Demo
                   </a>
