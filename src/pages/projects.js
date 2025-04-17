@@ -5,10 +5,7 @@ import './projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
-
-
-
-
+import { getProjectImages } from '../utils/projectImageUtils';
 
 const Projects = () => {
   // Filter categories
@@ -42,33 +39,42 @@ const Projects = () => {
       
       {/* Projects Grid */}
       <div className="projects-grid">
-        {filteredProjects.map(project => (
-          <div className="project-card" key={project.id}>
-            <div className="project-image">
-              <span>{project.title}</span>
-            </div>
-            <div className="project-info">
-              <div className="project-header">
-                <h3>{project.title}</h3>
-                <span className="project-year">{project.year}</span>
+        {filteredProjects.map(project => {
+          // Get the first image for this project
+          const projectImage = getProjectImages(project.id)[7]?.src;
+          
+          return (
+            <div className="project-card" key={project.id}>
+              <div className="project-image">
+                {projectImage ? (
+                  <img src={projectImage} alt={project.title} />
+                ) : (
+                  <span>{project.title}</span>
+                )}
               </div>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">
-                <h4>Technologies Used:</h4>
-                <div className="tech-tags">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index}>{tech}</span>
-                  ))}
+              <div className="project-info">
+                <div className="project-header">
+                  <h3>{project.title}</h3>
+                  <span className="project-year">{project.year}</span>
+                </div>
+                <p className="project-description">{project.description}</p>
+                <div className="project-tech">
+                  <h4>Technologies Used:</h4>
+                  <div className="tech-tags">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index}>{tech}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="project-links">
+                  <Link to={`/project/${project.id}`} className="btn btn-primary">
+                    <FontAwesomeIcon icon={faEye} /> View Project
+                  </Link>
                 </div>
               </div>
-              <div className="project-links">
-                <Link to={`/project/${project.id}`} className="btn btn-primary">
-                  <FontAwesomeIcon icon={faEye} /> View Project
-                </Link>
-              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       
       {/* Project Call to Action */}

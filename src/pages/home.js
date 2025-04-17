@@ -3,10 +3,13 @@ import { Link } from 'react-router';
 import './home.css';
 import profileImage from '../assets/images/about/profile.jpg'; 
 import projectsData from '../data/projects.json';
+import { getProjectImages } from '../utils/projectImageUtils';
 
 const Home = () => {
   // Get the first project as the featured project
   const featuredProject = projectsData[0];
+  // Get the first image of the featured project
+  const featuredProjectImage = getProjectImages(featuredProject.id)[7]?.src;
   
   return (
     <div className="home-container">
@@ -70,7 +73,11 @@ const Home = () => {
           {/* Featured Project */}
           <div className="project-card">
             <div className="project-image">
-              <span>{featuredProject.title}</span>
+              {featuredProjectImage ? (
+                <img src={featuredProjectImage} alt={featuredProject.title} />
+              ) : (
+                <span>{featuredProject.title}</span>
+              )}
             </div>
             <div className="project-info">
               <h3>{featuredProject.title}</h3>

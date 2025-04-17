@@ -6,6 +6,7 @@ import ff4 from '../assets/images/projects/fourierForge/fourierforge4.png';
 import ff5 from '../assets/images/projects/fourierForge/fourierforge5.png';
 import ff6 from '../assets/images/projects/fourierForge/fourierforge6.png';
 import ff7 from '../assets/images/projects/fourierForge/fourierforge7.png';
+import projectImage from '../assets/images/projects/fourierForge/projectImage.png';
 import ffVideo from '../assets/videos/fourierForge/fourierforge-demo.mp4';
 
 import js1 from '../assets/images/projects/jamStream/jamstream1.png';
@@ -66,6 +67,11 @@ export const getProjectImages = (projectId) => {
       },
       {
         src: ff7,
+        alt: "Fourier Forge Results Screen",
+        caption: "Step by Step Solutions 3"
+      },
+      {
+        src: projectImage,
         alt: "Fourier Forge Results Screen",
         caption: "Step by Step Solutions 3"
       }
