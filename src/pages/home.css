@@ -167,25 +167,18 @@
   color: var(--color-text-primary);
 }
 
-.projects-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .project-card {
-  background: var(--card-bg, #1e2129);
+  background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -266,39 +259,6 @@
   transform: translateY(-2px);
 }
 
-/* Single project centering */
-.projects-count-1 .project-card {
-  width: 100%;
-  max-width: 450px;
-}
-
-/* Two projects centering */
-.projects-count-2 .project-card {
-  width: calc(50% - 1rem);
-  max-width: 450px;
-}
-
-/* Three projects in a row */
-.projects-count-3 .project-card {
-  width: calc(33.333% - 1.33rem);
-  max-width: 380px;
-}
-
-@media (max-width: 900px) {
-  .projects-count-2 .project-card,
-  .projects-count-3 .project-card {
-    width: calc(50% - 1rem);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-count-1 .project-card,
-  .projects-count-2 .project-card,
-  .projects-count-3 .project-card {
-    width: 100%;
-  }
-}
-
 /* About Preview Section */
 .about-preview {
   padding: 80px 0;
@@ -369,49 +329,5 @@
   
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-/* Add these rules to your existing CSS file */
-
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.project-card {
-  flex: 0 0 calc(33.333% - 2rem);
-  min-width: 280px;
-  max-width: 400px;
-}
-
-/* Center a single project */
-.projects-count-1 {
-  justify-content: center;
-}
-
-/* Center two projects */
-.projects-count-2 .project-card {
-  flex: 0 0 calc(50% - 2rem);
-  max-width: 450px;
-}
-
-/* Three projects in a row */
-.projects-count-3 .project-card {
-  flex: 0 0 calc(33.333% - 2rem);
-}
-
-@media (max-width: 900px) {
-  .projects-count-2 .project-card,
-  .projects-count-3 .project-card {
-    flex: 0 0 calc(50% - 2rem);
-  }
-}
-
-@media (max-width: 600px) {
-  .project-card {
-    flex: 0 0 100%;
   }
 }

@@ -6,10 +6,10 @@ import projectsData from '../data/projects.json';
 import { getProjectImages } from '../utils/projectImageUtils';
 
 const Home = () => {
-  // // Get the first project as the featured project
-  // const featuredProject = projectsData[0];
-  // // Get the first image of the featured project
-  // const featuredProjectImage = getProjectImages(featuredProject.id)[7]?.src;
+  // Get the first project as the featured project
+  const featuredProject = projectsData[0];
+  // Get the first image of the featured project
+  const featuredProjectImage = getProjectImages(featuredProject.id)[7]?.src;
   
   return (
     <div className="home-container">
@@ -17,7 +17,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Irfan Syakir</h1>
-          <h2>Aspiring Software Engineer</h2>
+          <h2>Inspiring Software Engineer</h2>
           <p>Building innovative solutions with modern technologies</p>
           <div className="cta-buttons">
             <Link to="/projects" className="btn btn-primary">View My Work</Link>
@@ -68,51 +68,32 @@ const Home = () => {
       {/* Featured Projects Section */}
       <section className="featured-projects">
         <h2>Featured Project</h2>
-        {/* Get projects marked as featured, or fall back to the first project if none are marked */}
-        {(() => {
-          // Filter projects that have featured:true property
-          const featuredProjects = projectsData.filter(project => project.featured === true);
-          
-          // If no featured projects are specified, use the first project as default
-          const projectsToShow = featuredProjects.length > 0 ? 
-            featuredProjects : [projectsData[0]];
-            
-          return (
-            <div className="projects-container">
-              <div className={`projects-grid projects-count-${Math.min(projectsToShow.length, 3)}`}>
-                
-                {/* Display up to 3 featured projects */}
-                {projectsToShow.slice(0, 3).map((project, index) => {
-                  const projectImage = getProjectImages(project.id)[7]?.src;
-                  
-                  return (
-                    <div className="project-card" key={project.id}>
-                      <div className="project-image">
-                        {projectImage ? (
-                          <img src={projectImage} alt={project.title} />
-                        ) : (
-                          <span>{project.title}</span>
-                        )}
-                      </div>
-                      <div className="project-info">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <div className="project-tags">
-                          {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                            <span key={techIndex}>{tech}</span>
-                          ))}
-                        </div>
-                        <div className="featured-project-link">
-                          <Link to={`/project/${project.id}`} className="view-project">View Project</Link>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
+        <div className="projects-grid">
+        
+          {/* Featured Project */}
+          <div className="project-card">
+            <div className="project-image">
+              {featuredProjectImage ? (
+                <img src={featuredProjectImage} alt={featuredProject.title} />
+              ) : (
+                <span>{featuredProject.title}</span>
+              )}
+            </div>
+            <div className="project-info">
+              <h3>{featuredProject.title}</h3>
+              <p>{featuredProject.description}</p>
+              <div className="project-tags">
+                {featuredProject.technologies.slice(0, 3).map((tech, index) => (
+                  <span key={index}>{tech}</span>
+                ))}
+              </div>
+              <div className="featured-project-link">
+                <Link to={`/project/${featuredProject.id}`} className="view-project">View Project</Link>
               </div>
             </div>
-          );
-        })()}
+          </div>
+          
+        </div>
         
         <Link to="/projects" className="view-all">View All Projects →</Link>
       </section>
