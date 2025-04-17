@@ -6,11 +6,21 @@ import ff4 from '../assets/images/projects/fourierForge/fourierforge4.png';
 import ff5 from '../assets/images/projects/fourierForge/fourierforge5.png';
 import ff6 from '../assets/images/projects/fourierForge/fourierforge6.png';
 import ff7 from '../assets/images/projects/fourierForge/fourierforge7.png';
-import projectImage from '../assets/images/projects/fourierForge/projectImage.png';
+import ffprojectImage from '../assets/images/projects/fourierForge/projectImage.png';
 import ffVideo from '../assets/videos/fourierForge/fourierforge-demo.mp4';
 
-import js1 from '../assets/images/projects/jamStream/jamstream1.png';
-import js2 from '../assets/images/projects/jamStream/jamstream2.png';
+// import js1 from '../assets/images/projects/jamStream/jamstream1.png';
+// import js2 from '../assets/images/projects/jamStream/jamstream2.png';
+
+import op1 from '../assets/images/projects/opusCinemas/opuscinemas1.jpg';
+import op2 from '../assets/images/projects/opusCinemas/opuscinemas2.jpg';
+import op3 from '../assets/images/projects/opusCinemas/opuscinemas3.jpg';
+import op4 from '../assets/images/projects/opusCinemas/opuscinemas4.jpg';
+import op5 from '../assets/images/projects/opusCinemas/opuscinemas5.jpg';
+import op6 from '../assets/images/projects/opusCinemas/opuscinemas6.jpg';
+import op7 from '../assets/images/projects/opusCinemas/opuscinemas7.jpg';
+import opprojectImage from '../assets/images/projects/opusCinemas/projectImage.jpg';
+import opVideo from '../assets/videos/opusCinemas/opuscinemas-demo.mp4';
 
 /**
  * Returns the demo video URL for a project if available
@@ -21,6 +31,8 @@ export const getProjectVideo = (projectId) => {
   switch (projectId) {
     case 1:
       return ffVideo;
+    case 2:
+      return opVideo;
     default:
       return null;
   }
@@ -71,7 +83,7 @@ export const getProjectImages = (projectId) => {
         caption: "Step by Step Solutions 3"
       },
       {
-        src: projectImage,
+        src: ffprojectImage,
         alt: "Fourier Forge Results Screen",
         caption: "Splash Screen"
       }
@@ -79,15 +91,46 @@ export const getProjectImages = (projectId) => {
   } else if (projectId === 2) {
     return [
       {
-        src: js1,
-        alt: "JamStream Main Interface",
-        caption: "Main Interface"
+        src: op1,
+        alt: "Home Page",
+        caption: "Home Page"
       },
       {
-        src: js2,
-        alt: "JamStream Features",
-        caption: "Music Streaming Features"
-      }
+        src: op2,
+        alt: "Cinemas",
+        caption: "Cinemas"
+      },
+      {
+        src: op3,
+        alt: "Individual Movie",
+        caption: "Individual Movie"
+      },
+      {
+        src: op4,
+        alt: "Ticket Booking",
+        caption: "Ticket Booking"
+      },
+      {
+        src: op5,
+        alt: "Payment",
+        caption: "Payment"
+      },
+      {
+        src: op6,
+        alt: "Upcoming Movies",
+        caption: "Upcoming Movies"
+      },
+      {
+        src: op7,
+        alt: "Contact Us",
+        caption: "Contact Us"
+      },
+      {
+        src: opprojectImage,
+        alt: "Contact Us",
+        caption: "Contact Us"
+      },
+      
     ];
   } else {
     // Default placeholder images for other projects

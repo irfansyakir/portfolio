@@ -18,5 +18,26 @@
       "Step-by-step solution generator",
       "Offline mode for studying without internet connection"
     ]
+  },
+  {
+    "id": 2,
+    "title": "Opus-Cinemas",
+    "description": "A premium movie booking web application featuring real-time seat selection and secure payment processing with multiple options. Users can browse detailed film listings, watch trailers, and receive personalized recommendations based on preferences and viewing history.",
+    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform designed to provide a premium cinema experience from the moment users browse for movies. The application focuses on creating a seamless booking experience with attention to visual design and user flow. The system includes a customer-facing booking interface as well as an administrative backend for cinema management.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "XAMPP"],
+    "category": "Web Development",
+    "image": "placeholder-opus-cinemas.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/opus-cinemas",
+    "year": "2024",
+    "challenges": "Building a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. Additionally, designing an intuitive seat selection interface was difficult due to the need to represent complex theater layouts, handle group seating preferences, and provide visual feedback on seat availability while maintaining responsiveness across different devices and screen sizes.",
+    "solutions": "I implemented database features to manage seat availability and used user profiles to track booked tickets and related activity.",
+    "features": [
+      "Interactive seat selection with real-time availability updates",
+      "User Profile dashboard for checking booking history and preferences",
+      "Detailed film listings with trailers and reviews",
+      "User-friendly interface with intuitive navigation",
+      "Email notifications for booking confirmations and reminders"
+    ]
   }
 ]

@@ -3,10 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faExpand } from '@fortawesome/free-solid-svg-icons';
 import './projectVideo.css';
 
-const ProjectVideo = ({ videoSrc, poster }) => {
+const ProjectVideo = ({ videoSrc, poster, projectCategory }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const videoRef = useRef(null);
+  
+  // Check if this is a mobile app project
+  const isMobileApp = projectCategory === 'Mobile Development';
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -43,7 +46,7 @@ const ProjectVideo = ({ videoSrc, poster }) => {
 
   return (
     <div 
-      className="project-video-container"
+      className={`project-video-container ${isMobileApp ? 'mobile-layout' : 'web-layout'}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
