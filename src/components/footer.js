@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p className="footer-credit">Designed & Built with ❤️</p>
+          <p className="footer-credit">Designed & Built in React with ❤️</p>
         </div>
       </div>
     </footer>

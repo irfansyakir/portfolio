@@ -1,39 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './skills.css';
 // Import Font Awesome components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments, faUsers, faLightbulb, faSyncAlt} from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
+  // Add state to control animation
+  const [animate, setAnimate] = useState(false);
+  
+  // Start animation after component mounts
+  useEffect(() => {
+    // Small delay to ensure the animation is visible after page loads
+    const timer = setTimeout(() => {
+      setAnimate(true);
+    }, 300);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   // Skills data organized by categories
   const skillsData = {
     programmingLanguages: [
       { name: 'Java', level: 90 },
-      { name: 'C/C++', level: 60 },
-      { name: 'Python', level: 75 },
-      { name: 'JavaScript', level: 85 },
+      { name: 'C/C++', level: 50 },
+      { name: 'Python', level: 65 },
+      { name: 'JavaScript', level: 80 },
       { name: 'Dart', level: 75 },
       { name: 'SQL', level: 80 },
       { name: 'HTML/CSS', level: 90 },
       { name: 'PHP', level: 70 },
-      { name: 'Bash/Shell', level: 65 }
+      { name: 'Bash/Shell', level: 75 }
     ],
     frameworks: [
-      { name: 'React', level: 85 },
+      { name: 'React', level: 60 },
+      { name: 'React Native', level: 60 },
       { name: 'Flutter', level: 80 },
-      { name: 'XAMPP', level: 75 },
-      { name: 'Node.js', level: 70 },
+      { name: 'XAMPP', level: 60 },
+      { name: 'Bootstrap', level: 60 },
+      { name: 'Node.js', level: 50 },
     ],
     devOps: [
       { name: 'Git', level: 90 },
       { name: 'GitHub/GitLab', level: 85 },
       { name: 'CI/CD', level: 80 },
       { name: 'Terraform', level: 75 },
+      { name: 'Terraform Cloud', level: 65 },
+      { name: 'Digital Ocean', level: 50 },
     ],
     others: [
       { name: 'RESTful APIs', level: 85 },
       { name: 'Database Design', level: 80 },
       { name: 'UI/UX Design', level: 75 },
+      { name: 'Branding & Marketing', level: 75 },
       { name: 'Automated Testing', level: 75 },
       { name: 'Machine Learning', level: 65 },
     ]
@@ -49,7 +67,7 @@ const Skills = () => {
       <div className="skill-bar">
         <div 
           className="skill-progress" 
-          style={{ width: `${skill.level}%` }}
+          style={{ width: animate ? `${skill.level}%` : '0%' }}
         ></div>
       </div>
     </div>

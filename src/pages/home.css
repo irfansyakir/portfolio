@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80vh;
-  padding: 60px 0;
+  min-height: 70vh; /* Reduced from 80vh to reduce vertical space */
+  padding: 10px 0 20px; /* Reduced padding-top from 40px to 10px */
 }
 
 .hero-content {
@@ -102,7 +102,7 @@
 
 /* Skills Highlight Section */
 .skills-highlight {
-  padding: 80px 0;
+  padding: 40px 0; /* Reduced from 80px to 40px */
 }
 
 .skills-highlight h2 {

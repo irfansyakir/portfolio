@@ -8,6 +8,7 @@ import Projects from './pages/projects';
 import ProjectDetail from './pages/projectDetail';
 import Skills from './pages/skills';
 import Contact from './pages/contact';
+import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <Router basename={process.env.PUBLIC_URL}>
+          <ScrollToTop />
           <Navbar />
           <main className="main-content">
             <Routes>

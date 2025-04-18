@@ -4,8 +4,9 @@ import ThemeToggle from './ThemeToggle';
 import './navbar.css';
 
 const Navbar = () => {
+  // Initialize scrolled state based on current scroll position
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(window.scrollY > 50);
 
   // Toggle mobile menu
   const toggleMenu = () => {
@@ -28,6 +29,9 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    
+    // Check scroll position on component mount
+    handleScroll();
     
     // Clean up the event listener on component unmount
     return () => {
