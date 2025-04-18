@@ -26,13 +26,22 @@
   letter-spacing: -0.01em;
 }
 
+/* Filter and Sort Container */
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 /* Filter Styles */
 .filter-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 40px;
 }
 
 .filter-btn {
@@ -55,6 +64,39 @@
 .filter-btn.active {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-container label {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-background-tertiary);
+  color: var(--color-text-secondary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.sort-select:hover {
+  background-color: var(--color-border-light);
 }
 
 /* Projects Grid */
@@ -234,6 +276,16 @@
   
   .projects-cta {
     padding: 30px;
+  }
+
+  .filter-sort-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .sort-container {
+    justify-content: center;
   }
 }
 

@@ -11,7 +11,7 @@ const About = () => {
     <div className="about-container">
       <div className="about-header">
         <h1>About Me</h1>
-        <p className="subtitle">Aspiring Software Engineer</p>
+        <p className="subtitle">Aspiring Software Engineer & AI Enthusiast</p>
       </div>
       
       <div className="about-content">
@@ -33,6 +33,13 @@ const About = () => {
           </p>
           
           <p>
+            I have a strong interest in artificial intelligence and machine learning, having completed 
+            several projects in computer vision, large language models, and predictive analytics. 
+            My AI/ML focus includes developing models for image classification, sentiment analysis, and 
+            recommendation systems using frameworks like TensorFlow and PyTorch.
+          </p>
+          
+          <p>
             I have professional experience as a DevOps Intern at ST Engineering, where I implemented
             best practices to enhance collaboration between development and operations teams. I also
             worked at Accenture as a Test Analyst Intern and later as a Business Analyst, where I
@@ -41,10 +48,8 @@ const About = () => {
           
           <p>
             I enjoy tackling complex problems and continuously learning new technologies. When I'm not
-            coding, you might find me gaming or hiking.
+            coding you might find me gaming or hiking.
           </p>
-          
-         
         </div>
       </div>
       
@@ -61,6 +66,10 @@ const About = () => {
               <h3 className="timeline-title">Nanyang Technological University (NTU)</h3>
               <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
               <p className="timeline-degree">Bachelor of Engineering,<br />Information Engineering and Media</p>
+              <p className="timeline-details">
+                <li>Specialized in Software Engineering and Artificial Intelligence.</li><br/>
+                Completed coursework in Object Oriented Programming, <br/> Software Engineering, 
+                Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning. </p>
             </div>
           </div>
           
@@ -74,6 +83,11 @@ const About = () => {
               <h3 className="timeline-title">Singapore Polytechnic (SP)</h3>
               <p className="timeline-date">Apr 2017 – Mar 2020</p>
               <p className="timeline-degree">Diploma in Computer Engineering</p>
+              <p className="timeline-details">
+                <li>Specialized in Computer Applications.</li>
+                 <br/>
+                Completed coursework in Mobile Application Development, Data Structures and algorithms,
+                Web Applications and Machine Learning </p>
             </div>
           </div>
         </div>
@@ -96,6 +110,7 @@ const About = () => {
                 <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
                 <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
                 <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
+                <li>Worked on infrastructure for AI model deployment and continuous training pipelines</li>
               </ul>
             </div>
           </div>
@@ -113,6 +128,7 @@ const About = () => {
               <ul className="timeline-achievements">
                 <li>Applied RPA techniques to automate software testing protocols</li>
                 <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
+                <li>Utilized predictive analytics to forecast business trends and optimize resource allocation</li>
               </ul>
             </div>
           </div>

@@ -31,7 +31,7 @@ export const getProjectVideo = (projectId) => {
   switch (projectId) {
     case 1:
       return ffVideo;
-    case 2:
+    case 4:
       return opVideo;
     default:
       return null;
@@ -88,7 +88,7 @@ export const getProjectImages = (projectId) => {
         caption: "Splash Screen"
       }
     ];
-  } else if (projectId === 2) {
+  } else if (projectId === 4) {
     return [
       {
         src: op1,

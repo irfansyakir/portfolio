@@ -21,23 +21,171 @@
   },
   {
     "id": 2,
+    "title": "JamStream ",
+    "description": "A collaborative project with 9 team members that created a mobile music streaming application with interactive social features. Built with React Native and Expo, the app connects to Spotify's API for music content while using Firebase for real-time social interactions.",
+    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronized listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
+    "technologies": ["React Native", "Expo", "JavaScript", "Firebase", "Spotify API"],
+    "category": "Mobile Development",
+    "image": "placeholder-jamstream.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/DIP-Group-4",
+    "year": "2023",
+    "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
+    "solutions": "We implemented a modular architecture with clearly defined responsibilities for each team member. Firebase Realtime Database helped us create responsive social features, while Expo's development environment allowed for consistent testing across different devices. We created custom hooks and state management with Zustand to handle the complex interactions between the music playback and social components.",
+    "features": [
+      "Genre-specific music chatrooms for real-time music discovery and discussion",
+      "User profile customization with music preferences and listening history",
+      "Synchronized music streaming for group listening experiences",
+      "Track discovery through social recommendations",
+      "Cross-platform mobile experience with consistent UI/UX"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Imposter Sweeper",
+    "description": "Applied Java Programming to build an Among Us-themed Minesweeper Game with unique features including difficulty levels, custom death animations, sound effects, and themed elements inspired by the popular Among Us game.",
+    "longDescription": "Imposter Sweeper is a creative reimagining of the classic Minesweeper game with an Among Us theme, built using Java and following object-oriented programming principles. Instead of mines, players must avoid suspicious 'imposters' hidden throughout the grid. The game features multiple difficulty levels, custom death animations when imposters are clicked, Among Us-inspired graphics, and additional features not found in the traditional version, such as hints, themed sound effects, and a score tracking system.",
+    "technologies": ["Java", "OOP", "GUI Development"],
+    "category": "Others",
+    "image": "placeholder-impostersweeper.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/OOP-Minesweeper",
+    "year": "2023",
+    "challenges": "Implementing an efficient algorithm for imposter placement and number calculation was challenging, especially when ensuring the first click is always safe. Creating custom death animations and incorporating the Among Us theme while maintaining the core Minesweeper gameplay required balancing visual appeal with game functionality.",
+    "solutions": "I used the Model-View-Controller design pattern to separate game logic from the UI. For imposter generation, I implemented a delayed generation algorithm that only places imposters after the first click, ensuring the player always starts with a safe move. Custom animations were implemented using Java's animation libraries.",
+    "features": [
+      "Multiple difficulty levels (Beginner, Intermediate, Expert)",
+      "Custom Among Us-themed graphics and sound effects",
+      "Unique death animations when clicking on imposters",
+      "Hint system that reveals safe cells",
+      "Custom game mode with adjustable board size and imposter count",
+      "High score tracking and export functionality"
+    ]
+  },
+
+  {
+    "id": 4,
     "title": "Opus-Cinemas",
-    "description": "A premium movie booking web application featuring real-time seat selection and secure payment processing with multiple options. Users can browse detailed film listings, watch trailers, and receive personalized recommendations based on preferences and viewing history.",
-    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform designed to provide a premium cinema experience from the moment users browse for movies. The application focuses on creating a seamless booking experience with attention to visual design and user flow. The system includes a customer-facing booking interface as well as an administrative backend for cinema management.",
-    "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "XAMPP"],
+    "description": "A collaborative project with 2 team members that created a premium movie booking web application with real-time seat selection, secure payment processing, and booking management. Built with PHP, MySQL, and JavaScript to deliver an immersive cinema experience.",
+    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform developed as a team project with 2 members. The application provides a premium cinema experience, allowing users to browse current and upcoming films, view detailed movie information with trailers, and select seats through an interactive real-time seating chart. The system features a complete booking flow including cinema selection, seat reservation with visual availability indicators, secure payment processing, and automated email confirmations. Users can manage their booking history through personalized profiles, while the administrative backend supports the entire cinema management process. The project demonstrates solid database design principles with multiple interconnected entities including movies, cinemas, showtimes, and user accounts.",
+    "technologies": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "XAMPP"],
     "category": "Web Development",
     "image": "placeholder-opus-cinemas.jpg",
     "link": "#",
     "github": "https://github.com/irfansyakir/opus-cinemas",
     "year": "2024",
-    "challenges": "Building a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. Additionally, designing an intuitive seat selection interface was difficult due to the need to represent complex theater layouts, handle group seating preferences, and provide visual feedback on seat availability while maintaining responsiveness across different devices and screen sizes.",
-    "solutions": "I implemented database features to manage seat availability and used user profiles to track booked tickets and related activity.",
+    "challenges": "Working with a partner to build a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. We needed to design a database schema that could efficiently manage relationships between movies, cinemas, showtimes and seat bookings. Creating an intuitive seat selection interface that could represent complex theater layouts while providing visual feedback across different devices also required careful planning and implementation.",
+    "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalized database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
     "features": [
       "Interactive seat selection with real-time availability updates",
-      "User Profile dashboard for checking booking history and preferences",
-      "Detailed film listings with trailers and reviews",
-      "User-friendly interface with intuitive navigation",
-      "Email notifications for booking confirmations and reminders"
+      "User profiles with comprehensive booking history",
+      "Detailed movie listings with trailers and information",
+      "Secure payment processing with multiple options",
+      "Email notifications for booking confirmations",
+      "Responsive design optimized for different devices"
     ]
+  },
+  
+  {
+    "id": 5,
+    "title": "Bahoot! Quiz App",
+    "description": "A collaborative project with 2 team members that created a Kahoot-style interactive quiz platform with both web and mobile components. Built using Java web technologies, MySQL database, and Android development.",
+    "longDescription": "Bahoot is a comprehensive quiz platform inspired by Kahoot, featuring a Java web application with Tomcat and a complementary Android mobile app. As a team project with 2 members, we designed the system to support educators in creating engaging interactive quizzes for classroom participation. The web application provides question management with full CRUD operations, quiz session creation, and real-time quiz control. The Android application allows students to participate in live quiz sessions with immediate feedback. The project includes a robust MySQL database design supporting question sets across multiple subject areas, user authentication, and detailed response tracking.",
+    "technologies": ["Java Servlet", "Apache Tomcat", "MySQL", "Android Studio", "Firebase"],
+    "category": "Mobile Development",
+    "image": "placeholder-bahoot.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/bahoot",
+    "year": "2023",
+    "challenges": "Working with a partner to design a system that could handle real-time synchronization between the web and mobile platforms was our primary challenge. Creating a low-latency communication system that could support multiple concurrent users while maintaining consistent quiz state across all devices required careful planning of both database structure and communication protocols.",
+    "solutions": "We implemented a dual-system architecture where the Java web application served as the primary content management system and quiz controller, while Firebase handled the real-time data synchronization with Android clients. Our database schema was designed to efficiently manage question sets, track user responses, and calculate scores in real-time across multiple quiz categories.",
+    "features": [
+      "Interactive quiz creation and management through web interface",
+      "Real-time participation with immediate feedback via Android app",
+      "Multiple question types with support for various subject categories",
+      "Live score tracking and performance analytics",
+      "Room code system for easy session joining",
+      "Detailed response tracking with user comments"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "OldEgg E-commerce",
+    "description": "A collaborative project with 2 team members that created a web-based e-commerce platform for PC components, featuring product categorization, user management, and order processing. Built using Java Servlets and JSP with MySQL database integration.",
+    "longDescription": "OldEgg is a comprehensive e-commerce platform inspired by Newegg, specializing in PC components and hardware. Developed as a team project with 2 members, the platform enables users to browse and purchase from various product categories including motherboards, CPUs, GPUs, RAM, storage, cases, and cooling solutions. The database schema implements a normalized structure to efficiently handle complex products with multiple specifications, while the application provides complete shopping functionality including user authentication, product listings, shopping cart management, and order processing.",
+    "technologies": ["Java Servlet", "JSP", "Apache Tomcat", "MySQL", "HTML", "CSS"],
+    "category": "Web Development",
+    "image": "placeholder-oldegg.jpg",
+    "link": "#",
+    "github": "https://github.com/irfansyakir/oldegg",
+    "year": "2023",
+    "challenges": "Working with a partner to design a database schema capable of handling diverse PC components with varying specifications posed a significant challenge. Implementing an effective product categorization system with filtering capabilities while maintaining consistent data relationships across multiple product types required careful database design.",
+    "solutions": "We designed a normalized database schema with separate tables for each component category, connected through a centralized listings table. This approach allowed each product type to have its own specific attributes while maintaining consistent query patterns. For the user interface, we implemented JSP templates to ensure consistent presentation across different product categories.",
+    "features": [
+      "Comprehensive product catalog with 7 PC component categories",
+      "User authentication and account management system",
+      "Shopping cart functionality with persistent sessions",
+      "Order processing and history tracking",
+      "Advanced filtering options for technical specifications",
+      "Responsive product listing pages with detailed information"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Bettersweet",
+    "description": "A collaborative project with 4 team members creating a responsive static website for a fictional premium coffee capsule brand. Features a comprehensive UI design with subscription options, rewards system, and product catalog.",
+    "longDescription": "Bettersweet is a frontend prototype for an e-commerce platform designed for coffee enthusiasts, showcasing Nespresso®-compatible coffee capsules with a focus on sustainability and quality. The static website demonstrates both one-time purchases and subscription models with a loyalty rewards system. Our team designed a complete user journey from product discovery to checkout, with detailed product information, blog content, FAQs, and account management interfaces. The project emphasizes UI/UX design principles for e-commerce, presenting a Singapore-based coffee brand with sustainable practices.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "JSON"],
+    "category": "Web Development",
+    "image": "placeholder-bettersweet.jpg",
+    "link": "#",
+    "github": "#",
+    "year": "2024",
+    "challenges": "Our team faced challenges in designing an intuitive e-commerce experience with multiple product variants while maintaining a static website architecture. Creating UI/UX flows that effectively demonstrated subscription management, shopping cart functionality, and a rewards program without backend processing required creative front-end solutions.",
+    "solutions": "We implemented a sliding cart system with simulated product configuration using JavaScript and designed JSON data stores for FAQs, policies, and blog content. Our team created interactive UI elements that provided realistic e-commerce experiences despite the static nature of the site, focusing on responsive design and visual consistency across all pages.",
+    "features": [
+      "Simulated subscription management UI with pricing options",
+      "Dynamic product catalog with filtering capabilities",
+      "Interactive rewards program interface",
+      "Corporate bulk ordering inquiry system",
+      "Responsive design optimized for all devices"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Pinnacle Accounting",
+    "description": "A collaborative project with 2 team members that created a responsive static website for an accounting firm targeting Singapore SMEs. Features a professional UI design with service descriptions, testimonials, and client-focused solutions.",
+    "longDescription": "Pinnacle Accounting is a frontend prototype for an accounting services firm specializing in financial solutions for various business types in Singapore. The static website showcases targeted service packages for startups, established enterprises, and family businesses with succession planning needs. Our team of two designed a complete user experience with clear service pathways, testimonials, credential displays, and contact options. The project uses modern web design principles to convey trust and professionalism while making complex accounting services accessible to potential clients through intuitive navigation and clear communication of value propositions.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Font Awesome"],
+    "category": "Web Development",
+    "image": "placeholder-pinnacle.jpg",
+    "link": "https://cs2024-website.vercel.app/",
+    "github": "#",
+    "year": "2024",
+    "challenges": "Our team faced challenges in organizing complex service information in a way that would resonate with different target audiences (startups vs. enterprises vs. family businesses) while maintaining a cohesive brand experience. Creating a professional yet approachable design that would instill trust in potential accounting clients required careful consideration of UI elements, typography, and content presentation.",
+    "solutions": "We implemented a tabbed interface to segment services by business type while maintaining design consistency. Our team used strategic visual hierarchy and white space to make complex service information digestible, and created an interactive testimonial carousel to build trust through client stories. We focused on mobile responsiveness to ensure the professional experience translated across all devices.",
+    "features": [
+      "Business-specific service package presentation",
+      "Interactive testimonial carousel with client success stories",
+      "Credentials and certification display section",
+      "Problem-solution narrative structure",
+      "Responsive design with bootstrap framework"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Cats vs Dogs Image Classification",
+    "description": "A collaborative project with 3 team members that developed a deep learning model using GoogLeNet architecture to classify images of cats and dogs. Implemented custom data preprocessing to optimize model training, including strategic data splitting and augmentation techniques to improve model performance.",
+    "longDescription": "This project was a comprehensive exploration of deep learning for image classification, completed collaboratively with 3 team members. We implemented GoogLeNet CNN architecture using TensorFlow to create a robust model capable of distinguishing between cat and dog images with high accuracy. The preprocessing pipeline included strategic data splitting that dropped 50% of training data and reallocated 20% to a labelled test set. We utilized TensorFlow's GPU acceleration capabilities to optimize training time and employed various data augmentation techniques to enhance model generalization. The project demonstrates solid understanding of convolutional neural network architectures, data preprocessing strategies for computer vision tasks, and deep learning model optimization techniques.",
+    "year": "2023",
+    "category": "AI/ML",
+    "technologies": ["TensorFlow", "Python", "GoogLeNet", "Deep Learning", "Computer Vision"],
+    "features": [
+      "Implemented GoogLeNet CNN architecture for image classification",
+      "Created data preprocessing pipeline with train-test splitting",
+      "Optimized model for GPU acceleration",
+      "Achieved high accuracy in distinguishing between cat and dog images"
+    ],
+    "github": "#"
   }
 ]

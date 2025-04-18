@@ -9,13 +9,30 @@ import { getProjectImages } from '../utils/projectImageUtils';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Web Development', 'Mobile Development']; //, 'AI/ML'];
+  const categories = ['All', 'Web Development', 'Mobile Development', 'AI/ML', 'Others'];
   const [activeFilter, setActiveFilter] = useState('All');
+  
+  // Add state for sort method
+  const [sortMethod, setSortMethod] = useState('id'); // Default sort by id
 
   // Filter projects based on active category
   const filteredProjects = activeFilter === 'All' 
     ? projectsData 
     : projectsData.filter(project => project.category === activeFilter);
+    
+  // Sort the filtered projects based on the selected sort method
+  const sortedProjects = [...filteredProjects].sort((a, b) => {
+    if (sortMethod === 'year-desc') {
+      // Sort by year descending (newest first)
+      return parseInt(b.year) - parseInt(a.year);
+    }
+    else if (sortMethod === 'year-asc') {
+      // Sort by year ascending (oldest first)
+      return parseInt(a.year) - parseInt(b.year);
+    }
+    // Default sort by id
+    return a.id - b.id;
+  });
 
   return (
     <div className="projects-container">
@@ -24,22 +41,38 @@ const Projects = () => {
         <p>Here's a collection of my recent work across various technologies and domains</p>
       </header>
       
-      {/* Filter Buttons */}
-      <div className="filter-container">
-        {categories.map(category => (
-          <button 
-            key={category}
-            className={`filter-btn ${activeFilter === category ? 'active' : ''}`}
-            onClick={() => setActiveFilter(category)}
+      {/* Filter and Sort Container */}
+      <div className="filter-sort-container">
+        <div className="filter-container">
+          {categories.map(category => (
+            <button 
+              key={category}
+              className={`filter-btn ${activeFilter === category ? 'active' : ''}`}
+              onClick={() => setActiveFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        
+        <div className="sort-container">
+          <label htmlFor="sort-select">Sort by:</label>
+          <select 
+            id="sort-select" 
+            value={sortMethod}
+            onChange={(e) => setSortMethod(e.target.value)}
+            className="sort-select"
           >
-            {category}
-          </button>
-        ))}
+            <option value="id">Default</option>
+            <option value="year-desc">Year (Newest First)</option>
+            <option value="year-asc">Year (Oldest First)</option>
+          </select>
+        </div>
       </div>
       
       {/* Projects Grid */}
       <div className="projects-grid">
-        {filteredProjects.map(project => {
+        {sortedProjects.map(project => {
           // Get the first image for this project
           const projectImage = getProjectImages(project.id)[7]?.src;
           

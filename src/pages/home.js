@@ -6,10 +6,12 @@ import projectsData from '../data/projects.json';
 import { getProjectImages } from '../utils/projectImageUtils';
 
 const Home = () => {
-  // Get the first project as the featured project
-  const featuredProject = projectsData[0];
-  // Get the first image of the featured project
-  const featuredProjectImage = getProjectImages(featuredProject.id)[7]?.src;
+  const featuredProject1 = projectsData[0];
+  const featuredProjectImage1 = getProjectImages(featuredProject1.id)[7]?.src;
+  const featuredProject2 = projectsData[1];
+  const featuredProjectImage2 = getProjectImages(featuredProject2.id)[7]?.src;
+  const featuredProject3 = projectsData[2];
+  const featuredProjectImage3 = getProjectImages(featuredProject3.id)[7]?.src;
   
   return (
     <div className="home-container">
@@ -41,24 +43,38 @@ const Home = () => {
               <li>JavaScript</li>
               <li>C/C++</li>
               <li>Dart</li>
+              <li>Bash/Shell</li>
             </ul>
           </div>
           <div className="skill-category">
-            <h3>Frameworks & Libraries</h3>
+            <h3>Frameworks</h3>
             <ul>
               <li>Flutter</li>
               <li>React</li>
               <li>XAMPP</li>
               <li>Node.js</li>
-
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
             </ul>
-          </div>
+          </div> 
           <div className="skill-category">
             <h3>DevOps</h3>
             <ul>
+              <li>Git</li>
+              <li>GitHub</li>
               <li>CI/CD</li>
               <li>Terraform</li>
-              <li>GitHub Actions</li>
+              <li>Pipelines & Workflows</li>
+              <li>Digital Ocean</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>AI & Machine Learning</h3>
+            <ul>
+              <li>Computer Vision</li>
+              <li>Deep Learning</li>
+              <li>Large Language Models</li>
+              <li>Data Mining</li>
             </ul>
           </div>
         </div>
@@ -67,31 +83,79 @@ const Home = () => {
 
       {/* Featured Projects Section */}
       <section className="featured-projects">
-        <h2>Featured Project</h2>
+        <h2>Featured Projects</h2>
         <div className="projects-grid">
         
-          {/* Featured Project */}
+          {/* Featured Project 1*/}
           <div className="project-card">
             <div className="project-image">
-              {featuredProjectImage ? (
-                <img src={featuredProjectImage} alt={featuredProject.title} />
+              {featuredProjectImage1 ? (
+                <img src={featuredProjectImage1} alt={featuredProject1.title} />
               ) : (
-                <span>{featuredProject.title}</span>
+                <span>{featuredProject1.title}</span>
               )}
             </div>
             <div className="project-info">
-              <h3>{featuredProject.title}</h3>
-              <p>{featuredProject.description}</p>
+              <h3>{featuredProject1.title}</h3>
+              <p>{featuredProject1.description}</p>
               <div className="project-tags">
-                {featuredProject.technologies.slice(0, 3).map((tech, index) => (
+                {featuredProject1.technologies.slice(0, 3).map((tech, index) => (
                   <span key={index}>{tech}</span>
                 ))}
               </div>
               <div className="featured-project-link">
-                <Link to={`/project/${featuredProject.id}`} className="view-project">View Project</Link>
+                <Link to={`/project/${featuredProject1.id}`} className="view-project">View Project</Link>
               </div>
             </div>
           </div>
+
+          {/* Featured Project 2*/}
+          <div className="project-card">
+            <div className="project-image">
+              {featuredProjectImage2 ? (
+                <img src={featuredProjectImage2} alt={featuredProject2.title} />
+              ) : (
+                <span>{featuredProject2.title}</span>
+              )}
+            </div>
+            <div className="project-info">
+              <h3>{featuredProject2.title}</h3>
+              <p>{featuredProject2.description}</p>
+              <div className="project-tags">
+                {featuredProject2.technologies.slice(0, 3).map((tech, index) => (
+                  <span key={index}>{tech}</span>
+                ))}
+              </div>
+              <div className="featured-project-link">
+                <Link to={`/project/${featuredProject2.id}`} className="view-project">View Project</Link>
+              </div>
+            </div>
+          </div>
+
+           {/* Featured Project 3*/}
+           <div className="project-card">
+            <div className="project-image">
+              {featuredProjectImage3 ? (
+                <img src={featuredProjectImage3} alt={featuredProject3.title} />
+              ) : (
+                <span>{featuredProject3.title}</span>
+              )}
+            </div>
+            <div className="project-info">
+              <h3>{featuredProject3.title}</h3>
+              <p>{featuredProject3.description}</p>
+              <div className="project-tags">
+                {featuredProject3.technologies.slice(0, 3).map((tech, index) => (
+                  <span key={index}>{tech}</span>
+                ))}
+              </div>
+              <div className="featured-project-link">
+                <Link to={`/project/${featuredProject3.id}`} className="view-project">View Project</Link>
+              </div>
+            </div>
+          </div>
+
+         
           
         </div>
         
@@ -103,8 +167,10 @@ const Home = () => {
         <h2>About Me</h2>
         <p>
           I'm a final-year Information Engineering & Media student at Nanyang Technological University 
-          with a passion for building efficient, user-friendly applications. My experience spans from
-          full-stack development to DevOps practices, with a focus on creating innovative solutions.
+          with a passion for building efficient, user-friendly applications. My experience spans from full-stack development
+          to DevOps practices, with a focus on creating innovative solutions. I'm also interested in 
+          artificial intelligence and machine learning applications, having worked on several ML projects 
+          including computer vision and LLMs.
         </p>
         <Link to="/about" className="view-all">Learn More About Me →</Link>
       </section>

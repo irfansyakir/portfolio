@@ -143,22 +143,25 @@ const ProjectDetail = () => {
             </div>
           </div>
           
-          <div className="project-links">
-            <div className="project-links-title">Project Links</div>
-            <div className="links-container">
-              {project.github && (
-                <a href={project.github} className="project-link github" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} /> GitHub
-                </a>
-              )}
-              
-              {(project.link && project.link !=="#") && (
-                <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faExternalLink} /> Live Demo (WebApp Version)
-                </a>
-              )}
+          {/* Project Links */}
+          {(project.github !== "#" || project.link !== "#") && (
+            <div className="project-links">
+              <div className="project-links-title">Project Links</div>
+              <div className="links-container">
+                {(project.github && project.github !== '#') && (
+                  <a href={project.github} className="project-link github" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
+                  </a>
+                )}
+                
+                {(project.link && project.link !== "#") && (
+                  <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faExternalLink} /> Live Demo (WebApp Version)
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
+          )}
           
           <div className="project-category">
             <h3>Category</h3>
