@@ -7,20 +7,14 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   color: var(--color-text-primary);
   line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.01em;
   background-color: var(--color-background-primary);
+  /* Font-related properties removed as they're now in fonts.css */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  /* Font-related properties removed as they're now in fonts.css */
 }
 
 a {

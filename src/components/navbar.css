@@ -36,8 +36,7 @@
 }
 
 .logo-text {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
-  letter-spacing: -0.02em;
+  /* Font-family now handled in fonts.css */
   font-weight: 600;
 }
 
@@ -61,7 +60,7 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   position: relative;
-  letter-spacing: -0.01em;
+  /* Letter-spacing now handled in fonts.css */
 }
 
 .nav-link::after {
