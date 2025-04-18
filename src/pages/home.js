@@ -47,7 +47,7 @@ const Home = () => {
             </ul>
           </div>
           <div className="skill-category">
-            <h3>Frameworks</h3>
+            <h3>Frameworks & Libraries</h3>
             <ul>
               <li>Flutter</li>
               <li>React</li>
@@ -69,7 +69,7 @@ const Home = () => {
             </ul>
           </div>
           <div className="skill-category">
-            <h3>AI & Machine Learning</h3>
+            <h3>Artificial Intelligence & Machine Learning</h3>
             <ul>
               <li>Computer Vision</li>
               <li>Deep Learning</li>
