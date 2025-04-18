@@ -15,6 +15,25 @@ const Projects = () => {
   // Add state for sort method
   const [sortMethod, setSortMethod] = useState('id'); // Default sort by id
 
+  // Helper function to convert month name to numerical value for sorting
+  const getMonthNumber = (monthName) => {
+    const months = {
+      'January': 1,
+      'February': 2,
+      'March': 3,
+      'April': 4,
+      'May': 5,
+      'June': 6,
+      'July': 7,
+      'August': 8,
+      'September': 9,
+      'October': 10,
+      'November': 11,
+      'December': 12
+    };
+    return months[monthName] || 0; // Return 0 if month name is not found
+  };
+
   // Filter projects based on active category
   const filteredProjects = activeFilter === 'All' 
     ? projectsData 
@@ -24,11 +43,17 @@ const Projects = () => {
   const sortedProjects = [...filteredProjects].sort((a, b) => {
     if (sortMethod === 'year-desc') {
       // Sort by year descending (newest first)
-      return parseInt(b.year) - parseInt(a.year);
+      const yearDiff = parseInt(b.year) - parseInt(a.year);
+      if (yearDiff !== 0) return yearDiff;
+      // If years are equal, sort by month descending
+      return getMonthNumber(b.month) - getMonthNumber(a.month);
     }
     else if (sortMethod === 'year-asc') {
       // Sort by year ascending (oldest first)
-      return parseInt(a.year) - parseInt(b.year);
+      const yearDiff = parseInt(a.year) - parseInt(b.year);
+      if (yearDiff !== 0) return yearDiff;
+      // If years are equal, sort by month ascending
+      return getMonthNumber(a.month) - getMonthNumber(b.month);
     }
     // Default sort by id
     return a.id - b.id;
@@ -75,7 +100,6 @@ const Projects = () => {
         {sortedProjects.map(project => {
           // Get the first image for this project
           const projectImage = getProjectImages(project.id)[7]?.src;
-          
           return (
             <div className="project-card" key={project.id}>
               <div className="project-image">

@@ -10,6 +10,7 @@
     "link": "https://fourier-forge-83jn8.ondigitalocean.app/",
     "github": "https://github.com/irfansyakir/fourierforge",
     "year": "2025",
+    "month": "April",
     "challenges": "One of the main challenges was translating complex mathematical formulas into a user-friendly mobile interface while ensuring computational accuracy. Additionally, creating intuitive visualisations that properly illustrate Fourier series signals required significant research and testing.",
     "solutions": "I used Flutter packages to render mathematical equations and to visualise waveforms and signals. These tools allowed me to create accurate, responsive visuals and present Fourier series calculations in clear, step-by-step breakdowns without building custom rendering engines or algorithms.",
     "features": [
@@ -30,6 +31,7 @@
     "link": "#",
     "github": "https://github.com/irfansyakir/DIP-Group-4",
     "year": "2023",
+    "month": "August",
     "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
     "solutions": "We implemented a modular architecture with clearly defined responsibilities for each team member. Firebase Realtime Database helped us create responsive social features, while Expo's development environment allowed for consistent testing across different devices. We created custom hooks and state management with Zustand to handle the complex interactions between the music playback and social components.",
     "features": [
@@ -51,6 +53,7 @@
     "link": "#",
     "github": "https://github.com/irfansyakir/OOP-Minesweeper",
     "year": "2023",
+    "month": "April",
     "challenges": "Implementing an efficient algorithm for imposter placement and number calculation was challenging, especially when ensuring the first click is always safe. Creating custom death animations and incorporating the Among Us theme while maintaining the core Minesweeper gameplay required balancing visual appeal with game functionality.",
     "solutions": "I used the Model-View-Controller design pattern to separate game logic from the UI. For imposter generation, I implemented a delayed generation algorithm that only places imposters after the first click, ensuring the player always starts with a safe move. Custom animations were implemented using Java's animation libraries.",
     "features": [
@@ -74,6 +77,7 @@
     "link": "#",
     "github": "https://github.com/irfansyakir/opus-cinemas",
     "year": "2024",
+    "month": "October",
     "challenges": "Working with a partner to build a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. We needed to design a database schema that could efficiently manage relationships between movies, cinemas, showtimes and seat bookings. Creating an intuitive seat selection interface that could represent complex theater layouts while providing visual feedback across different devices also required careful planning and implementation.",
     "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalized database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
     "features": [
@@ -97,6 +101,7 @@
     "link": "#",
     "github": "https://github.com/irfansyakir/bahoot",
     "year": "2023",
+    "month": "April",
     "challenges": "Working with a partner to design a system that could handle real-time synchronization between the web and mobile platforms was our primary challenge. Creating a low-latency communication system that could support multiple concurrent users while maintaining consistent quiz state across all devices required careful planning of both database structure and communication protocols.",
     "solutions": "We implemented a dual-system architecture where the Java web application served as the primary content management system and quiz controller, while Firebase handled the real-time data synchronization with Android clients. Our database schema was designed to efficiently manage question sets, track user responses, and calculate scores in real-time across multiple quiz categories.",
     "features": [
@@ -119,6 +124,7 @@
     "link": "#",
     "github": "https://github.com/irfansyakir/oldegg",
     "year": "2023",
+    "month": "March",
     "challenges": "Working with a partner to design a database schema capable of handling diverse PC components with varying specifications posed a significant challenge. Implementing an effective product categorization system with filtering capabilities while maintaining consistent data relationships across multiple product types required careful database design.",
     "solutions": "We designed a normalized database schema with separate tables for each component category, connected through a centralized listings table. This approach allowed each product type to have its own specific attributes while maintaining consistent query patterns. For the user interface, we implemented JSP templates to ensure consistent presentation across different product categories.",
     "features": [
@@ -141,6 +147,7 @@
     "link": "#",
     "github": "#",
     "year": "2024",
+    "month": "November",
     "challenges": "Our team faced challenges in designing an intuitive e-commerce experience with multiple product variants while maintaining a static website architecture. Creating UI/UX flows that effectively demonstrated subscription management, shopping cart functionality, and a rewards program without backend processing required creative front-end solutions.",
     "solutions": "We implemented a sliding cart system with simulated product configuration using JavaScript and designed JSON data stores for FAQs, policies, and blog content. Our team created interactive UI elements that provided realistic e-commerce experiences despite the static nature of the site, focusing on responsive design and visual consistency across all pages.",
     "features": [
@@ -162,6 +169,7 @@
     "link": "https://cs2024-website.vercel.app/",
     "github": "#",
     "year": "2024",
+    "month": "October",
     "challenges": "Our team faced challenges in organizing complex service information in a way that would resonate with different target audiences (startups vs. enterprises vs. family businesses) while maintaining a cohesive brand experience. Creating a professional yet approachable design that would instill trust in potential accounting clients required careful consideration of UI elements, typography, and content presentation.",
     "solutions": "We implemented a tabbed interface to segment services by business type while maintaining design consistency. Our team used strategic visual hierarchy and white space to make complex service information digestible, and created an interactive testimonial carousel to build trust through client stories. We focused on mobile responsiveness to ensure the professional experience translated across all devices.",
     "features": [
@@ -177,7 +185,8 @@
     "title": "Cats vs Dogs Image Classification",
     "description": "A collaborative project with 3 team members that developed a deep learning model using GoogLeNet architecture to classify images of cats and dogs. Implemented custom data preprocessing to optimize model training, including strategic data splitting and augmentation techniques to improve model performance.",
     "longDescription": "This project was a comprehensive exploration of deep learning for image classification, completed collaboratively with 3 team members. We implemented GoogLeNet CNN architecture using TensorFlow to create a robust model capable of distinguishing between cat and dog images with high accuracy. The preprocessing pipeline included strategic data splitting that dropped 50% of training data and reallocated 20% to a labelled test set. We utilized TensorFlow's GPU acceleration capabilities to optimize training time and employed various data augmentation techniques to enhance model generalization. The project demonstrates solid understanding of convolutional neural network architectures, data preprocessing strategies for computer vision tasks, and deep learning model optimization techniques.",
-    "year": "2023",
+    "year": "2024",
+    "month": "October",
     "category": "AI/ML",
     "technologies": ["TensorFlow", "Python", "GoogLeNet", "Deep Learning", "Computer Vision"],
     "features": [
