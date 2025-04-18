@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.335ba6ed.css",
+    "main.css": "/static/css/main.d00574b9.css",
     "main.js": "/static/js/main.1a117a8c.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/opuscinemas-demo.mp4": "/static/media/opuscinemas-demo.6fef0bbe19f7b9ab9425.mp4",
@@ -27,12 +27,12 @@
     "static/media/ste.png": "/static/media/ste.f1c9988c253a6ab934be.png",
     "static/media/accenture.png": "/static/media/accenture.895996f6a6b4ced8da00.png",
     "index.html": "/index.html",
-    "main.335ba6ed.css.map": "/static/css/main.335ba6ed.css.map",
+    "main.d00574b9.css.map": "/static/css/main.d00574b9.css.map",
     "main.1a117a8c.js.map": "/static/js/main.1a117a8c.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.335ba6ed.css",
+    "static/css/main.d00574b9.css",
     "static/js/main.1a117a8c.js"
   ]
 }
