@@ -152,7 +152,7 @@ const ProjectDetail = () => {
                 </a>
               )}
               
-              {(project.link && project.link !="#") && (
+              {(project.link && project.link !=="#") && (
                 <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faExternalLink} /> Live Demo (WebApp Version)
                 </a>
