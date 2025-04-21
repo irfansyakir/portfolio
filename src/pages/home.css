@@ -598,3 +598,27 @@
     width: 80%;
   }
 }
+
+/* Add this to your existing home.css file */
+.hero-resume-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  gap: 8px;
+}
+
+.hero-resume-outline:hover {
+  background-color: rgba(66, 153, 225, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-resume-outline .svg-inline--fa {
+  font-size: 1.1em;
+}

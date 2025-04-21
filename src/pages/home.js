@@ -6,7 +6,7 @@ import projectsData from '../data/projects.json';
 import { getProjectImages } from '../utils/projectImageUtils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import steLogo from '../assets/images/about/ste.png';
 import accentureLogo from '../assets/images/about/accenture.png';
 import ntuLogo from '../assets/images/about/ntu.png';
@@ -30,6 +30,9 @@ const Home = () => {
           <h2>Aspiring Software Engineer</h2>
           <p>I am a soon to be graduate from NTU who is passionate about building innovative solutions with modern technologies!</p>
           <div className="hero-social-links">
+            <a href="/resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFileDownload} /> Resume
+            </a>
             <a href="https://github.com/irfansyakir" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
@@ -38,9 +41,6 @@ const Home = () => {
             </a>
             <a href="mailto:irfansyakir@gmail.com" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEnvelope} /> Email
-            </a>
-            <a href="/resume.pdf" className="hero-resume-link" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFileAlt} /> Resume
             </a>
           </div>
         </div>
