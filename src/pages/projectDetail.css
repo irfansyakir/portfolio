@@ -400,6 +400,16 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Add this to your existing project link styles */
+.project-link.figma {
+  background-color: #1E1E1E;
+  color: white;
+}
+
+.project-link.figma:hover {
+  background-color: #0D0D0D;
+}
+
 @media (max-width: 768px) {
   .project-detail-content {
     grid-template-columns: 1fr;

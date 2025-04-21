@@ -9,7 +9,7 @@ import { getProjectImages } from '../utils/projectImageUtils';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Web Development', 'Mobile Development', 'AI/ML', 'Others'];
+  const categories = ['All', 'Web Development', 'Mobile Development', 'Others'] //, 'AI/ML', 'Others'];
   const [activeFilter, setActiveFilter] = useState('All');
   
   // Add state for sort method

@@ -1,0 +1,95 @@
+{
+  "1": { 
+    "dir": "fourierForge", 
+    "extension": "png", 
+    "videoName": "fourierforge-demo.mp4",
+    "captions": [
+      "Main Interface",
+      "Problem Solver Input Parameters 1",
+      "Problem Solver Input Parameters 2",
+      "Signal Visualisation",
+      "Step by Step Solutions 1",
+      "Step by Step Solutions 2",
+      "Step by Step Solutions 3",
+      "Splash Screen"
+    ]
+  },
+  "2": {
+    "dir": "jamStream",
+    "extension": "jpg",
+    "videoName": "jamstream-demo.mp4",
+    "captions": [
+      "Creating JamRooms",
+      "Song Queue",
+      "Discover Weekly",
+      "JamRooms List",
+      "JamRoom Song Queue",
+      "JamStream Profile",
+      "Edit JamStream Profile",
+      "JamRoom Chat",
+      "Playlist",
+      "Music Player",
+      "Home Screen"
+    ]
+  },
+  "3": {
+    "dir": "imposterSweeper",
+    "extension": "jpg",
+    "videoName": "impostersweeper-demo.mp4",
+    "captions": [
+      "Main Menu",
+      "Game Board",
+      "Game Over",
+      "Victory Screen",
+      "Game Board 2",
+      "Game Board 3",
+      "Game Board 4",
+      "Start Screen"
+    ]
+  },
+  "4": {
+    "dir": "opusCinemas",
+    "extension": "jpg",
+    "videoName": "opuscinemas-demo.mp4",
+    "captions": [
+      "Home Page",
+      "Cinemas",
+      "Individual Movie",
+      "Ticket Booking",
+      "Payment",
+      "Upcoming Movies",
+      "Contact Us",
+      "Contact Us"
+    ]
+  },
+  "7": {
+    "dir": "bettersweet",
+    "extension": "jpg",
+    "videoName": "bettersweet-demo.mp4",
+    "captions": [
+      "Homepage",
+      "Product Catalog",
+      "Subscription Options",
+      "Coffee Capsules Showcase",
+      "Rewards System",
+      "Checkout Process",
+      "Blog Section",
+      "Mobile View"
+    ]
+  },
+  "8": {
+    "dir": "pinnacle",
+    "extension": "jpg",
+    "videoName": "pinnacle-demo.mp4",
+    "captions": [
+      "Homepage",
+      "Services Overview",
+      "Business Packages",
+      "Testimonials Section",
+      "Team Members",
+      "Credentials Display",
+      "Contact Form",
+      "Mobile Responsive View"
+    ]
+  }
+}

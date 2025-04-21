@@ -6,7 +6,7 @@ import ProjectGallery from '../components/projectGallery';
 import ProjectVideo from '../components/projectVideo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLink, faArrowLeft, faFolder } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLink, faArrowLeft, faFolder, faPenRuler } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
 import { getProjectImages, getProjectVideo } from '../utils/projectImageUtils';
 
@@ -85,7 +85,7 @@ const ProjectDetail = () => {
           <ProjectVideo 
             videoSrc={projectVideo} 
             poster={projectImages[0]?.src}
-            projectCategory={project.category} 
+            verticalVideo={project.verticalVideo} 
           />
         </div>
       )}
@@ -144,7 +144,7 @@ const ProjectDetail = () => {
           </div>
           
           {/* Project Links */}
-          {(project.github !== "#" || project.link !== "#") && (
+          {(project.github !== "#" || project.link !== "#" || project.figma) && (
             <div className="project-links">
               <div className="project-links-title">Project Links</div>
               <div className="links-container">
@@ -157,6 +157,12 @@ const ProjectDetail = () => {
                 {(project.link && project.link !== "#") && (
                   <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faExternalLink} /> Live Demo (WebApp Version)
+                  </a>
+                )}
+                
+                {(project.figma && project.figma !== "#") && (
+                  <a href={project.figma} className="project-link figma" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faPenRuler} /> Figma
                   </a>
                 )}
               </div>

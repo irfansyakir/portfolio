@@ -1,26 +1,59 @@
-// Import all project images and videos
-import ff1 from '../assets/images/projects/fourierForge/fourierforge1.png';
-import ff2 from '../assets/images/projects/fourierForge/fourierforge2.png';
-import ff3 from '../assets/images/projects/fourierForge/fourierforge3.png';
-import ff4 from '../assets/images/projects/fourierForge/fourierforge4.png';
-import ff5 from '../assets/images/projects/fourierForge/fourierforge5.png';
-import ff6 from '../assets/images/projects/fourierForge/fourierforge6.png';
-import ff7 from '../assets/images/projects/fourierForge/fourierforge7.png';
-import ffprojectImage from '../assets/images/projects/fourierForge/projectImage.png';
-import ffVideo from '../assets/videos/fourierForge/fourierforge-demo.mp4';
+/**
+ * Project Image Utilities
+ * 
+ * This module handles dynamic loading of project media assets (images and videos)
+ * based on configuration from projectsMedia.json.
+ * 
+ * The JSON configuration format:
+ * - Each project is identified by its ID as the top level key
+ * - dir: The directory name for this project's assets
+ * - extension: File extension for image files (jpg, png, etc)
+ * - videoName: Name of the demo video file
+ * - captions: Array of captions for each image in order (1, 2, 3, etc)
+ *
+ * To add a new project:
+ * 1. Add a new entry to projectsMedia.json with the appropriate configuration
+ * 2. Make sure the images follow the naming convention: {dirLowercase}{number}.{extension}
+ * 3. Place project thumbnail as "projectImage.{extension}"
+ */
 
-// import js1 from '../assets/images/projects/jamStream/jamstream1.png';
-// import js2 from '../assets/images/projects/jamStream/jamstream2.png';
+// Import project media configuration
+import projectDirs from '../data/projectsMedia.json';
 
-import op1 from '../assets/images/projects/opusCinemas/opuscinemas1.jpg';
-import op2 from '../assets/images/projects/opusCinemas/opuscinemas2.jpg';
-import op3 from '../assets/images/projects/opusCinemas/opuscinemas3.jpg';
-import op4 from '../assets/images/projects/opusCinemas/opuscinemas4.jpg';
-import op5 from '../assets/images/projects/opusCinemas/opuscinemas5.jpg';
-import op6 from '../assets/images/projects/opusCinemas/opuscinemas6.jpg';
-import op7 from '../assets/images/projects/opusCinemas/opuscinemas7.jpg';
-import opprojectImage from '../assets/images/projects/opusCinemas/projectImage.jpg';
-import opVideo from '../assets/videos/opusCinemas/opuscinemas-demo.mp4';
+// Function to dynamically import images
+function importImage(projectId, imageNumber) {
+  const project = projectDirs[projectId];
+  if (!project) return null;
+
+  const { dir, extension } = project;
+  const dirLower = dir.toLowerCase();
+  
+  try {
+    // All project images are now standardized to "projectImage.{extension}"
+    if (imageNumber === 'projectImage') {
+      return require(`../assets/images/projects/${dir}/projectImage.${extension}`);
+    }
+    
+    // Regular numbered images
+    return require(`../assets/images/projects/${dir}/${dirLower}${imageNumber}.${extension}`);
+  } catch (e) {
+    console.error(`Failed to load image ${imageNumber} for project ${projectId}:`, e);
+    return null;
+  }
+}
+
+// Function to dynamically import videos
+function importVideo(projectId) {
+  const project = projectDirs[projectId];
+  if (!project) return null;
+  
+  try {
+    return require(`../assets/videos/${project.dir}/${project.videoName}`);
+  } catch (e) {
+    console.error(`Failed to load video for project ${projectId}:`, e);
+    return null;
+  }
+}
 
 /**
  * Returns the demo video URL for a project if available
@@ -28,14 +61,7 @@ import opVideo from '../assets/videos/opusCinemas/opuscinemas-demo.mp4';
  * @returns {string|null} URL to the video or null if not available
  */
 export const getProjectVideo = (projectId) => {
-  switch (projectId) {
-    case 1:
-      return ffVideo;
-    case 4:
-      return opVideo;
-    default:
-      return null;
-  }
+  return importVideo(projectId);
 };
 
 /**
@@ -44,96 +70,10 @@ export const getProjectVideo = (projectId) => {
  * @returns {Array} Array of image objects with src, alt, and caption properties
  */
 export const getProjectImages = (projectId) => {
-  // Return different sets of images based on project ID
-  if (projectId === 1) {
-    return [
-      { 
-        src: ff1, 
-        alt: "Fourier Forge Main Interface", 
-        caption: "Main Interface"
-      },
-      { 
-        src: ff2, 
-        alt: "Fourier Forge Feature 1", 
-        caption: "Problem Solver Input Parameters 1"
-      },
-      { 
-        src: ff3, 
-        alt: "Fourier Forge Feature 2", 
-        caption: "Problem Solver Input Parameters 2"
-      },
-      { 
-        src: ff4, 
-        alt: "Fourier Forge Mobile View", 
-        caption: "Signal Visualisation"
-      },
-      { 
-        src: ff5, 
-        alt: "Fourier Forge Data Flow", 
-        caption: "Step by Step Solutions 1"
-      },
-      {
-        src: ff6,
-        alt: "Fourier Forge Additional View",
-        caption: "Step by Step Solutions 2"
-      },
-      {
-        src: ff7,
-        alt: "Fourier Forge Results Screen",
-        caption: "Step by Step Solutions 3"
-      },
-      {
-        src: ffprojectImage,
-        alt: "Fourier Forge Results Screen",
-        caption: "Splash Screen"
-      }
-    ];
-  } else if (projectId === 4) {
-    return [
-      {
-        src: op1,
-        alt: "Home Page",
-        caption: "Home Page"
-      },
-      {
-        src: op2,
-        alt: "Cinemas",
-        caption: "Cinemas"
-      },
-      {
-        src: op3,
-        alt: "Individual Movie",
-        caption: "Individual Movie"
-      },
-      {
-        src: op4,
-        alt: "Ticket Booking",
-        caption: "Ticket Booking"
-      },
-      {
-        src: op5,
-        alt: "Payment",
-        caption: "Payment"
-      },
-      {
-        src: op6,
-        alt: "Upcoming Movies",
-        caption: "Upcoming Movies"
-      },
-      {
-        src: op7,
-        alt: "Contact Us",
-        caption: "Contact Us"
-      },
-      {
-        src: opprojectImage,
-        alt: "Contact Us",
-        caption: "Contact Us"
-      },
-      
-    ];
-  } else {
-    // Default placeholder images for other projects
+  const project = projectDirs[projectId];
+  
+  // Return default placeholder images for unknown projects
+  if (!project) {
     return [
       { 
         src: "https://via.placeholder.com/800x600?text=Project+Preview", 
@@ -152,4 +92,34 @@ export const getProjectImages = (projectId) => {
       }
     ];
   }
+  
+  const { dir, captions } = project;
+  const images = [];
+  
+  // Determine how many images to attempt loading based on captions length
+  const maxImages = Math.min(captions.length, 10); // Limit to 10 images max
+  
+  // Import the regular numbered images
+  for (let i = 1; i <= maxImages; i++) {
+    const img = importImage(projectId, i);
+    if (img) {
+      images.push({
+        src: img,
+        alt: `${dir} ${captions[i-1]}`,
+        caption: captions[i-1]
+      });
+    }
+  }
+  
+  // Add the project image if available (usually used as thumbnail)
+  const projectImage = importImage(projectId, 'projectImage');
+  if (projectImage && images.length < captions.length) {
+    images.push({
+      src: projectImage,
+      alt: `${dir} Splash Screen`,
+      caption: captions[images.length] || "Splash Screen"
+    });
+  }
+  
+  return images;
 };

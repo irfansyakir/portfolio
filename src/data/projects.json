@@ -3,10 +3,11 @@
     "id": 1,
     "title": "Fourier Forge",
     "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. \n   It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
-    "longDescription": "Fourier Forge is a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
+    "longDescription": "As part of my Final Year Project (FYP), I developed Fourier Forge, a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
     "technologies": ["Flutter", "Dart", "Mathematics"],
     "category": "Mobile Development",
     "image": "placeholder-fourier.jpg",
+    "verticalVideo" : "true",
     "link": "https://fourier-forge-83jn8.ondigitalocean.app/",
     "github": "https://github.com/irfansyakir/fourierforge",
     "year": "2025",
@@ -19,17 +20,20 @@
       "Step-by-step solution generator",
       "Offline mode for studying without internet connection"
     ]
+    
   },
   {
     "id": 2,
     "title": "JamStream ",
     "description": "A collaborative project with 9 team members that created a mobile music streaming application with interactive social features. Built with React Native and Expo, the app connects to Spotify's API for music content while using Firebase for real-time social interactions.",
-    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronized listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
+    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students as part of the Design and Innovation Project (DIP) looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronized listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
     "technologies": ["React Native", "Expo", "JavaScript", "Firebase", "Spotify API"],
     "category": "Mobile Development",
     "image": "placeholder-jamstream.jpg",
+    "verticalVideo" : "false",
     "link": "#",
     "github": "https://github.com/irfansyakir/DIP-Group-4",
+    "figma" : "https://www.figma.com/design/gMIQ6WEVMcx6wvEDuRvBZ2/app-features-rough-draft?node-id=71-3474&t=aEqdiWd3V13V9GxV-1",
     "year": "2023",
     "month": "August",
     "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
@@ -74,6 +78,7 @@
     "technologies": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "XAMPP"],
     "category": "Web Development",
     "image": "placeholder-opus-cinemas.jpg",
+    "verticalVideo" : "false",
     "link": "#",
     "github": "https://github.com/irfansyakir/opus-cinemas",
     "year": "2024",
@@ -90,52 +95,7 @@
     ]
   },
   
-  {
-    "id": 5,
-    "title": "Bahoot! Quiz App",
-    "description": "A collaborative project with 2 team members that created a Kahoot-style interactive quiz platform with both web and mobile components. Built using Java web technologies, MySQL database, and Android development.",
-    "longDescription": "Bahoot is a comprehensive quiz platform inspired by Kahoot, featuring a Java web application with Tomcat and a complementary Android mobile app. As a team project with 2 members, we designed the system to support educators in creating engaging interactive quizzes for classroom participation. The web application provides question management with full CRUD operations, quiz session creation, and real-time quiz control. The Android application allows students to participate in live quiz sessions with immediate feedback. The project includes a robust MySQL database design supporting question sets across multiple subject areas, user authentication, and detailed response tracking.",
-    "technologies": ["Java Servlet", "Apache Tomcat", "MySQL", "Android Studio", "Firebase"],
-    "category": "Mobile Development",
-    "image": "placeholder-bahoot.jpg",
-    "link": "#",
-    "github": "https://github.com/irfansyakir/bahoot",
-    "year": "2023",
-    "month": "April",
-    "challenges": "Working with a partner to design a system that could handle real-time synchronization between the web and mobile platforms was our primary challenge. Creating a low-latency communication system that could support multiple concurrent users while maintaining consistent quiz state across all devices required careful planning of both database structure and communication protocols.",
-    "solutions": "We implemented a dual-system architecture where the Java web application served as the primary content management system and quiz controller, while Firebase handled the real-time data synchronization with Android clients. Our database schema was designed to efficiently manage question sets, track user responses, and calculate scores in real-time across multiple quiz categories.",
-    "features": [
-      "Interactive quiz creation and management through web interface",
-      "Real-time participation with immediate feedback via Android app",
-      "Multiple question types with support for various subject categories",
-      "Live score tracking and performance analytics",
-      "Room code system for easy session joining",
-      "Detailed response tracking with user comments"
-    ]
-  },
-  {
-    "id": 6,
-    "title": "OldEgg E-commerce",
-    "description": "A collaborative project with 2 team members that created a web-based e-commerce platform for PC components, featuring product categorization, user management, and order processing. Built using Java Servlets and JSP with MySQL database integration.",
-    "longDescription": "OldEgg is a comprehensive e-commerce platform inspired by Newegg, specializing in PC components and hardware. Developed as a team project with 2 members, the platform enables users to browse and purchase from various product categories including motherboards, CPUs, GPUs, RAM, storage, cases, and cooling solutions. The database schema implements a normalized structure to efficiently handle complex products with multiple specifications, while the application provides complete shopping functionality including user authentication, product listings, shopping cart management, and order processing.",
-    "technologies": ["Java Servlet", "JSP", "Apache Tomcat", "MySQL", "HTML", "CSS"],
-    "category": "Web Development",
-    "image": "placeholder-oldegg.jpg",
-    "link": "#",
-    "github": "https://github.com/irfansyakir/oldegg",
-    "year": "2023",
-    "month": "March",
-    "challenges": "Working with a partner to design a database schema capable of handling diverse PC components with varying specifications posed a significant challenge. Implementing an effective product categorization system with filtering capabilities while maintaining consistent data relationships across multiple product types required careful database design.",
-    "solutions": "We designed a normalized database schema with separate tables for each component category, connected through a centralized listings table. This approach allowed each product type to have its own specific attributes while maintaining consistent query patterns. For the user interface, we implemented JSP templates to ensure consistent presentation across different product categories.",
-    "features": [
-      "Comprehensive product catalog with 7 PC component categories",
-      "User authentication and account management system",
-      "Shopping cart functionality with persistent sessions",
-      "Order processing and history tracking",
-      "Advanced filtering options for technical specifications",
-      "Responsive product listing pages with detailed information"
-    ]
-  },
+ 
   {
     "id": 7,
     "title": "Bettersweet",
@@ -179,22 +139,5 @@
       "Problem-solution narrative structure",
       "Responsive design with bootstrap framework"
     ]
-  },
-  {
-    "id": 9,
-    "title": "Cats vs Dogs Image Classification",
-    "description": "A collaborative project with 3 team members that developed a deep learning model using GoogLeNet architecture to classify images of cats and dogs. Implemented custom data preprocessing to optimize model training, including strategic data splitting and augmentation techniques to improve model performance.",
-    "longDescription": "This project was a comprehensive exploration of deep learning for image classification, completed collaboratively with 3 team members. We implemented GoogLeNet CNN architecture using TensorFlow to create a robust model capable of distinguishing between cat and dog images with high accuracy. The preprocessing pipeline included strategic data splitting that dropped 50% of training data and reallocated 20% to a labelled test set. We utilized TensorFlow's GPU acceleration capabilities to optimize training time and employed various data augmentation techniques to enhance model generalization. The project demonstrates solid understanding of convolutional neural network architectures, data preprocessing strategies for computer vision tasks, and deep learning model optimization techniques.",
-    "year": "2024",
-    "month": "October",
-    "category": "AI/ML",
-    "technologies": ["TensorFlow", "Python", "GoogLeNet", "Deep Learning", "Computer Vision"],
-    "features": [
-      "Implemented GoogLeNet CNN architecture for image classification",
-      "Created data preprocessing pipeline with train-test splitting",
-      "Optimized model for GPU acceleration",
-      "Achieved high accuracy in distinguishing between cat and dog images"
-    ],
-    "github": "#"
   }
 ]
