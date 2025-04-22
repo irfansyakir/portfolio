@@ -40,59 +40,12 @@ const About = () => {
           </p>
           
           <p>
-            I have professional experience as a DevOps Intern at ST Engineering, where I implemented
-            best practices to enhance collaboration between development and operations teams. I also
-            worked at Accenture as a Test Analyst Intern and later as a Business Analyst, where I
-            applied RPA techniques to automate software testing protocols.
-          </p>
-          
-          <p>
             I enjoy tackling complex problems and continuously learning new technologies. When I'm not
-            coding you might find me gaming or hiking.
+            coding you might find me gaming or hiking!
           </p>
         </div>
       </div>
-      
-      <div className="education-section">
-        <h2>Education</h2>
-        <div className="timeline">
-          {/* NTU Education */}
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <div className="timeline-logo">
-                <img src={ntuLogo} alt="Nanyang Technological University" />
-              </div>
-              <h3 className="timeline-title">Nanyang Technological University (NTU)</h3>
-              <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
-              <p className="timeline-degree">Bachelor of Engineering,<br />Information Engineering and Media</p>
-              <p className="timeline-details">
-                <li>Specialized in Software Engineering and Artificial Intelligence.</li><br/>
-                Completed coursework in Object Oriented Programming, <br/> Software Engineering, 
-                Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning. </p>
-            </div>
-          </div>
-          
-          {/* SP Education */}
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <div className="timeline-logo">
-                <img src={spLogo} alt="Singapore Polytechnic" />
-              </div>
-              <h3 className="timeline-title">Singapore Polytechnic (SP)</h3>
-              <p className="timeline-date">Apr 2017 – Mar 2020</p>
-              <p className="timeline-degree">Diploma in Computer Engineering</p>
-              <p className="timeline-details">
-                <li>Specialized in Computer Applications.</li>
-                 <br/>
-                Completed coursework in Mobile Application Development, Data Structures and algorithms,
-                Web Applications and Machine Learning </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
       <div className="experience-section">
         <h2>Professional Experience</h2>
         <div className="timeline">
@@ -151,6 +104,72 @@ const About = () => {
           </div>
         </div>
       </div>
+      
+      <div className="education-section">
+        <h2>Education</h2>
+        <div className="timeline">
+          {/* NTU Education */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <div className="timeline-logo">
+                <img src={ntuLogo} alt="Nanyang Technological University" />
+              </div>
+              <h3 className="timeline-title">Nanyang Technological University (NTU)</h3>
+              <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
+              <p className="timeline-degree">Bachelor of Engineering,<br />Information Engineering and Media</p>
+              <p className="timeline-details">
+                <li>Specialised in Software Engineering and Artificial Intelligence.</li>
+                <br/>
+                Completed coursework in: 
+                <br/>
+                <ul className='timeline-achievements'>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Software Engineering</li>
+                  <li>Object Oriented Programming</li>
+                  <li>Web Application Development</li>
+                  <li>Artificial Intelligence & Data Mining</li>
+                  <li>Machine Learning Design Application</li>
+                </ul>
+                
+
+
+              </p>
+                {/* <br/>
+                Completed coursework in Object Oriented Programming, <br/> Software Engineering, 
+                Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning. </p> */}
+            </div>
+          </div>
+          
+          {/* SP Education */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <div className="timeline-logo">
+                <img src={spLogo} alt="Singapore Polytechnic" />
+              </div>
+              <h3 className="timeline-title">Singapore Polytechnic (SP)</h3>
+              <p className="timeline-date">Apr 2017 – Mar 2020</p>
+              <p className="timeline-degree">Diploma in Computer Engineering</p>
+              <p className="timeline-details">
+                <li>Specialised in Computer Applications</li>
+                <br/>
+                Completed coursework in: 
+                <br/>
+                <ul className='timeline-achievements'>
+                  <li>Mobile Application Development</li>
+                  <li>Client Server Application Development</li>
+                  <li>Web Application Development</li>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Machine Learning & AI</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
   );
 };

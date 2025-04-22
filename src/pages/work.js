@@ -118,7 +118,7 @@ const Work = () => {
                 <div className="work-title">Nanyang Technological University (NTU)</div>
                 <div className="work-position">Bachelor of Engineering, Information Engineering and Media</div>
                 <ul className="work-description">
-                  <li>Specialized in Software Engineering and Artificial Intelligence</li>
+                  <li>Specialised in Software Engineering and Artificial Intelligence</li>
                   <li>Completed coursework in Object Oriented Programming, Software Engineering, Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning</li>
                 </ul>
               </div>
@@ -134,7 +134,7 @@ const Work = () => {
                 <div className="work-title">Singapore Polytechnic (SP)</div>
                 <div className="work-position">Diploma in Computer Engineering</div>
                 <ul className="work-description">
-                  <li>Specialized in Computer Applications</li>
+                  <li>Specialised in Computer Applications</li>
                   <li>Completed coursework in Mobile Application Development, Data Structures and Algorithms, Web Applications and Machine Learning</li>
                 </ul>
               </div>

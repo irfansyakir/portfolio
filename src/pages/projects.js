@@ -63,7 +63,7 @@ const Projects = () => {
     <div className="projects-container">
       <header className="projects-header">
         <h1>My Projects</h1>
-        <p>Here's a collection of my recent work across various technologies and domains</p>
+        <p>Here's a collection of my recent work across various technologies and domains!</p>
       </header>
       
       {/* Filter and Sort Container */}

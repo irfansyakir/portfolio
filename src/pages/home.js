@@ -6,7 +6,7 @@ import projectsData from '../data/projects.json';
 import { getProjectImages } from '../utils/projectImageUtils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileAlt, faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import steLogo from '../assets/images/about/ste.png';
 import accentureLogo from '../assets/images/about/accenture.png';
 import ntuLogo from '../assets/images/about/ntu.png';
@@ -26,7 +26,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>hi i'm irfan! 👋</h1>
+          <h1>hello! i'm irfan! 👋</h1>
           <h2>Aspiring Software Engineer</h2>
           <p>I am a soon to be graduate from NTU who is passionate about building innovative solutions with modern technologies!</p>
           <div className="hero-social-links">
@@ -85,7 +85,6 @@ const Home = () => {
                     <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
                     <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
                     <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
-                    <li>Worked on infrastructure for AI model deployment and continuous training pipelines</li>
                   </ul>
                 </div>
               </div>
@@ -102,7 +101,6 @@ const Home = () => {
                   <ul className="work-description">
                     <li>Applied RPA techniques to automate software testing protocols</li>
                     <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
-                    <li>Utilized predictive analytics to forecast business trends and optimize resource allocation</li>
                   </ul>
                 </div>
               </div>
@@ -138,8 +136,7 @@ const Home = () => {
                   <div className="work-title">Nanyang Technological University (NTU)</div>
                   <div className="work-position">Bachelor of Engineering, Information Engineering and Media</div>
                   <ul className="work-description">
-                    <li>Specialized in Software Engineering and Artificial Intelligence</li>
-                    <li>Completed coursework in Object Oriented Programming, Software Engineering, Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning</li>
+                    <li>Specialised in Software Engineering and Artificial Intelligence</li>
                   </ul>
                 </div>
               </div>
@@ -154,8 +151,7 @@ const Home = () => {
                   <div className="work-title">Singapore Polytechnic (SP)</div>
                   <div className="work-position">Diploma in Computer Engineering</div>
                   <ul className="work-description">
-                    <li>Specialized in Computer Applications</li>
-                    <li>Completed coursework in Mobile Application Development, Data Structures and Algorithms, Web Applications and Machine Learning</li>
+                    <li>Specialised in Computer Applications</li>
                   </ul>
                 </div>
               </div>
