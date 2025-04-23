@@ -33,10 +33,8 @@ const About = () => {
           </p>
           
           <p>
-            I have a strong interest in artificial intelligence and machine learning, having completed 
+            I also have a strong interest in artificial intelligence and machine learning, having completed 
             several projects in computer vision, large language models, and predictive analytics. 
-            My AI/ML focus includes developing models for image classification, sentiment analysis, and 
-            recommendation systems using frameworks like TensorFlow and PyTorch.
           </p>
           
           <p>
@@ -63,7 +61,6 @@ const About = () => {
                 <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
                 <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
                 <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
-                <li>Worked on infrastructure for AI model deployment and continuous training pipelines</li>
               </ul>
             </div>
           </div>
@@ -81,7 +78,6 @@ const About = () => {
               <ul className="timeline-achievements">
                 <li>Applied RPA techniques to automate software testing protocols</li>
                 <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
-                <li>Utilized predictive analytics to forecast business trends and optimize resource allocation</li>
               </ul>
             </div>
           </div>

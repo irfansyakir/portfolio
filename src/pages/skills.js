@@ -77,7 +77,7 @@ const Skills = () => {
     <div className="skills-container">
       <div className="skills-header">
         <h1>My Skills</h1>
-        <p>Here's a comprehensive overview of my technical expertise and proficiency levels</p>
+        <p>Here's a comprehensive overview of my technical expertise and proficiency levels!</p>
       </div>
       
       <div className="skills-content">
