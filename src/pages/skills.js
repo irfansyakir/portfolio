@@ -40,12 +40,14 @@ const Skills = () => {
       { name: 'Node.js', level: 50 },
     ],
     devOps: [
-      { name: 'Git', level: 90 },
       { name: 'GitHub/GitLab', level: 85 },
       { name: 'CI/CD', level: 80 },
+      { name: 'Docker', level: 50 },
       { name: 'Terraform', level: 75 },
       { name: 'Terraform Cloud', level: 65 },
       { name: 'Digital Ocean', level: 50 },
+      { name: 'AWS', level: 30 },
+      { name: 'Azure', level: 20 }
     ],
     others: [
       { name: 'RESTful APIs', level: 85 },
@@ -96,7 +98,7 @@ const Skills = () => {
         </div>
         
         <div className="skills-section">
-          <h2>DevOps & Version Control</h2>
+          <h2>DevOps</h2>
           <div className="skills-list">
             {skillsData.devOps.map(renderSkillBar)}
           </div>

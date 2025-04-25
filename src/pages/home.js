@@ -180,7 +180,7 @@ const Home = () => {
             <ul>
               <li>Flutter</li>
               <li>React</li>
-              <li>XAMPP</li>
+              <li>React Native</li>
               <li>Node.js</li>
               <li>TensorFlow</li>
               <li>PyTorch</li>
@@ -194,6 +194,7 @@ const Home = () => {
               <li>CI/CD</li>
               <li>Terraform</li>
               <li>Pipelines & Workflows</li>
+              <li>Docker</li>
               <li>Digital Ocean</li>
             </ul>
           </div>
