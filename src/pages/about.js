@@ -203,7 +203,7 @@ const About = () => {
             </p>
             <br/>
             <p>
-              This year's theme, "Optimising the Future: Lean Solutions," challenges participants to apply lean methodology to create efficient, impactful innovations. The event combines technical workshops, industry mentorship, and concludes with pitches to expert judges.
+              Escendo 2025's theme, "Optimising the Future: Lean Solutions," challenges participants to apply lean methodology to create efficient, impactful innovations. The event combines technical workshops, industry mentorship, and concludes with pitches to expert judges.
             </p>
             <br/>
             <p>
