@@ -5,8 +5,29 @@ import ntuLogo from '../assets/images/about/ntu.png';
 import spLogo from '../assets/images/about/sp.webp';
 import steLogo from '../assets/images/about/ste.png';
 import accentureLogo from '../assets/images/about/accenture.png';
+import ProjectGallery from '../components/projectGallery';
+import escendoCommittee from '../assets/images/escendo/group.jpeg';
+import escendoJudges from '../assets/images/escendo/judges.jpeg';
+import escendoFinalists from '../assets/images/escendo/finalists.jpeg';
+import escendoMicron from '../assets/images/escendo/micron.jpeg';
+import escendoEsp32 from '../assets/images/escendo/esp32.jpeg';
+import escendoFinal from '../assets/images/escendo/group2.jpeg';
+import escendoFirstDay from '../assets/images/escendo/1stday.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 
 const About = () => {
+  const escendoGallery = [
+    { src: escendoCommittee, alt: "NTU Escendo 2025 Committee", caption: "Escendo 2025 Commitee" },
+    { src: escendoJudges, alt: "NTU Escendo 2025 Judges", caption: "Escendo 2025 Judges" },
+    { src: escendoFinalists, alt: "NTU Escendo 2025 Finalists", caption: "Escendo 2025 Finalists" },
+    { src: escendoMicron, alt: "NTU Escendo 2025 Micron", caption: "Micron!" },
+    { src: escendoEsp32, alt: "NTU Escendo 2025 Espressif", caption: "Espressif!" },
+    { src: escendoFirstDay, alt: "NTU Escendo 2025 First Day", caption: "First Day!" },
+    { src: escendoFinal, alt: "NTU Escendo 2025 Final", caption: "Everyone!" },
+  ];
+
   return (
     <div className="about-container">
       <div className="about-header">
@@ -160,6 +181,65 @@ const About = () => {
                   <li>Machine Learning & AI</li>
                 </ul>
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="leadership-showcase">
+        <h2>Leadership Experience</h2>
+        <div className="leadership-card">
+          <div className="leadership-header">
+            <div className="leadership-title-section">
+              <h3>NTU Escendo 2025</h3>
+              <h4>Vice President (Branding and Marketing)</h4>
+              <span className="tenure">Aug 2024 – January 2025</span>
+            </div>
+          </div>
+          
+          <div className="leadership-description">
+            <p>
+              Escendo is NTU Garage@EEE's flagship annual engineering makeathon, a premier 3-4 day event where student teams collaborate to develop innovative solutions for real-world challenges.
+            </p>
+            <br/>
+            <p>
+              This year's theme, "Optimising the Future: Lean Solutions," challenges participants to apply lean methodology to create efficient, impactful innovations. The event combines technical workshops, industry mentorship, and concludes with pitches to expert judges.
+            </p>
+            <br/>
+            <p>
+              It's proudly supported by industry leaders: Micron Singapore (Platinum Sponsor), Huawei (Silver Sponsor), and Singapore Aerospace Manufacturing SAM Group, Espressif Systems, and Marvell Technology (Bronze Sponsors).
+            </p>
+            <br/>
+            <p>
+              As Vice President of Branding and Marketing for Escendo 2025, I led the development of digital assets and marketing campaigns and coordinated cross-functional teams to create comprehensive brand strategies, designed visual identities, and established communication channels.
+            </p>
+          </div>
+            
+        
+          <ProjectGallery 
+            images={escendoGallery}
+            projectCategory="Marketing"
+          />
+          
+          <div className="leadership-highlights">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Led development of brand strategy and visual identity</li>
+              <li>Managed Escendo's Instagram page and oversaw social media content strategy</li>
+              <li>Led a team of designers for posts, posters, and merchandise creation</li>
+              <li>Coordinated coverage team for photography and videography</li>
+            </ul>
+
+            <div className="leadership-links">
+              <a href="https://www.instagram.com/escendo_ntu/" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FontAwesomeIcon icon={faInstagram} /> Instagram
+              </a>
+              <a href="https://www.linkedin.com/posts/ntueee_escendo2025-escendo2025-ntueee-ugcPost-7293481080639090688-CyNy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACqXZ9QBYsbcfgPR6oz1bOtRwOOXXuQB-Jo" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+              </a>
+              <a href="https://www.youtube.com/watch?v=Bx8YbvXCJHg" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FontAwesomeIcon icon={faYoutube} /> Event Highlights
+              </a>
             </div>
           </div>
         </div>

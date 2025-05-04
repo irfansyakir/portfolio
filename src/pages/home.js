@@ -30,7 +30,7 @@ const Home = () => {
           <h2>Aspiring Software Engineer</h2>
           <p>I'm a soon-to-be graduate from NTU who is passionate about building innovative solutions with modern technologies!</p>
           <div className="hero-social-links">
-            <a href="/resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
+            <a href="/irfan_syakir_resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFileDownload} /> Resume
             </a>
             <a href="https://github.com/irfansyakir" className="hero-social-link" target="_blank" rel="noopener noreferrer">
