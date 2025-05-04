@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.10174375.css",
-    "main.js": "/static/js/main.d3178ff5.js",
+    "main.css": "/static/css/main.c11f249f.css",
+    "main.js": "/static/js/main.3f33b67a.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/bettersweet-demo.mp4": "/static/media/bettersweet-demo.4c9a4e94f62d4e4bf627.mp4",
     "static/media/opuscinemas-demo.mp4": "/static/media/opuscinemas-demo.6fef0bbe19f7b9ab9425.mp4",
@@ -29,10 +29,12 @@
     "static/media/opuscinemas7.jpg": "/static/media/opuscinemas7.eb224c796383a256b9ca.jpg",
     "static/media/bettersweet2.jpg": "/static/media/bettersweet2.24b336554f48743a716b.jpg",
     "static/media/bettersweet6.jpg": "/static/media/bettersweet6.340ac06f9b95d81977a0.jpg",
+    "static/media/group2.jpeg": "/static/media/group2.57fdb2727db62b94a143.jpeg",
     "static/media/pinnacle5.jpg": "/static/media/pinnacle5.1d9cbcb04b0254de3968.jpg",
     "static/media/pinnacle2.jpg": "/static/media/pinnacle2.015741a387667e1acfeb.jpg",
     "static/media/pinnacle4.jpg": "/static/media/pinnacle4.0d86b62c205475d075ad.jpg",
     "static/media/pinnacle7.jpg": "/static/media/pinnacle7.905661a00284117cc31f.jpg",
+    "static/media/group.jpeg": "/static/media/group.94f0ac26f2030f55afc9.jpeg",
     "static/media/bettersweet7.jpg": "/static/media/bettersweet7.0a5edd379a83a7eb3568.jpg",
     "static/media/pinnacle1.jpg": "/static/media/pinnacle1.75483ad973dbfbb9c70e.jpg",
     "static/media/fourierforge7.png": "/static/media/fourierforge7.cf7cd1f6b5f1091d228e.png",
@@ -43,10 +45,15 @@
     "static/media/fourierforge4.png": "/static/media/fourierforge4.ac0dac1d41a9537e3abb.png",
     "static/media/fourierforge3.png": "/static/media/fourierforge3.bd5bab44259607b0170f.png",
     "static/media/ntu.png": "/static/media/ntu.2799b4bb5b616a9a661c.png",
+    "static/media/1stday.jpeg": "/static/media/1stday.a099cf42ed9151cdaffa.jpeg",
+    "static/media/judges.jpeg": "/static/media/judges.71fc5a7e66a32040df5f.jpeg",
+    "static/media/esp32.jpeg": "/static/media/esp32.1cf34d773d8e8f3c2ca4.jpeg",
     "static/media/impostersweeper1.jpg": "/static/media/impostersweeper1.ced283becbab806caa0a.jpg",
     "static/media/impostersweeper3.jpg": "/static/media/impostersweeper3.e9438a320f21771793f8.jpg",
     "static/media/impostersweeper4.jpg": "/static/media/impostersweeper4.57e827e723798ce5dfd0.jpg",
+    "static/media/micron.jpeg": "/static/media/micron.3c9ecd47859421975da1.jpeg",
     "static/media/fourierforge1.png": "/static/media/fourierforge1.a77e3e1069cb331053d8.png",
+    "static/media/finalists.jpeg": "/static/media/finalists.052d0f6495c1f7b797d6.jpeg",
     "static/media/impostersweeper2.jpg": "/static/media/impostersweeper2.06b6bc93697cd68fe8fb.jpg",
     "static/media/ste.png": "/static/media/ste.347a6bc9e657183f282c.png",
     "static/media/projectImage.png": "/static/media/projectImage.7bc6e8cbd35dbffc72da.png",
@@ -64,12 +71,12 @@
     "static/media/sp.webp": "/static/media/sp.e9abf5e739782f06384a.webp",
     "static/media/accenture.png": "/static/media/accenture.895996f6a6b4ced8da00.png",
     "index.html": "/index.html",
-    "main.10174375.css.map": "/static/css/main.10174375.css.map",
-    "main.d3178ff5.js.map": "/static/js/main.d3178ff5.js.map",
+    "main.c11f249f.css.map": "/static/css/main.c11f249f.css.map",
+    "main.3f33b67a.js.map": "/static/js/main.3f33b67a.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10174375.css",
-    "static/js/main.d3178ff5.js"
+    "static/css/main.c11f249f.css",
+    "static/js/main.3f33b67a.js"
   ]
 }
