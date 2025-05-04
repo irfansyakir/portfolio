@@ -43,6 +43,7 @@ const Skills = () => {
       { name: 'GitHub/GitLab', level: 85 },
       { name: 'CI/CD', level: 80 },
       { name: 'Docker', level: 50 },
+      { name: 'IaC', level: 75 },
       { name: 'Terraform', level: 75 },
       { name: 'Terraform Cloud', level: 65 },
       { name: 'Digital Ocean', level: 50 },

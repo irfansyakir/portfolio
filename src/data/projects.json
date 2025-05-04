@@ -104,7 +104,7 @@
     "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "JSON"],
     "category": "Web Development",
     "image": "placeholder-bettersweet.jpg",
-    "link": "#",
+    "link": "https://bettersweet.vercel.app/",
     "github": "#",
     "year": "2024",
     "month": "November",
