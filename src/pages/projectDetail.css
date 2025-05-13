@@ -410,6 +410,16 @@
   background-color: #0D0D0D;
 }
 
+.project-link.presentation {
+  background-color: #FF5722;
+  color: white;
+}
+
+.project-link.presentation:hover {
+  background-color: #E64A19;
+}
+
+
 @media (max-width: 768px) {
   .project-detail-content {
     grid-template-columns: 1fr;

@@ -6,7 +6,7 @@ import ProjectGallery from '../components/projectGallery';
 import ProjectVideo from '../components/projectVideo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLink, faArrowLeft, faFolder, faPenRuler } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLink, faArrowLeft, faFolder, faPenRuler, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
 import { getProjectImages, getProjectVideo } from '../utils/projectImageUtils';
 
@@ -144,7 +144,7 @@ const ProjectDetail = () => {
           </div>
           
           {/* Project Links */}
-          {(project.github !== "#" || project.link !== "#" || project.figma) && (
+          {(project.github !== "#" || project.link !== "#" || project.figma || project.presentation) && (
             <div className="project-links">
               <div className="project-links-title">Project Links</div>
               <div className="links-container">
@@ -163,6 +163,12 @@ const ProjectDetail = () => {
                 {(project.figma && project.figma !== "#") && (
                   <a href={project.figma} className="project-link figma" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faPenRuler} /> Figma
+                  </a>
+                )}
+                
+                {(project.presentation && project.presentation !== "#") && (
+                  <a href={project.presentation} className="project-link presentation" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFileAlt} /> Presentation
                   </a>
                 )}
               </div>
