@@ -52,9 +52,9 @@ const Home = () => {
             
           <p>I combine technical problem-solving with creative thinking to build efficient solutions that deliver measurable business impact.</p>
           <div className="hero-social-links">
-            <a href="/irfan_syakir_resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
+            {/* <a href="/irfan_syakir_resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFileDownload} /> Resume
-            </a>
+            </a> */}
             <a href="https://github.com/irfansyakir" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
@@ -103,11 +103,11 @@ const Home = () => {
                   <div className="work-date">May 2024 – Jul 2024</div>
                   <div className="work-title">ST Engineering</div>
                   <div className="work-position">DevOps Intern</div>
-                  <ul className="work-description">
+                  {/* <ul className="work-description">
                     <li>Implemented CI/CD pipelines and infrastructure-as-code using Terraform across cloud platforms, reducing deployment times by 40%</li>
                     <li>Designed and documented automation workflows that improved cross-team collaboration and stakeholder visibility</li>
                     <li>Created cloud monitoring solutions for system reliability and presented performance metrics to key stakeholders</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               
@@ -120,11 +120,11 @@ const Home = () => {
                   <div className="work-date">Mar 2020 - Jun 2020</div>
                   <div className="work-title">Accenture</div>
                   <div className="work-position">Business Analyst</div>
-                  <ul className="work-description">
+                  {/* <ul className="work-description">
                     <li>Applied automation techniques to streamline processes and improve operational efficiency for a government client.</li>
                     <li>Analyzed business requirements and translated them into technical specifications</li>
                     <li>Created data visualizations to communicate insights to stakeholders</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               
@@ -137,11 +137,11 @@ const Home = () => {
                   <div className="work-date">Sep 2019 - Feb 2020</div>
                   <div className="work-title">Accenture</div>
                   <div className="work-position">Test Analyst</div>
-                  <ul className="work-description">
+                  {/* <ul className="work-description">
                     <li>Developed automated testing solutions using RPA for a government client, reducing testing time by 40%</li>
                     <li>Evaluated system functionality against business requirements</li>
                     <li>Collaborated with cross-functional teams to improve system reliability</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
