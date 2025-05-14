@@ -9,7 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLink, faArrowLeft, faFolder, faPenRuler, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import projectsData from '../data/projects.json';
 import { getProjectImages, getProjectVideo } from '../utils/projectImageUtils';
-
+import { faBook, faClipboard, faTasks } from '@fortawesome/free-solid-svg-icons';
 // Format paragraph text into individual sentences on new lines
 const formatSentences = (text) => {
   if (!text) return null;
@@ -143,37 +143,50 @@ const ProjectDetail = () => {
             </div>
           </div>
           
-          {/* Project Links */}
-          {(project.github !== "#" || project.link !== "#" || project.figma || project.presentation) && (
-            <div className="project-links">
-              <div className="project-links-title">Project Links</div>
-              <div className="links-container">
-                {(project.github && project.github !== '#') && (
-                  <a href={project.github} className="project-link github" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} /> GitHub
-                  </a>
-                )}
-                
-                {(project.link && project.link !== "#") && (
-                  <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faExternalLink} /> Live Demo (WebApp Version)
-                  </a>
-                )}
-                
-                {(project.figma && project.figma !== "#") && (
-                  <a href={project.figma} className="project-link figma" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faPenRuler} /> Figma
-                  </a>
-                )}
-                
-                {(project.presentation && project.presentation !== "#") && (
-                  <a href={project.presentation} className="project-link presentation" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFileAlt} /> Presentation
-                  </a>
-                )}
-              </div>
+        {/* Project Links */}
+        {(project.github !== "#" || project.link !== "#" || project.figma || 
+          project.finalProject || project.classAssignments || project.classActivities) && (
+          <div className="project-links">
+            <div className="project-links-title">Project Links</div>
+            <div className="links-container">
+              {(project.github && project.github !== '#') && (
+                <a href={project.github} className="project-link github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} /> GitHub
+                </a>
+              )}
+              
+              {(project.link && project.link !== "#") && (
+                <a href={project.link} className="project-link live" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faExternalLink} /> Live Demo
+                </a>
+              )}
+              
+              {(project.figma && project.figma !== "#") && (
+                <a href={project.figma} className="project-link figma" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faPenRuler} /> Figma
+                </a>
+              )}
+              
+              {(project.finalProject && project.finalProject !== "#") && (
+                <a href={project.finalProject} className="project-link final-project" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faBook} /> Final Project
+                </a>
+              )}
+              
+              {(project.classAssignments && project.classAssignments !== "#") && (
+                <a href={project.classAssignments} className="project-link class-assignments" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faClipboard} /> Class Assignments
+                </a>
+              )}
+              
+              {(project.classActivities && project.classActivities !== "#") && (
+                <a href={project.classActivities} className="project-link class-activities" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTasks} /> Class Activities
+                </a>
+              )}
             </div>
-          )}
+          </div>
+        )}
           
           <div className="project-category">
             <h3>Category</h3>

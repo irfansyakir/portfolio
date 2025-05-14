@@ -172,7 +172,7 @@ const About = () => {
           {/* NTU Education */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-n            <div className="timeline-content">
+             <div className="timeline-content">
               <div className="timeline-logo">
                 <img src={ntuLogo} alt="Nanyang Technological University" />
               </div>

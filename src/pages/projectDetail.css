@@ -420,6 +420,33 @@
 }
 
 
+.project-link.final-project {
+  background-color: #E91E63; /* Pink */
+  color: white;
+}
+
+.project-link.final-project:hover {
+  background-color: #C2185B;
+}
+
+.project-link.class-assignments {
+  background-color: #673AB7; /* Deep Purple */
+  color: white;
+}
+
+.project-link.class-assignments:hover {
+  background-color: #512DA8;
+}
+
+.project-link.class-activities {
+  background-color: #009688; /* Teal */
+  color: white;
+}
+
+.project-link.class-activities:hover {
+  background-color: #00796B;
+}
+
 @media (max-width: 768px) {
   .project-detail-content {
     grid-template-columns: 1fr;
