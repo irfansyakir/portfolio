@@ -185,59 +185,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Skills Section */}
-      <section className="skills-highlight">
-        <h2>Core Competencies</h2>
-        <div className="skills-grid">
-          <div className="skill-category">
-            <h3>Software Engineering</h3>
-            <ul>
-              <li>Java, Python, JavaScript</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Flutter & React</li>
-              <li>Mobile & Web Development</li>
-              <li>Object-Oriented Programming</li>
-              <li>Data Structures & Algorithms</li>
-              <li>REST APIs</li>
-            </ul>
-          </div>
-          <div className="skill-category">
-            <h3>DevOps & Cloud</h3>
-            <ul>
-              <li>CI/CD Pipelines</li>
-              <li>Infrastructure as Code</li>
-              <li>Terraform & Docker</li>
-              <li>Version Control (Git)</li>
-              <li>Cloud Services</li>
-              <li>System Monitoring</li>
-            </ul>
-          </div>
-          <div className="skill-category">
-            <h3>Design & Analysis</h3>
-            <ul>
-              <li>UI/UX Design</li>
-              <li>Wireframing & Prototyping</li>
-              <li>Requirements Gathering</li>
-              <li>Process Optimization</li>
-              <li>User Research</li>
-              <li>Data Visualization</li>
-            </ul>
-          </div>
-          <div className="skill-category">
-            <h3>Professional Skills</h3>
-            <ul>
-              <li>Cross-functional Collaboration</li>
-              <li>Problem Solving</li>
-              <li>Technical Documentation</li>
-              <li>Stakeholder Management</li>
-              <li>Project Planning</li>
-              <li>Presentation Skills</li>
-            </ul>
-          </div>
-        </div>
-        <Link to="/skills" className="view-all">View All Skills →</Link>
-      </section>
-
       {/* Featured Projects Section */}
       <section className="featured-projects">
         <h2>Featured Projects</h2>
@@ -317,6 +264,10 @@ const Home = () => {
         <Link to="/projects" className="view-all">View All Projects →</Link>
       </section>
 
+      
+
+      
+
       <section>
       <div className="leadership-showcase">
           <h2>Leadership Experience</h2>
@@ -377,6 +328,59 @@ const Home = () => {
           </div>
         </div>
          
+      </section>
+
+      {/* Featured Skills Section */}
+      <section className="skills-highlight">
+        <h2>Core Competencies</h2>
+        <div className="skills-grid">
+          <div className="skill-category">
+            <h3>Software Engineering</h3>
+            <ul>
+              <li>Java, Python, JavaScript</li>
+              <li>Data Structures & Algorithms</li>
+              <li>Flutter & React</li>
+              <li>Mobile & Web Development</li>
+              <li>Object-Oriented Programming</li>
+              <li>Data Structures & Algorithms</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>DevOps & Cloud</h3>
+            <ul>
+              <li>CI/CD Pipelines</li>
+              <li>Infrastructure as Code</li>
+              <li>Terraform & Docker</li>
+              <li>Version Control (Git)</li>
+              <li>Cloud Services</li>
+              <li>System Monitoring</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>Design & Analysis</h3>
+            <ul>
+              <li>UI/UX Design</li>
+              <li>Wireframing & Prototyping</li>
+              <li>Requirements Gathering</li>
+              <li>Process Optimization</li>
+              <li>User Research</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>Professional Skills</h3>
+            <ul>
+              <li>Cross-functional Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Technical Documentation</li>
+              <li>Stakeholder Management</li>
+              <li>Project Planning</li>
+              <li>Presentation Skills</li>
+            </ul>
+          </div>
+        </div>
+        <Link to="/skills" className="view-all">View All Skills →</Link>
       </section>
         
       {/* Brief About Section */}
