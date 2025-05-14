@@ -162,6 +162,29 @@
       "Compositional exercises exploring balance, rhythm, and pattern",
       "Critical analysis and iterative improvement of visual communication"
     ]
+  },
+   {
+    "id": 10,
+    "title": "Thinking & Communicating Visually II",
+    "description": "An exploration of two-dimensional design fundamentals and color theory through hands-on experimentation with diverse media. Applied principles of visual organization, composition planning, and color harmonies to create effective visual communication while developing technical proficiency in printmaking and painting techniques.",
+    "longDescription": "This project focused on developing advanced understanding of visual design language through systematic exploration of two-dimensional design principles and color theory. I mastered fundamental aspects of visual composition by analyzing relationships between design elements including emphasis, harmony, unity, opposition, balance, and the strategic use of negative space.\n\nThe work progressed through a comprehensive study of color theory based on the principles of Joseph Albers and Henri Matisse, applying concepts of color harmonies, atmospheric perspective, and the psychological aspects of warm/cool color relationships. I developed technical skills across multiple mediums including printmaking (lino-cut and etching) and various painting techniques (gouache, watercolor, and acrylic).\n\nThrough structured exercises and critique sessions, I learned to evaluate visual compositions critically and articulate design decisions using proper terminology. The project culminated in a series of finished artworks that demonstrated my ability to solve complex visual problems through deliberate application of design principles, color theory, and technical execution across diverse media. This foundation in visual language directly informs my approach to UI/UX design, visual branding, and effective digital communication strategies.",
+    "technologies": ["Color Theory", "Composition", "Printmaking", "Painting", "Visual Organization"],
+    "category": "Design",
+    "image": "placeholder-visualthinking2.jpg",
+    "link": "#",
+    "github": "#",
+    "year": "2023",
+    "month": "April",
+    "challenges": "The primary challenge was developing a sophisticated understanding of color relationships and their application in creating visual hierarchy, depth, and emotional impact. Mastering diverse technical skills across printmaking and painting media required adapting to different working processes and material properties. Additionally, learning to analyze and articulate design decisions using proper terminology demanded development of critical thinking skills.",
+    "solutions": "I developed a methodical approach to color and composition through extensive experimentation and analysis of successful design examples. By maintaining a detailed process journal documenting technical procedures and outcomes, I built a comprehensive understanding of each medium's capabilities and constraints. Regular participation in critique sessions helped refine my ability to evaluate work objectively and articulate design decisions clearly.",
+    "features": [
+      "Color harmony studies demonstrating various schemes and relationships",
+      "Printmaking techniques including lino-cut and etching processes",
+      "Paintings exploring atmospheric perspective and emotional qualities of color",
+      "Compositions demonstrating principles of balance, emphasis, and visual hierarchy",
+      "Process documentation showing development from concept to finished artwork",
+      "Technical experiments with various water-based painting media"
+    ]
   }
 
 ]
