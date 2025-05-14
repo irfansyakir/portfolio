@@ -1,6 +1,5 @@
 import React from 'react';
 import './contact.css';
-// Import Font Awesome components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -10,7 +9,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="contact-header">
         <h1>Get In Touch</h1>
-        <p>I'm interested in software engineering and DevOps opportunities. If you have a question or want to work together, feel free to reach out!</p>
+        <p>I'm interested in roles spanning software engineering, DevOps, UI/UX design, marketing, and business analysis. If you have a question or want to work together, feel free to reach out!</p>
       </div>
       
       <div className="contact-content">
@@ -64,7 +63,7 @@ const Contact = () => {
           <p>I'm currently available for new opportunities starting August 2025.</p>
         </div>
         <p className="availability-note">
-          I'm most interested in Software Engineering and DevOps roles, but I'm open to discussing other opportunities that match my skills and interests.
+          My expertise spans software engineering, DevOps, UI/UX design, digital marketing, and business analysis. I'm looking for roles that leverage my multidisciplinary skill set to create impactful digital solutions.
         </p>
       </div>
     </div>

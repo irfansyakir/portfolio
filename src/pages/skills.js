@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './skills.css';
-// Import Font Awesome components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments, faUsers, faLightbulb, faSyncAlt} from '@fortawesome/free-solid-svg-icons';
+import { 
+  faComments, 
+  faUsers, 
+  faLightbulb, 
+  faSyncAlt, 
+  faCode,
+  faServer,
+  faChartLine, 
+  faNetworkWired,
+  faPencilRuler, 
+  faPalette, 
+  faBullhorn,
+  faChartPie
+} from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
-  // Add state to control animation
   const [animate, setAnimate] = useState(false);
   
-  // Start animation after component mounts
   useEffect(() => {
-    // Small delay to ensure the animation is visible after page loads
     const timer = setTimeout(() => {
       setAnimate(true);
     }, 300);
@@ -18,49 +27,49 @@ const Skills = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Skills data organized by categories
+  // Updated skills data for multiple roles
   const skillsData = {
-    programmingLanguages: [
+    softwareEngineering: [
       { name: 'Java', level: 90 },
-      { name: 'C/C++', level: 50 },
       { name: 'Python', level: 65 },
       { name: 'JavaScript', level: 80 },
-      { name: 'Dart', level: 75 },
-      { name: 'SQL', level: 80 },
-      { name: 'HTML/CSS', level: 90 },
-      { name: 'PHP', level: 70 },
-      { name: 'Bash/Shell', level: 75 }
-    ],
-    frameworks: [
-      { name: 'React', level: 60 },
-      { name: 'React Native', level: 60 },
-      { name: 'Flutter', level: 80 },
-      { name: 'XAMPP', level: 60 },
-      { name: 'Bootstrap', level: 60 },
-      { name: 'Node.js', level: 50 },
-    ],
-    devOps: [
-      { name: 'GitHub/GitLab', level: 85 },
-      { name: 'CI/CD', level: 80 },
-      { name: 'Docker', level: 50 },
-      { name: 'IaC', level: 75 },
-      { name: 'Terraform', level: 75 },
-      { name: 'Terraform Cloud', level: 65 },
-      { name: 'Digital Ocean', level: 50 },
-      { name: 'AWS', level: 30 },
-      { name: 'Azure', level: 20 }
-    ],
-    others: [
+      { name: 'Flutter/Dart', level: 75 },
+      { name: 'Data Structures & Algorithms', level: 80 },
+      { name: 'OOP Principles', level: 85 },
       { name: 'RESTful APIs', level: 85 },
-      { name: 'Database Design', level: 80 },
-      { name: 'UI/UX Design', level: 75 },
-      { name: 'Branding & Marketing', level: 75 },
-      { name: 'Automated Testing', level: 75 },
-      { name: 'Machine Learning', level: 65 },
+      { name: 'Database Design', level: 80 }
+    ],
+    devOpsSkills: [
+      { name: 'CI/CD Pipelines', level: 85 },
+      { name: 'Infrastructure as Code', level: 80 },
+      { name: 'Terraform', level: 75 },
+      { name: 'Docker', level: 65 },
+      { name: 'Git/GitHub', level: 90 },
+      { name: 'Cloud Services', level: 70 },
+      { name: 'System Monitoring', level: 75 },
+      { name: 'Automated Testing', level: 80 }
+    ],
+    designSkills: [
+      { name: 'UI/UX Design', level: 85 },
+      { name: 'Wireframing & Prototyping', level: 80 },
+      { name: 'Visual Design', level: 75 },
+      { name: 'User Research', level: 70 },
+      { name: 'Information Architecture', level: 75 },
+      { name: 'Interaction Design', level: 80 },
+      { name: 'Mobile App Design', level: 85 }
+    ],
+    businessSkills: [
+      { name: 'Requirements Gathering', level: 85 },
+      { name: 'Marketing', level: 70},
+      { name: 'Process Optimization', level: 80 },
+      { name: 'Data Visualization', level: 75 },
+      { name: 'Stakeholder Management', level: 80 },
+      { name: 'User Story Mapping', level: 75 },
+      { name: 'Technical Documentation', level: 85 },
+      { name: 'Project Planning', level: 80 }
     ]
   };
 
-  // Render skill bar
   const renderSkillBar = (skill) => (
     <div className="skill-item" key={skill.name}>
       <div className="skill-info">
@@ -80,56 +89,109 @@ const Skills = () => {
     <div className="skills-container">
       <div className="skills-header">
         <h1>My Skills</h1>
-        <p>Here's a comprehensive overview of my technical expertise and proficiency levels!</p>
+        <p>Combining software engineering expertise, DevOps practices, creative design thinking, and analytical problem-solving to deliver robust and user-centered solutions</p>
       </div>
       
       <div className="skills-content">
         <div className="skills-section">
-          <h2>Programming Languages</h2>
+          <h2>Software Engineering</h2>
           <div className="skills-list">
-            {skillsData.programmingLanguages.map(renderSkillBar)}
+            {skillsData.softwareEngineering.map(renderSkillBar)}
           </div>
         </div>
         
         <div className="skills-section">
-          <h2>Frameworks & Libraries</h2>
+          <h2>DevOps & Infrastructure</h2>
           <div className="skills-list">
-            {skillsData.frameworks.map(renderSkillBar)}
+            {skillsData.devOpsSkills.map(renderSkillBar)}
           </div>
         </div>
         
         <div className="skills-section">
-          <h2>DevOps</h2>
+          <h2>Design & User Experience</h2>
           <div className="skills-list">
-            {skillsData.devOps.map(renderSkillBar)}
+            {skillsData.designSkills.map(renderSkillBar)}
           </div>
         </div>
         
         <div className="skills-section">
-          <h2>Other Technical Skills</h2>
+          <h2>Business & Project Management</h2>
           <div className="skills-list">
-            {skillsData.others.map(renderSkillBar)}
+            {skillsData.businessSkills.map(renderSkillBar)}
+          </div>
+        </div>
+      </div>
+      
+      <div className="design-process-section">
+        <h2>My Problem-Solving Approach</h2>
+        <div className="process-steps">
+          <div className="process-step">
+            <div className="step-number">01</div>
+            <div className="step-content">
+              <h3>Research & Discovery</h3>
+              <p>Begin by deeply understanding technical requirements, user needs, business goals, and system constraints through stakeholder interviews and systematic analysis.</p>
+            </div>
+          </div>
+          
+          <div className="process-step">
+            <div className="step-number">02</div>
+            <div className="step-content">
+              <h3>Define & Architecture</h3>
+              <p>Develop clear requirements, technical specifications, system diagrams, and implementation plans that will guide the development process.</p>
+            </div>
+          </div>
+          
+          <div className="process-step">
+            <div className="step-number">03</div>
+            <div className="step-content">
+              <h3>Design & Prototype</h3>
+              <p>Create technical solutions, design interfaces, and develop proof-of-concept implementations to validate approaches before full development.</p>
+            </div>
+          </div>
+          
+          <div className="process-step">
+            <div className="step-number">04</div>
+            <div className="step-content">
+              <h3>Implement & Test</h3>
+              <p>Develop robust code with proper testing methodologies, conduct thorough quality assurance, and implement automated validation processes.</p>
+            </div>
+          </div>
+          
+          <div className="process-step">
+            <div className="step-number">05</div>
+            <div className="step-content">
+              <h3>Deploy & Monitor</h3>
+              <p>Implement CI/CD pipelines for reliable deployment, establish monitoring systems, and ensure smooth operations in production environments.</p>
+            </div>
+          </div>
+          
+          <div className="process-step">
+            <div className="step-number">06</div>
+            <div className="step-content">
+              <h3>Analyze & Optimize</h3>
+              <p>Continuously evaluate performance metrics, gather user feedback, and implement improvements based on real-world usage patterns.</p>
+            </div>
           </div>
         </div>
       </div>
       
       <div className="soft-skills-section">
-        <h2>Soft Skills</h2>
+        <h2>Professional Strengths</h2>
         <div className="soft-skills-content">
           <div className="soft-skill">
             <div className="soft-skill-icon">
               <FontAwesomeIcon icon={faComments} />
             </div>
             <h3>Communication</h3>
-            <p>Effectively convey complex technical concepts to both technical and non-technical stakeholders</p>
+            <p>Skilled at translating complex technical concepts into clear explanations for both technical and non-technical stakeholders</p>
           </div>
           
           <div className="soft-skill">
             <div className="soft-skill-icon">
               <FontAwesomeIcon icon={faUsers} />
             </div>
-            <h3>Teamwork</h3>
-            <p>Collaborate effectively in cross-functional teams to achieve project goals and deliver quality solutions</p>
+            <h3>Collaboration</h3>
+            <p>Experienced in working effectively across cross-functional teams to deliver integrated solutions that meet diverse requirements</p>
           </div>
           
           <div className="soft-skill">
@@ -137,7 +199,7 @@ const Skills = () => {
               <FontAwesomeIcon icon={faLightbulb} />
             </div>
             <h3>Problem Solving</h3>
-            <p>Apply analytical thinking to break down complex problems and develop efficient solutions</p>
+            <p>Adept at approaching complex technical challenges systematically to develop efficient and scalable solutions</p>
           </div>
           
           <div className="soft-skill">
@@ -145,35 +207,109 @@ const Skills = () => {
               <FontAwesomeIcon icon={faSyncAlt} />
             </div>
             <h3>Adaptability</h3>
-            <p>Quickly adapt to new technologies, environments, and project requirements</p>
+            <p>Quick to learn new technologies, methodologies, and frameworks while maintaining flexibility in rapidly changing environments</p>
           </div>
         </div>
       </div>
       
-      {/* <div className="learning-section">
-        <h2>Currently Learning</h2>
-        <div className="learning-content">
-          <div className="learning-item">
-            <div className="learning-icon">
-              <FontAwesomeIcon icon={faCloud} />
+      <div className="specialized-skills">
+        <h2>Specialized Expertise</h2>
+        <div className="specialized-grid">
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faCode} />
             </div>
-            <div className="learning-details">
-              <h3>Cloud Architecture</h3>
-              <p>Expanding knowledge in cloud-native application design and serverless architectures</p>
+            <h3>Software Architecture</h3>
+            <p>Designing modular, maintainable code structures and system components that enable scalability and efficient development workflows</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faServer} />
+            </div>
+            <h3>Infrastructure Automation</h3>
+            <p>Implementing infrastructure as code and automated deployment pipelines that ensure consistent, reliable system operations</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faPencilRuler} />
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive user interfaces and experiences that balance aesthetic appeal with functional efficiency to enhance user engagement and satisfaction</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faPalette} />
+            </div>
+            <h3>Brand Development</h3>
+            <p>Crafting cohesive visual identities and design systems that effectively communicate brand values and maintain consistency across digital platforms</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faChartLine} />
+            </div>
+            <h3>Data Analysis</h3>
+            <p>Transforming raw data into meaningful insights through effective processing, visualization, and analytical techniques</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faBullhorn} />
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Implementing targeted campaigns and content strategies that drive engagement, optimize conversion funnels, and achieve measurable business outcomes</p>
+          </div>
+          
+          <div className="specialized-item">
+            <div className="specialized-icon">
+              <FontAwesomeIcon icon={faNetworkWired} />
+            </div>
+            <h3>System Integration</h3>
+            <p>Connecting disparate technologies and platforms to create cohesive solutions that enable seamless data flow and functionality</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="certification-section">
+        <h2>Core Competencies</h2>
+        <div className="certification-items">
+          <div className="certification-item">
+            <div className="certification-badge">
+              <FontAwesomeIcon icon={faCode} />
+            </div>
+            <div className="certification-details">
+              <h3>Software Development</h3>
+              <p>Gained through multiple full-stack projects (2020-2025)</p>
+              <p>Proficient in designing and implementing efficient, scalable applications using modern frameworks and best practices</p>
             </div>
           </div>
           
-          <div className="learning-item">
-            <div className="learning-icon">
-              <FontAwesomeIcon icon={faRobot} />
+          <div className="certification-item">
+            <div className="certification-badge">
+              <FontAwesomeIcon icon={faBullhorn} />
             </div>
-            <div className="learning-details">
-              <h3>Advanced Machine Learning</h3>
-              <p>Deepening understanding of neural networks and deep learning techniques</p>
+            <div className="certification-details">
+              <h3>Branding & Marketing</h3>
+              <p>Vice President (Branding & Marketing) at NTU Escendo (2024-2025)</p>
+              <p>Created comprehensive brand strategies, visual identity systems, and marketing campaigns that increased event participation by 30%</p>
+            </div>
+          </div>
+          
+          <div className="certification-item">
+            <div className="certification-badge">
+              <FontAwesomeIcon icon={faChartPie} />
+            </div>
+            <div className="certification-details">
+              <h3>Business Analysis</h3>
+              <p>Applied across multiple academic and professional projects (2022-2025)</p>
+              <p>Expert in requirements gathering, stakeholder management, process mapping, and translating business needs into technical specifications</p>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

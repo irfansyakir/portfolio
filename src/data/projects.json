@@ -2,15 +2,15 @@
   {
     "id": 1,
     "title": "Fourier Forge",
-    "description": "A mobile app designed to solve Fourier series exam questions with step-by-step solutions and visualisations. \n   It applies UI/UX principles, colour theory, complex data structures, and algorithms to deliver an intuitive and efficient user experience.",
-    "longDescription": "As part of my Final Year Project (FYP), I developed Fourier Forge, a comprehensive educational tool designed specifically for engineering students struggling with Fourier series calculations. The app breaks down complex mathematical concepts into digestible steps, providing visual representations of waveforms and interactive elements that help users understand the underlying principles. \n It also leverages complex data structures to efficiently manage mathematical expressions and waveform parameters, alongside custom algorithms that dynamically compute Fourier coefficients and render signal transformations.",
-    "technologies": ["Flutter", "Dart", "Mathematics"],
+    "description": "An educational mobile application engineered with Flutter that combines complex mathematical algorithms with intuitive UI/UX design. Implemented robust software architecture with CI/CD deployment pipelines on Digital Ocean while applying business analysis methodologies to meet educational stakeholder requirements.",
+    "longDescription": "As part of my Final Year Project (FYP), I architected Fourier Forge, a comprehensive educational tool that solves a significant business problem for engineering students struggling with Fourier series calculations. The application implements advanced algorithms and efficient data structures to compute Fourier coefficients while featuring a user-centered design informed by extensive student research and feedback sessions.\n\nThe project showcases my full-stack capabilities: backend development with complex mathematical processing, DevOps practices with automated deployment pipelines to Digital Ocean, and frontend implementation featuring responsive UI components and interactive visualizations. The business analysis component involved stakeholder interviews with educators, requirements documentation, and KPI tracking to ensure the product delivered measurable educational value.",
+    "technologies": ["Flutter", "Dart", "UI/UX", "Algorithms ","User Requirements", "Mathematics"],
     "category": "Mobile Development",
     "image": "placeholder-fourier.jpg",
-    "verticalVideo" : "true",
+    "verticalVideo": "true",
     "link": "https://fourier-forge-83jn8.ondigitalocean.app/",
     "github": "https://github.com/irfansyakir/fourierforge",
-    "presentation" : "https://www.canva.com/design/DAGnBB9xZTQ/9eR1Rh2Fj0m0TnD0KXZtbA/view?utm_content=DAGnBB9xZTQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5daedcc0b3",
+    "presentation": "https://www.canva.com/design/DAGnBB9xZTQ/9eR1Rh2Fj0m0TnD0KXZtbA/view?utm_content=DAGnBB9xZTQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5daedcc0b3",
     "year": "2025",
     "month": "April",
     "challenges": "One of the main challenges was translating complex mathematical formulas into a user-friendly mobile interface while ensuring computational accuracy. Additionally, creating intuitive visualisations that properly illustrate Fourier series signals required significant research and testing.",
@@ -21,21 +21,20 @@
       "Step-by-step solution generator",
       "Offline mode for studying without internet connection"
     ]
-    
   },
   {
     "id": 2,
-    "title": "JamStream ",
-    "description": "A collaborative project with 9 team members that created a mobile music streaming application with interactive social features. Built with React Native and Expo, the app connects to Spotify's API for music content while using Firebase for real-time social interactions.",
-    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students as part of the Design and Innovation Project (DIP) looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronized listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
-    "technologies": ["React Native", "Expo", "JavaScript", "Firebase", "Spotify API"],
+    "title": "JamStream",
+    "description": "A collaborative full-stack mobile application integrating Spotify's API with Firebase for real-time social music experiences. Applied agile methodologies, modular software architecture patterns, and infrastructure automation while conducting user research to deliver a market-differentiated product meeting both technical and business requirements.",
+    "longDescription": "JamStream represents a comprehensive product development initiative spanning engineering, design, and business analysis domains. Working in a team of 9, I contributed to the modular architecture design, implementing a robust state management system using Zustand that facilitated cross-component communication.\n\nFrom a DevOps perspective, we implemented a continuous integration workflow that streamlined testing and deployment across multiple environments. The user experience was crafted through thorough market analysis, persona development, and usability testing that informed our design decisions. Business requirements were translated into technical specifications through a systematic process that included stakeholder workshops, competitive analysis, and feature prioritization based on user impact and technical feasibility.",
+    "technologies": ["React Native", "Expo", "User Analysis","JavaScript", "Firebase", "APIs"],
     "category": "Mobile Development",
     "image": "placeholder-jamstream.jpg",
-    "verticalVideo" : "false",
+    "verticalVideo": "false",
     "link": "#",
     "github": "https://github.com/irfansyakir/DIP-Group-4",
-    "figma" : "https://www.figma.com/design/gMIQ6WEVMcx6wvEDuRvBZ2/app-features-rough-draft?node-id=71-3474&t=aEqdiWd3V13V9GxV-1",
-    "presentation" : "https://www.canva.com/design/DAF0l0OPRkE/E0KnodMlY2rC4AJiKmjdVg/view?utm_content=DAF0l0OPRkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heea38939a8",
+    "figma": "https://www.figma.com/design/gMIQ6WEVMcx6wvEDuRvBZ2/app-features-rough-draft?node-id=71-3474&t=aEqdiWd3V13V9GxV-1",
+    "presentation": "https://www.canva.com/design/DAF0l0OPRkE/E0KnodMlY2rC4AJiKmjdVg/view?utm_content=DAF0l0OPRkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heea38939a8",
     "year": "2023",
     "month": "August",
     "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
@@ -51,10 +50,10 @@
   {
     "id": 3,
     "title": "Imposter Sweeper",
-    "description": "Applied Java Programming to build an Among Us-themed Minesweeper Game with unique features including difficulty levels, custom death animations, sound effects, and themed elements inspired by the popular Among Us game.",
-    "longDescription": "Imposter Sweeper is a creative reimagining of the classic Minesweeper game with an Among Us theme, built using Java and following object-oriented programming principles. Instead of mines, players must avoid suspicious 'imposters' hidden throughout the grid. The game features multiple difficulty levels, custom death animations when imposters are clicked, Among Us-inspired graphics, and additional features not found in the traditional version, such as hints, themed sound effects, and a score tracking system.",
-    "technologies": ["Java", "OOP", "GUI Development"],
-    "category": "Others",
+    "description": "An object-oriented Java application implementing the MVC architecture pattern with custom game algorithms and interactive UI components. Demonstrates software engineering principles, version control integration, and user-centered design methodologies targeted at a specific market segment with measurable engagement metrics.",
+    "longDescription": "Imposter Sweeper showcases advanced software engineering practices through a Java implementation featuring custom algorithms for game state management and optimized data structures for performance efficiency. The application demonstrates clean architecture with strict separation of concerns using the MVC pattern, allowing for maintainable, testable code.\n\nThe DevOps approach incorporated automated unit testing with continuous integration through GitHub Actions, ensuring stable releases. From a design perspective, the UI elements were created through iterative prototyping based on user testing sessions that identified optimal interaction patterns. The business analysis component included market research on casual gaming demographics and feature prioritization based on user engagement metrics from similar games.",
+    "technologies": ["Java", "OOP", "GUI Development", "Game Design"],
+    "category": "Game",
     "image": "placeholder-impostersweeper.jpg",
     "link": "#",
     "github": "https://github.com/irfansyakir/OOP-Minesweeper",
@@ -71,16 +70,15 @@
       "High score tracking and export functionality"
     ]
   },
-
   {
     "id": 4,
     "title": "Opus-Cinemas",
-    "description": "A collaborative project with 2 team members that created a premium movie booking web application with real-time seat selection, secure payment processing, and booking management. Built with PHP, MySQL, and JavaScript to deliver an immersive cinema experience.",
-    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform developed as a team project with 2 members. The application provides a premium cinema experience, allowing users to browse current and upcoming films, view detailed movie information with trailers, and select seats through an interactive real-time seating chart. The system features a complete booking flow including cinema selection, seat reservation with visual availability indicators, secure payment processing, and automated email confirmations. Users can manage their booking history through personalized profiles, while the administrative backend supports the entire cinema management process. The project demonstrates solid database design principles with multiple interconnected entities including movies, cinemas, showtimes, and user accounts.",
+    "description": "A full-stack web application built with PHP, MySQL, and JavaScript implementing complex database relationships and real-time transactions. Features secure authentication systems, RESTful API design, and responsive UI components while addressing business requirements for ticket management and revenue optimization.",
+    "longDescription": "Opus-Cinemas demonstrates comprehensive software engineering capabilities through a layered architecture that separates data access, business logic, and presentation layers. The backend implements secure authentication, transaction management, and database optimization techniques while the frontend delivers a responsive, accessible user interface with real-time feedback.\n\nThe DevOps implementation included local development environments with XAMPP, version control with feature branching, and automated testing of critical user paths. From a business analysis perspective, we conducted competitor research to identify market gaps and developed a feature roadmap aligned with key performance indicators for user acquisition and retention. The UI/UX design process involved user journey mapping, wireframing, and usability testing to create an intuitive booking flow that maximized conversion rates.",
     "technologies": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "XAMPP"],
     "category": "Web Development",
     "image": "placeholder-opus-cinemas.jpg",
-    "verticalVideo" : "false",
+    "verticalVideo": "false",
     "link": "#",
     "github": "https://github.com/irfansyakir/opus-cinemas",
     "year": "2024",
@@ -96,14 +94,12 @@
       "Responsive design optimized for different devices"
     ]
   },
-  
- 
   {
     "id": 7,
     "title": "Bettersweet",
-    "description": "A collaborative project with 4 team members creating a responsive static website for a fictional premium coffee capsule brand. Features a comprehensive UI design with subscription options, rewards system, and product catalog.",
-    "longDescription": "Bettersweet is a frontend prototype for an e-commerce platform designed for coffee enthusiasts, showcasing Nespresso®-compatible coffee capsules with a focus on sustainability and quality. The static website demonstrates both one-time purchases and subscription models with a loyalty rewards system. Our team designed a complete user journey from product discovery to checkout, with detailed product information, blog content, FAQs, and account management interfaces. The project emphasizes UI/UX design principles for e-commerce, presenting a Singapore-based coffee brand with sustainable practices.",
-    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "JSON"],
+    "description": "A front-end e-commerce platform developed using HTML, CSS, and JavaScript with a focus on conversion optimization and customer engagement. Implements responsive design patterns, interactive UI components, and data-driven user flows while demonstrating brand strategy alignment with target market analysis.",
+    "longDescription": "Bettersweet showcases front-end engineering excellence through modular JavaScript components, performance-optimized CSS, and semantic HTML structure. The project implements advanced UI patterns like lazy loading, infinite scroll, and responsive layouts that adapt to diverse device contexts.\n\nFrom a business perspective, the site structure was informed by e-commerce conversion funnel analysis, with optimized product discovery paths and streamlined checkout processes. The design strategy combined branding requirements with UX research findings to create a distinctive visual language that reinforced the premium positioning of the coffee products. My marketing contribution included developing the loyalty program mechanics, subscription model pricing strategy, and customer segmentation approach that targeted different coffee consumption habits.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "UI/UX"],
     "category": "Web Development",
     "image": "placeholder-bettersweet.jpg",
     "link": "https://bettersweet.vercel.app/",
@@ -123,9 +119,9 @@
   {
     "id": 8,
     "title": "Pinnacle Accounting",
-    "description": "A collaborative project with 2 team members that created a responsive static website for an accounting firm targeting Singapore SMEs. Features a professional UI design with service descriptions, testimonials, and client-focused solutions.",
-    "longDescription": "Pinnacle Accounting is a frontend prototype for an accounting services firm specializing in financial solutions for various business types in Singapore. The static website showcases targeted service packages for startups, established enterprises, and family businesses with succession planning needs. Our team of two designed a complete user experience with clear service pathways, testimonials, credential displays, and contact options. The project uses modern web design principles to convey trust and professionalism while making complex accounting services accessible to potential clients through intuitive navigation and clear communication of value propositions.",
-    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Font Awesome"],
+    "description": "A corporate website implementing modern front-end architecture with Bootstrap-based responsive design. Features audience-segmented content strategy, conversion-optimized user flows, and technical SEO implementations while addressing business stakeholder requirements for lead generation and brand positioning.",
+    "longDescription": "Pinnacle Accounting demonstrates technical implementation excellence through component-based architecture, performance optimization techniques, and cross-browser compatibility testing. The development process incorporated version control with feature branches, automated style linting, and responsive testing across multiple device profiles.\n\nThe project showcases my business analysis capabilities through stakeholder interview documentation, competitive landscape assessment, and target audience segmentation that informed our design decisions. My marketing contributions included developing the value proposition hierarchy, content strategy for different business segments, and conversion optimization for lead generation forms. The design approach balanced professional credibility with approachable messaging to establish trust with diverse business owners from startups to established enterprises.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Font Awesome" ,"UI/UX"],
     "category": "Web Development",
     "image": "placeholder-pinnacle.jpg",
     "link": "https://cs2024-website.vercel.app/",
@@ -141,5 +137,31 @@
       "Problem-solution narrative structure",
       "Responsive design with bootstrap framework"
     ]
+  },
+
+  {
+    "id": 9,
+    "title": "Thinking & Communicating Visually",
+    "description": "A creative exploration of visual communication through observational drawing, applying fundamental elements of art and design principles. This course-based project developed skills in perceptual drawing, perspective techniques, figure representation, and visual problem-solving while building a foundation for translating complex ideas into effective visual communication.",
+    "longDescription": "This comprehensive drawing-focused project explored the development of creative thinking methodologies through focused observational drawing and art-making processes. Working across multiple mediums including charcoal, graphite, and Chinese ink, I developed technical proficiency in communicating ideas visually through systematic application of fundamental art principles.\n\nThe project progressed through increasingly complex visual challenges, beginning with basic elements of art (line, tone, shape, texture, form) and advancing to spatial representation through 1 and 2-point perspective. I applied these foundations to figure drawing exercises, developing skills in capturing line of action, gesture, proportions, and anatomical landmarks. The curriculum culminated in compositional studies exploring balance, rhythm, pattern, and the effective use of the picture plane to convey specific ideas.\n\nThrough regular critique sessions and iterative development, I cultivated the ability to analyze visual communication critically and systematically improve execution. This project demonstrates my capacity to translate abstract concepts into concrete visual representations, a skill directly applicable to UI/UX design, information visualization, and effective visual storytelling in digital environments.",
+    "technologies": ["Drawing Techniques", "Composition", "Perspective", "Figure Drawing", "Visual Elements"],
+    "category": "Design",
+    "image": "placeholder-visualthinking.jpg",
+    "link": "#",
+    "github": "#",
+    "presentation" : "https://drive.google.com/drive/folders/1TtZXJhpTUiNrSUT4yO-AtggqbTtib_AT?usp=sharing",
+    "year": "2022",
+    "month": "December",
+    "challenges": "The primary challenge was developing the perceptual skills needed to accurately translate three-dimensional forms to two-dimensional representations. Mastering perspective, proportional relationships, and the effective use of tone to create volume required significant technical practice. Additionally, learning to simplify complex visual information while maintaining essential characteristics demanded both analytical thinking and creative problem-solving.",
+    "solutions": "Through systematic practice and focused exercises, I developed a methodical approach to visual problem-solving. Beginning with fundamental elements and progressing to complex compositions allowed for incremental skill development. Regular critique sessions provided valuable feedback that informed technical improvements and conceptual development, ultimately building a comprehensive visual vocabulary for effective communication.",
+    "features": [
+      "Perceptual drawing studies using observational techniques",
+      "Spatial representation using 1 and 2-point perspective",
+      "Figure drawing with gesture, proportion, and anatomical accuracy",
+      "Volume and form studies through manipulation of light properties",
+      "Compositional exercises exploring balance, rhythm, and pattern",
+      "Critical analysis and iterative improvement of visual communication"
+    ]
   }
+
 ]

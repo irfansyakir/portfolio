@@ -9,7 +9,7 @@ import { getProjectImages } from '../utils/projectImageUtils';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Web Development', 'Mobile Development', 'Others'] //, 'AI/ML', 'Others'];
+  const categories = ['All', 'Web Development', 'Mobile Development', 'Game', 'Design'] //, 'AI/ML', 'Others'];
   const [activeFilter, setActiveFilter] = useState('All');
   
   // Add state for sort method
@@ -116,7 +116,7 @@ const Projects = () => {
                 </div>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tech">
-                  <h4>Technologies Used:</h4>
+                  <h4>Skills Utilised:</h4>
                   <div className="tech-tags">
                     {project.technologies.map((tech, index) => (
                       <span key={index}>{tech}</span>

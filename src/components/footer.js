@@ -13,10 +13,10 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section about">
             <h2 className="footer-logo">Irfan Syakir</h2>
-            <p className="footer-description">
+            {/* <p className="footer-description">
               Aspring Software Engineer passionate about building efficient, 
               user-friendly applications and implementing effective automation solutions.
-            </p>
+            </p> */}
             <div className="social-links">
               <a href="https://github.com/irfansyakir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FontAwesomeIcon icon={faGithub} />

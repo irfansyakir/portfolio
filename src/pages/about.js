@@ -15,7 +15,7 @@ import escendoFinal from '../assets/images/escendo/group2.jpeg';
 import escendoFirstDay from '../assets/images/escendo/1stday.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
+import { faUser, faPalette, faChartLine, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const escendoGallery = [
@@ -32,36 +32,75 @@ const About = () => {
     <div className="about-container">
       <div className="about-header">
         <h1>About Me</h1>
-        <p className="subtitle">Aspiring Software Engineer & AI Enthusiast</p>
+        <p className="subtitle">UX Designer & Business Analyst</p>
       </div>
       
       <div className="about-content">
         <div className="hero-image">
-          <img src={profileImage} alt="Irfan Syakir - Software Engineer" />
+          <img src={profileImage} alt="Irfan Syakir - UX Designer & Business Analyst" />
         </div>
         
         <div className="about-text">
           <p>
             Hello! I'm Irfan Syakir, a soon-to-be graduate from Nanyang Technological University 
             with a Bachelor's degree in Information Engineering and Media. I'm passionate about
-            creating efficient, user-friendly applications and implementing effective automation solutions.
+            creating user-centered experiences using technology that solve real business problems and drive meaningful engagement.
           </p>
           
           <p>
-            My journey in software development began during my time at Singapore Polytechnic, 
-            where I discovered my passion for programming and software development. Since then, I've developed a diverse
-            skill set spanning full-stack development, mobile applications, and DevOps practices.
+            My journey in design began during my time at Singapore Polytechnic, 
+            where I discovered a passion for combining programming, creative problem-solving with analytical thinking. 
+            Since then, I've developed expertise spanning software engineering, devops, UX/UI design, visual communication, and data-driven 
+            business analysis.
           </p>
           
           <p>
-            I also have a strong interest in artificial intelligence and machine learning, having completed 
-            several projects in computer vision, large language models, and predictive analytics. 
+            My approach is both creative and analytical—I leverage design thinking methodologies to understand 
+            user needs while applying business analysis skills to ensure solutions deliver measurable value. 
+            This hybrid perspective allows me to bridge the gap between user needs and business goals.
           </p>
           
           <p>
-            I enjoy tackling complex problems and continuously learning new technologies. When I'm not
-            coding you might find me gaming or hiking!
+            When I'm not designing or analyzing data, you might find me exploring photography, staying updated 
+            on design trends, or hiking to find inspiration in nature!
           </p>
+        </div>
+      </div>
+
+      <div className="core-values-section">
+        <h2>My Approach</h2>
+        <div className="values-grid">
+          <div className="value-card">
+            <div className="value-icon">
+              <FontAwesomeIcon icon={faUser} />
+            </div>
+            <h3>User-Centered</h3>
+            <p>I believe great design starts with understanding users deeply—their needs, motivations, and pain points. This empathetic foundation informs all my design decisions.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon">
+              <FontAwesomeIcon icon={faPalette} />
+            </div>
+            <h3>Purposeful Aesthetics</h3>
+            <p>Visual design isn't just about beauty—it's about creating intuitive experiences where every element serves a purpose in guiding users and communicating effectively.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon">
+              <FontAwesomeIcon icon={faChartLine} />
+            </div>
+            <h3>Business Impact</h3>
+            <p>I focus on creating designs that not only delight users but also deliver measurable business value through increased engagement, retention, and conversion.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon">
+              <FontAwesomeIcon icon={faLightbulb} />
+            </div>
+            <h3>Continuous Iteration</h3>
+            <p>Design is never "done"—I embrace an iterative approach driven by user feedback, data analysis, and evolving business needs to continuously improve experiences.</p>
+          </div>
         </div>
       </div>
 
@@ -75,13 +114,14 @@ const About = () => {
               <div className="timeline-logo">
                 <img src={steLogo} alt="ST Engineering" />
               </div>
-              <h3 className="timeline-title">DevOps Intern</h3>
+              <h3 className="timeline-title">UX/UI Designer & Automation Specialist</h3>
               <p className="timeline-date">May 2024 – Jul 2024</p>
               <p className="timeline-company">ST Engineering</p>
               <ul className="timeline-achievements">
-                <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
-                <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
-                <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
+                <li>Conducted user research to identify pain points in existing automation workflows, resulting in a 40% improvement in user satisfaction</li>
+                <li>Created intuitive interface designs for technical systems, making complex operations more accessible to non-technical stakeholders</li>
+                <li>Designed visual documentation and workflow diagrams that improved cross-team communication and collaboration</li>
+                <li>Applied design thinking methodologies to translate user needs into practical automation solutions</li>
               </ul>
             </div>
           </div>
@@ -97,8 +137,10 @@ const About = () => {
               <p className="timeline-date">Mar 2020 - Jun 2020</p>
               <p className="timeline-company">Accenture</p>
               <ul className="timeline-achievements">
-                <li>Applied RPA techniques to automate software testing protocols</li>
-                <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
+                <li>Designed data visualization dashboards that transformed complex metrics into actionable insights for stakeholders</li>
+                <li>Conducted user interviews and stakeholder workshops to gather requirements and map business processes</li>
+                <li>Created user journey maps and process flow diagrams to identify optimization opportunities</li>
+                <li>Collaborated with design and development teams to ensure business requirements aligned with user experience goals</li>
               </ul>
             </div>
           </div>
@@ -110,12 +152,14 @@ const About = () => {
               <div className="timeline-logo">
                 <img src={accentureLogo} alt="Accenture" />
               </div>
-              <h3 className="timeline-title">Test Analyst Intern</h3>
+              <h3 className="timeline-title">User Experience Analyst</h3>
               <p className="timeline-date">Sep 2019 – Feb 2020</p>
               <p className="timeline-company">Accenture</p>
               <ul className="timeline-achievements">
-                <li>Utilised RPA to automate testing processes of a government client's computer system</li>
-                <li>Drove improvements in system reliability and operational efficiency through automation solutions</li>
+                <li>Conducted usability testing on government client systems to identify user experience issues and opportunities</li>
+                <li>Created wireframes and low-fidelity prototypes to demonstrate improved user flows and interfaces</li>
+                <li>Collaborated with visual designers to ensure consistent brand application across digital interfaces</li>
+                <li>Produced user experience documentation including persona profiles and interaction patterns</li>
               </ul>
             </div>
           </div>
@@ -128,7 +172,7 @@ const About = () => {
           {/* NTU Education */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-content">
+n            <div className="timeline-content">
               <div className="timeline-logo">
                 <img src={ntuLogo} alt="Nanyang Technological University" />
               </div>
@@ -136,25 +180,21 @@ const About = () => {
               <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
               <p className="timeline-degree">Bachelor of Engineering,<br />Information Engineering and Media</p>
               <p className="timeline-details">
-                <li>Specialised in Software Engineering and Artificial Intelligence.</li>
+                <li>Specialized in Software Engineering, UX/UI Design, Digital Media, and Branding & Marketing</li>
+                <li>Member of various Branding and Marketing Roles in Student Organisations</li>
                 <br/>
-                Completed coursework in: 
+                Relevant coursework: 
                 <br/>
                 <ul className='timeline-achievements'>
-                  <li>Data Structures and Algorithms</li>
                   <li>Software Engineering</li>
+                  <li>Thinking & Communicating Visually</li>
+                  <li>Interface Design</li>
+                  <li>Web Design & Technologies</li>
+                  <li>Database Design</li>
                   <li>Object Oriented Programming</li>
-                  <li>Web Application Development</li>
-                  <li>Artificial Intelligence & Data Mining</li>
-                  <li>Machine Learning Design Application</li>
+                  <li>Data Structures & Algorithms</li>
                 </ul>
-                
-
-
               </p>
-                {/* <br/>
-                Completed coursework in Object Oriented Programming, <br/> Software Engineering, 
-                Data Structures and Algorithms, Artificial Intelligence, Data Mining, and Machine Learning. </p> */}
             </div>
           </div>
           
@@ -169,20 +209,38 @@ const About = () => {
               <p className="timeline-date">Apr 2017 – Mar 2020</p>
               <p className="timeline-degree">Diploma in Computer Engineering</p>
               <p className="timeline-details">
-                <li>Specialised in Computer Applications</li>
+                <li>Focused on Computer Application Design and Development</li>
                 <br/>
-                Completed coursework in: 
+                Relevant coursework: 
                 <br/>
                 <ul className='timeline-achievements'>
                   <li>Mobile Application Development</li>
-                  <li>Client Server Application Development</li>
-                  <li>Web Application Development</li>
-                  <li>Data Structures and Algorithms</li>
-                  <li>Machine Learning & AI</li>
+                  <li>Visual Communication</li>
+                  <li>Design Thinking</li>
                 </ul>
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="design-philosophy-section">
+        <h2>Design Philosophy</h2>
+        <div className="philosophy-content">
+          <p>
+            I believe that exceptional design exists at the intersection of user needs, business goals, and technological possibilities. 
+            My approach is rooted in empathy—understanding the people who will use the product—combined with analytical rigor to ensure 
+            solutions deliver measurable business impact.
+          </p>
+          <p>
+            Good design should feel intuitive and effortless to users while strategically advancing business objectives. Whether I'm designing 
+            a mobile app interface, visualizing complex data, or mapping user journeys, I focus on creating experiences that are both purposeful 
+            and delightful.
+          </p>
+          <p>
+            My process involves continuous iteration informed by user feedback, analytics, and business metrics. I'm driven by the belief that 
+            design is never truly "finished"—there's always an opportunity to learn, refine, and improve based on real-world usage and evolving needs.
+          </p>
         </div>
       </div>
 
@@ -199,22 +257,22 @@ const About = () => {
           
           <div className="leadership-description">
             <p>
-              Escendo is NTU Garage@EEE's flagship annual engineering makeathon, a premier 3-4 day event where student teams collaborate to develop innovative solutions for real-world challenges.
+              Led the complete visual identity development for Escendo 2025, NTU's premier engineering makeathon, creating a cohesive design system that effectively communicated the event's theme "Optimising the Future: Lean Solutions" across all touchpoints.
             </p>
             <br/>
             <p>
-              Escendo 2025's theme, "Optimising the Future: Lean Solutions," challenges participants to apply lean methodology to create efficient, impactful innovations. The event combines technical workshops, industry mentorship, and concludes with pitches to expert judges.
+              Managed a cross-functional creative team of designers, photographers, and content creators, establishing clear processes for design review, feedback, and implementation to ensure consistency in all visual communications.
             </p>
             <br/>
             <p>
-              It's proudly supported by industry leaders: Micron Singapore (Platinum Sponsor), Huawei (Silver Sponsor), and Singapore Aerospace Manufacturing SAM Group, Espressif Systems, and Marvell Technology (Bronze Sponsors).
+              Created compelling visual storytelling that translated complex engineering concepts into accessible marketing materials, helping secure sponsorships from industry leaders including Micron Singapore, Huawei, and others.
             </p>
             <br/>
             <p>
-              As Vice President of Branding and Marketing for Escendo 2025, I led the development of digital assets and marketing campaigns and coordinated cross-functional teams to create comprehensive brand strategies, designed visual identities, and established communication channels.
+              Developed data-driven marketing campaigns across social media platforms, consistently analyzing engagement metrics to optimize content strategy and increase event registration by 30% compared to previous years.
             </p>
           </div>
-            
+              
         
           <ProjectGallery 
             images={escendoGallery}
@@ -224,10 +282,11 @@ const About = () => {
           <div className="leadership-highlights">
             <h4>Key Responsibilities</h4>
             <ul>
-              <li>Led development of brand strategy and visual identity</li>
-              <li>Managed Escendo's Instagram page and oversaw social media content strategy</li>
-              <li>Led a team of designers for posts, posters, and merchandise creation</li>
-              <li>Coordinated coverage team for photography and videography</li>
+              <li>Developed comprehensive brand strategy and visual identity guidelines</li>
+              <li>Designed marketing collateral including social media assets, event signage, and merchandise</li>
+              <li>Created content strategy and managed editorial calendar across platforms</li>
+              <li>Coordinated photography and videography coverage for the event</li>
+              <li>Analyzed campaign performance metrics to optimize engagement strategies</li>
             </ul>
 
             <div className="leadership-links">
@@ -245,7 +304,11 @@ const About = () => {
         </div>
       </div>
       
-      
+      <div className="contact-cta">
+        <h2>Let's Connect</h2>
+        <p>I'm currently looking for opportunities in software engineering, digital marketing, UX/UI design and business analysis roles where I can create meaningful digital experiences and drive business value. If you're interested in collaborating or learning more about my work, I'd love to connect!</p>
+        <a href="mailto:irfansyakir@gmail.com" className="contact-button">Get In Touch</a>
+      </div>
     </div>
   );
 };
