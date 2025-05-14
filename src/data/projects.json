@@ -188,6 +188,30 @@
       "Process documentation showing development from concept to finished artwork",
       "Technical experiments with various water-based painting media"
     ]
+  },
+    {
+    "id": 11,
+    "title": "Thinking & Communicating Visually III",
+    "description": "A product design and development project implementing 3D visualization techniques in digital environments using industry-standard software. Applied conceptual design methodology through systematic analysis of product structure, function, and context while developing skills in 3D modeling, assembly, and photorealistic rendering.",
+    "longDescription": "This comprehensive project explored the creative design process for new products and devices through both technical and conceptual frameworks. Working with professional 3D modeling software (Autodesk Inventor and Keyshot), I developed proficiency in digital product visualization from basic part creation to complex assemblies and photorealistic rendering.\n\nThe conceptual framework involved three distinct analytical approaches: syntactic analysis (investigating product structure, components, and materials), pragmatic analysis (examining use functions and ergonomics through user observation), and semantic analysis (exploring how context, form analogies, and emotional qualities are expressed through design).\n\nThe project culminated in the development of original product concepts, beginning with research and analysis of existing products, proceeding through conceptual sketching of deformed objects, and ultimately resulting in the creation of a new designed object. Throughout the process, I learned to visually communicate research data effectively and critically analyze products as communication tools conveying specific ideas and experiences to users.\n\nThis project demonstrates my ability to bridge technical 3D modeling skills with strategic product analysis and creative conceptualization, combining the 'hard' technical skills of digital visualization with the 'soft' skills of user-centered design thinking.",
+    "technologies": ["Autodesk Inventor", "Keyshot", "3D Modeling", "Product Design", "User Research"],
+    "category": "Design",
+    "image": "placeholder-visualthinking3.jpg",
+    "finalProject" : "https://www.canva.com/design/DAGnaw2jL_4/hsNfwRjyn0qhX795lrEGdg/view?utm_content=DAGnaw2jL_4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3401b9b36b",
+    "link": "#",
+    "github": "#",
+    "year": "2025",
+    "month": "November",
+    "challenges": "The primary challenge was integrating technical 3D modeling skills with conceptual product analysis methodologies. Learning complex software interfaces while simultaneously developing analytical frameworks for product evaluation required balancing technical execution with strategic thinking. Additionally, translating research insights into concrete design decisions demanded synthesizing data across multiple dimensions of product experience.",
+    "solutions": "I developed a systematic workflow that balanced technical skill development with conceptual analysis. By applying a structured methodology (syntactic, pragmatic, semantic) to product research, I created clear pathways from analysis to design decisions. Regular critique sessions with peers helped refine both technical execution and conceptual thinking, while detailed documentation of the design process ensured coherent development from research through final product concepts.",
+    "features": [
+      "3D product models created in Autodesk Inventor with proper part constraints and assemblies",
+      "Photorealistic product renderings using Keyshot materials and lighting techniques",
+      "Syntactic analysis documenting product structure, components, and materials",
+      "Pragmatic analysis examining user interaction patterns and ergonomic considerations",
+      "Semantic analysis exploring contextual meaning and emotional qualities of products",
+      "Original product concept development from research through final design visualization"
+    ]
   }
 
 ]
