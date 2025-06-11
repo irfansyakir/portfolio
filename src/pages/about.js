@@ -299,7 +299,7 @@ const About = () => {
               <li>Designed marketing collateral including social media assets, event signage, and merchandise</li>
               <li>Created content strategy and managed editorial calendar across platforms</li>
               <li>Coordinated photography and videography coverage for the event</li>
-              <li>Analyzed campaign performance metrics to optimize engagement strategies</li>
+              <li>Analysed campaign performance metrics to optimize engagement strategies</li>
             </ul>
 
             <div className="leadership-links">

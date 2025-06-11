@@ -63,7 +63,7 @@ const Work = () => {
                 <div className="work-position">DevOps Intern</div>
                 <ul className="work-description">
                   <li>Implemented DevOps best practices to enhance collaboration between development and operations teams</li>
-                  <li>Optimized existing automation processes using Terraform to improve reliability and performance</li>
+                  <li>Optimised existing automation processes using Terraform to improve reliability and performance</li>
                   <li>Designed and implemented CI/CD pipelines to automate software delivery</li>
                   <li>Worked on infrastructure for AI model deployment and continuous training pipelines</li>
                 </ul>
@@ -82,7 +82,7 @@ const Work = () => {
                 <ul className="work-description">
                   <li>Applied RPA techniques to automate software testing protocols</li>
                   <li>Leveraged robust data analysis techniques to identify inefficiencies and streamline processes</li>
-                  <li>Utilized predictive analytics to forecast business trends and optimize resource allocation</li>
+                  <li>Utilised predictive analytics to forecast business trends and optimize resource allocation</li>
                 </ul>
               </div>
             </div>
@@ -97,7 +97,7 @@ const Work = () => {
                 <div className="work-title">Accenture</div>
                 <div className="work-position">Test Analyst Intern</div>
                 <ul className="work-description">
-                  <li>Utilized RPA to automate testing processes of a government client's computer system</li>
+                  <li>Utilised RPA to automate testing processes of a government client's computer system</li>
                   <li>Drove improvements in system reliability and operational efficiency through automation solutions</li>
                 </ul>
               </div>

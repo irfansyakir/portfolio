@@ -13,7 +13,8 @@ import {
   faPencilRuler, 
   faPalette, 
   faBullhorn,
-  faChartPie
+  faChartPie,
+  faBook
 } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
@@ -212,63 +213,71 @@ const Skills = () => {
         </div>
       </div>
       
-      <div className="specialized-skills">
-        <h2>Specialized Expertise</h2>
-        <div className="specialized-grid">
-          <div className="specialized-item">
-            <div className="specialized-icon">
+      <div className="specialised-skills">
+        <h2>Specialised Expertise</h2>
+        <div className="specialised-grid">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faCode} />
             </div>
             <h3>Software Architecture</h3>
             <p>Designing modular, maintainable code structures and system components that enable scalability and efficient development workflows</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faServer} />
             </div>
             <h3>Infrastructure Automation</h3>
             <p>Implementing infrastructure as code and automated deployment pipelines that ensure consistent, reliable system operations</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faPencilRuler} />
             </div>
             <h3>UI/UX Design</h3>
             <p>Creating intuitive user interfaces and experiences that balance aesthetic appeal with functional efficiency to enhance user engagement and satisfaction</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faPalette} />
             </div>
             <h3>Brand Development</h3>
             <p>Crafting cohesive visual identities and design systems that effectively communicate brand values and maintain consistency across digital platforms</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faChartLine} />
             </div>
             <h3>Data Analysis</h3>
             <p>Transforming raw data into meaningful insights through effective processing, visualization, and analytical techniques</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faBullhorn} />
             </div>
             <h3>Digital Marketing</h3>
             <p>Implementing targeted campaigns and content strategies that drive engagement, optimize conversion funnels, and achieve measurable business outcomes</p>
           </div>
           
-          <div className="specialized-item">
-            <div className="specialized-icon">
+          <div className="specialised-item">
+            <div className="specialised-icon">
               <FontAwesomeIcon icon={faNetworkWired} />
             </div>
             <h3>System Integration</h3>
             <p>Connecting disparate technologies and platforms to create cohesive solutions that enable seamless data flow and functionality</p>
+          </div>
+
+           <div className="specialised-item">
+            <div className="specialised-icon">
+              <FontAwesomeIcon icon={faBook} />
+            </div>
+            <h3>Technical Writing</h3>
+            <p>Creating clear, concise documentation and tutorials to support onboarding, stakeholder clarity, and long-term project maintainability.</p>
           </div>
         </div>
       </div>

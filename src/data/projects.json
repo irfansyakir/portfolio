@@ -37,12 +37,12 @@
     "presentation": "https://www.canva.com/design/DAF0l0OPRkE/E0KnodMlY2rC4AJiKmjdVg/view?utm_content=DAF0l0OPRkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heea38939a8",
     "year": "2023",
     "month": "August",
-    "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
+    "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronised listening experience across multiple devices demanded innovative solutions.",
     "solutions": "We implemented a modular architecture with clearly defined responsibilities for each team member. Firebase Realtime Database helped us create responsive social features, while Expo's development environment allowed for consistent testing across different devices. We created custom hooks and state management with Zustand to handle the complex interactions between the music playback and social components.",
     "features": [
       "Genre-specific music chatrooms for real-time music discovery and discussion",
       "User profile customization with music preferences and listening history",
-      "Synchronized music streaming for group listening experiences",
+      "Synchronised music streaming for group listening experiences",
       "Track discovery through social recommendations",
       "Cross-platform mobile experience with consistent UI/UX"
     ]
@@ -51,7 +51,7 @@
     "id": 3,
     "title": "Imposter Sweeper",
     "description": "An object-oriented Java application implementing the MVC architecture pattern with custom game algorithms and interactive UI components. Demonstrates software engineering principles, version control integration, and user-centered design methodologies targeted at a specific market segment with measurable engagement metrics.",
-    "longDescription": "Imposter Sweeper showcases advanced software engineering practices through a Java implementation featuring custom algorithms for game state management and optimized data structures for performance efficiency. The application demonstrates clean architecture with strict separation of concerns using the MVC pattern, allowing for maintainable, testable code.\n\nThe DevOps approach incorporated automated unit testing with continuous integration through GitHub Actions, ensuring stable releases. From a design perspective, the UI elements were created through iterative prototyping based on user testing sessions that identified optimal interaction patterns. The business analysis component included market research on casual gaming demographics and feature prioritization based on user engagement metrics from similar games.",
+    "longDescription": "Imposter Sweeper showcases advanced software engineering practices through a Java implementation featuring custom algorithms for game state management and optimised data structures for performance efficiency. The application demonstrates clean architecture with strict separation of concerns using the MVC pattern, allowing for maintainable, testable code.\n\nThe DevOps approach incorporated automated unit testing with continuous integration through GitHub Actions, ensuring stable releases. From a design perspective, the UI elements were created through iterative prototyping based on user testing sessions that identified optimal interaction patterns. The business analysis component included market research on casual gaming demographics and feature prioritization based on user engagement metrics from similar games.",
     "technologies": ["Java", "OOP", "GUI Development", "Game Design"],
     "category": "Game",
     "image": "placeholder-impostersweeper.jpg",
@@ -74,7 +74,7 @@
     "id": 4,
     "title": "Opus-Cinemas",
     "description": "A full-stack web application built with PHP, MySQL, and JavaScript implementing complex database relationships and real-time transactions. Features secure authentication systems, RESTful API design, and responsive UI components while addressing business requirements for ticket management and revenue optimization.",
-    "longDescription": "Opus-Cinemas demonstrates comprehensive software engineering capabilities through a layered architecture that separates data access, business logic, and presentation layers. The backend implements secure authentication, transaction management, and database optimization techniques while the frontend delivers a responsive, accessible user interface with real-time feedback.\n\nThe DevOps implementation included local development environments with XAMPP, version control with feature branching, and automated testing of critical user paths. From a business analysis perspective, we conducted competitor research to identify market gaps and developed a feature roadmap aligned with key performance indicators for user acquisition and retention. The UI/UX design process involved user journey mapping, wireframing, and usability testing to create an intuitive booking flow that maximized conversion rates.",
+    "longDescription": "Opus-Cinemas demonstrates comprehensive software engineering capabilities through a layered architecture that separates data access, business logic, and presentation layers. The backend implements secure authentication, transaction management, and database optimization techniques while the frontend delivers a responsive, accessible user interface with real-time feedback.\n\nThe DevOps implementation included local development environments with XAMPP, version control with feature branching, and automated testing of critical user paths. From a business analysis perspective, we conducted competitor research to identify market gaps and developed a feature roadmap aligned with key performance indicators for user acquisition and retention. The UI/UX design process involved user journey mapping, wireframing, and usability testing to create an intuitive booking flow that maximised conversion rates.",
     "technologies": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "XAMPP"],
     "category": "Web Development",
     "image": "placeholder-opus-cinemas.jpg",
@@ -84,21 +84,21 @@
     "year": "2024",
     "month": "October",
     "challenges": "Working with a partner to build a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. We needed to design a database schema that could efficiently manage relationships between movies, cinemas, showtimes and seat bookings. Creating an intuitive seat selection interface that could represent complex theater layouts while providing visual feedback across different devices also required careful planning and implementation.",
-    "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalized database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
+    "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalised database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
     "features": [
       "Interactive seat selection with real-time availability updates",
       "User profiles with comprehensive booking history",
       "Detailed movie listings with trailers and information",
       "Secure payment processing with multiple options",
       "Email notifications for booking confirmations",
-      "Responsive design optimized for different devices"
+      "Responsive design optimised for different devices"
     ]
   },
   {
     "id": 7,
     "title": "Bettersweet",
     "description": "A front-end e-commerce platform developed using HTML, CSS, and JavaScript with a focus on conversion optimization and customer engagement. Implements responsive design patterns, interactive UI components, and data-driven user flows while demonstrating brand strategy alignment with target market analysis.",
-    "longDescription": "Bettersweet showcases front-end engineering excellence through modular JavaScript components, performance-optimized CSS, and semantic HTML structure. The project implements advanced UI patterns like lazy loading, infinite scroll, and responsive layouts that adapt to diverse device contexts.\n\nFrom a business perspective, the site structure was informed by e-commerce conversion funnel analysis, with optimized product discovery paths and streamlined checkout processes. The design strategy combined branding requirements with UX research findings to create a distinctive visual language that reinforced the premium positioning of the coffee products. My marketing contribution included developing the loyalty program mechanics, subscription model pricing strategy, and customer segmentation approach that targeted different coffee consumption habits.",
+    "longDescription": "Bettersweet showcases front-end engineering excellence through modular JavaScript components, performance-optimised CSS, and semantic HTML structure. The project implements advanced UI patterns like lazy loading, infinite scroll, and responsive layouts that adapt to diverse device contexts.\n\nFrom a business perspective, the site structure was informed by e-commerce conversion funnel analysis, with optimised product discovery paths and streamlined checkout processes. The design strategy combined branding requirements with UX research findings to create a distinctive visual language that reinforced the premium positioning of the coffee products. My marketing contribution included developing the loyalty program mechanics, subscription model pricing strategy, and customer segmentation approach that targeted different coffee consumption habits.",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "UI/UX"],
     "category": "Web Development",
     "image": "placeholder-bettersweet.jpg",
@@ -113,13 +113,13 @@
       "Dynamic product catalog with filtering capabilities",
       "Interactive rewards program interface",
       "Corporate bulk ordering inquiry system",
-      "Responsive design optimized for all devices"
+      "Responsive design optimised for all devices"
     ]
   },
   {
     "id": 8,
     "title": "Pinnacle Accounting",
-    "description": "A corporate website implementing modern front-end architecture with Bootstrap-based responsive design. Features audience-segmented content strategy, conversion-optimized user flows, and technical SEO implementations while addressing business stakeholder requirements for lead generation and brand positioning.",
+    "description": "A corporate website implementing modern front-end architecture with Bootstrap-based responsive design. Features audience-segmented content strategy, conversion-optimised user flows, and technical SEO implementations while addressing business stakeholder requirements for lead generation and brand positioning.",
     "longDescription": "Pinnacle Accounting demonstrates technical implementation excellence through component-based architecture, performance optimization techniques, and cross-browser compatibility testing. The development process incorporated version control with feature branches, automated style linting, and responsive testing across multiple device profiles.\n\nThe project showcases my business analysis capabilities through stakeholder interview documentation, competitive landscape assessment, and target audience segmentation that informed our design decisions. My marketing contributions included developing the value proposition hierarchy, content strategy for different business segments, and conversion optimization for lead generation forms. The design approach balanced professional credibility with approachable messaging to establish trust with diverse business owners from startups to established enterprises.",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Font Awesome" ,"UI/UX"],
     "category": "Web Development",

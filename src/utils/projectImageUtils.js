@@ -29,7 +29,7 @@ function importImage(projectId, imageNumber) {
   const dirLower = dir.toLowerCase();
   
   try {
-    // All project images are now standardized to "projectImage.{extension}"
+    // All project images are now standardised to "projectImage.{extension}"
     if (imageNumber === 'projectImage') {
       return require(`../assets/images/projects/${dir}/projectImage.${extension}`);
     }

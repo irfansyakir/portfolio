@@ -26,7 +26,7 @@
     "id": 2,
     "title": "JamStream ",
     "description": "A collaborative project with 9 team members that created a mobile music streaming application with interactive social features. Built with React Native and Expo, the app connects to Spotify's API for music content while using Firebase for real-time social interactions.",
-    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students as part of the Design and Innovation Project (DIP) looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronized listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
+    "longDescription": "JamStream (internally known as RadioRoom) was developed by a team of 9 students as part of the Design and Innovation Project (DIP) looking to reimagine music streaming by emphasizing social connectivity. The application combines Spotify's extensive music library with custom-built social features that allow users to engage with others who have similar music tastes. Using Firebase's Realtime Database, we implemented interactive chatrooms, collaborative playlists, and synchronised listening experiences. The project leveraged React Native and Expo for cross-platform compatibility, while focusing on delivering a seamless and engaging user experience.",
     "technologies": ["React Native", "Expo", "JavaScript", "Firebase", "Spotify API"],
     "category": "Mobile Development",
     "image": "placeholder-jamstream.jpg",
@@ -36,12 +36,12 @@
     "figma" : "https://www.figma.com/design/gMIQ6WEVMcx6wvEDuRvBZ2/app-features-rough-draft?node-id=71-3474&t=aEqdiWd3V13V9GxV-1",
     "year": "2023",
     "month": "August",
-    "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronized listening experience across multiple devices demanded innovative solutions.",
+    "challenges": "Working in a team of 9 presented coordination challenges across different components of the application. Integrating Spotify's API with our custom social features while ensuring all team members could contribute effectively required careful planning and communication. Additionally, building a real-time synchronised listening experience across multiple devices demanded innovative solutions.",
     "solutions": "We implemented a modular architecture with clearly defined responsibilities for each team member. Firebase Realtime Database helped us create responsive social features, while Expo's development environment allowed for consistent testing across different devices. We created custom hooks and state management with Zustand to handle the complex interactions between the music playback and social components.",
     "features": [
       "Genre-specific music chatrooms for real-time music discovery and discussion",
       "User profile customization with music preferences and listening history",
-      "Synchronized music streaming for group listening experiences",
+      "Synchronised music streaming for group listening experiences",
       "Track discovery through social recommendations",
       "Cross-platform mobile experience with consistent UI/UX"
     ]
@@ -74,7 +74,7 @@
     "id": 4,
     "title": "Opus-Cinemas",
     "description": "A collaborative project with 2 team members that created a premium movie booking web application with real-time seat selection, secure payment processing, and booking management. Built with PHP, MySQL, and JavaScript to deliver an immersive cinema experience.",
-    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform developed as a team project with 2 members. The application provides a premium cinema experience, allowing users to browse current and upcoming films, view detailed movie information with trailers, and select seats through an interactive real-time seating chart. The system features a complete booking flow including cinema selection, seat reservation with visual availability indicators, secure payment processing, and automated email confirmations. Users can manage their booking history through personalized profiles, while the administrative backend supports the entire cinema management process. The project demonstrates solid database design principles with multiple interconnected entities including movies, cinemas, showtimes, and user accounts.",
+    "longDescription": "Opus-Cinemas is a comprehensive movie booking platform developed as a team project with 2 members. The application provides a premium cinema experience, allowing users to browse current and upcoming films, view detailed movie information with trailers, and select seats through an interactive real-time seating chart. The system features a complete booking flow including cinema selection, seat reservation with visual availability indicators, secure payment processing, and automated email confirmations. Users can manage their booking history through personalised profiles, while the administrative backend supports the entire cinema management process. The project demonstrates solid database design principles with multiple interconnected entities including movies, cinemas, showtimes, and user accounts.",
     "technologies": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "XAMPP"],
     "category": "Web Development",
     "image": "placeholder-opus-cinemas.jpg",
@@ -84,14 +84,14 @@
     "year": "2024",
     "month": "October",
     "challenges": "Working with a partner to build a real-time seat reservation system that prevents double bookings while maintaining good performance was particularly challenging. We needed to design a database schema that could efficiently manage relationships between movies, cinemas, showtimes and seat bookings. Creating an intuitive seat selection interface that could represent complex theater layouts while providing visual feedback across different devices also required careful planning and implementation.",
-    "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalized database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
+    "solutions": "We implemented a modular architecture that separated business logic from presentation concerns. Our solution included AJAX-based seat availability checks to provide real-time feedback without page refreshes. We designed a normalised database schema with proper foreign key relationships and used prepared statements throughout the application to enhance security. The email notification system uses templates for consistent communication with customers throughout the booking process.",
     "features": [
       "Interactive seat selection with real-time availability updates",
       "User profiles with comprehensive booking history",
       "Detailed movie listings with trailers and information",
       "Secure payment processing with multiple options",
       "Email notifications for booking confirmations",
-      "Responsive design optimized for different devices"
+      "Responsive design optimised for different devices"
     ]
   },
   
@@ -122,7 +122,7 @@
     "id": 6,
     "title": "OldEgg E-commerce",
     "description": "A collaborative project with 2 team members that created a web-based e-commerce platform for PC components, featuring product categorization, user management, and order processing. Built using Java Servlets and JSP with MySQL database integration.",
-    "longDescription": "OldEgg is a comprehensive e-commerce platform inspired by Newegg, specializing in PC components and hardware. Developed as a team project with 2 members, the platform enables users to browse and purchase from various product categories including motherboards, CPUs, GPUs, RAM, storage, cases, and cooling solutions. The database schema implements a normalized structure to efficiently handle complex products with multiple specifications, while the application provides complete shopping functionality including user authentication, product listings, shopping cart management, and order processing.",
+    "longDescription": "OldEgg is a comprehensive e-commerce platform inspired by Newegg, specializing in PC components and hardware. Developed as a team project with 2 members, the platform enables users to browse and purchase from various product categories including motherboards, CPUs, GPUs, RAM, storage, cases, and cooling solutions. The database schema implements a normalised structure to efficiently handle complex products with multiple specifications, while the application provides complete shopping functionality including user authentication, product listings, shopping cart management, and order processing.",
     "technologies": ["Java Servlet", "JSP", "Apache Tomcat", "MySQL", "HTML", "CSS"],
     "category": "Web Development",
     "image": "placeholder-oldegg.jpg",
@@ -131,7 +131,7 @@
     "year": "2023",
     "month": "March",
     "challenges": "Working with a partner to design a database schema capable of handling diverse PC components with varying specifications posed a significant challenge. Implementing an effective product categorization system with filtering capabilities while maintaining consistent data relationships across multiple product types required careful database design.",
-    "solutions": "We designed a normalized database schema with separate tables for each component category, connected through a centralized listings table. This approach allowed each product type to have its own specific attributes while maintaining consistent query patterns. For the user interface, we implemented JSP templates to ensure consistent presentation across different product categories.",
+    "solutions": "We designed a normalised database schema with separate tables for each component category, connected through a centralised listings table. This approach allowed each product type to have its own specific attributes while maintaining consistent query patterns. For the user interface, we implemented JSP templates to ensure consistent presentation across different product categories.",
     "features": [
       "Comprehensive product catalog with 7 PC component categories",
       "User authentication and account management system",
@@ -160,7 +160,7 @@
       "Dynamic product catalog with filtering capabilities",
       "Interactive rewards program interface",
       "Corporate bulk ordering inquiry system",
-      "Responsive design optimized for all devices"
+      "Responsive design optimised for all devices"
     ]
   },
   {
@@ -189,7 +189,7 @@
     "id": 9,
     "title": "Cats vs Dogs Image Classification",
     "description": "A collaborative project with 3 team members that developed a deep learning model using GoogLeNet architecture to classify images of cats and dogs. Implemented custom data preprocessing to optimize model training, including strategic data splitting and augmentation techniques to improve model performance.",
-    "longDescription": "This project was a comprehensive exploration of deep learning for image classification, completed collaboratively with 3 team members. We implemented GoogLeNet CNN architecture using TensorFlow to create a robust model capable of distinguishing between cat and dog images with high accuracy. The preprocessing pipeline included strategic data splitting that dropped 50% of training data and reallocated 20% to a labelled test set. We utilized TensorFlow's GPU acceleration capabilities to optimize training time and employed various data augmentation techniques to enhance model generalization. The project demonstrates solid understanding of convolutional neural network architectures, data preprocessing strategies for computer vision tasks, and deep learning model optimization techniques.",
+    "longDescription": "This project was a comprehensive exploration of deep learning for image classification, completed collaboratively with 3 team members. We implemented GoogLeNet CNN architecture using TensorFlow to create a robust model capable of distinguishing between cat and dog images with high accuracy. The preprocessing pipeline included strategic data splitting that dropped 50% of training data and reallocated 20% to a labelled test set. We utilised TensorFlow's GPU acceleration capabilities to optimize training time and employed various data augmentation techniques to enhance model generalization. The project demonstrates solid understanding of convolutional neural network architectures, data preprocessing strategies for computer vision tasks, and deep learning model optimization techniques.",
     "year": "2024",
     "month": "October",
     "category": "AI/ML",
@@ -197,7 +197,7 @@
     "features": [
       "Implemented GoogLeNet CNN architecture for image classification",
       "Created data preprocessing pipeline with train-test splitting",
-      "Optimized model for GPU acceleration",
+      "Optimised model for GPU acceleration",
       "Achieved high accuracy in distinguishing between cat and dog images"
     ],
     "github": "#"
