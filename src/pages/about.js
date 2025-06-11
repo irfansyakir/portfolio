@@ -32,37 +32,37 @@ const About = () => {
     <div className="about-container">
       <div className="about-header">
         <h1>About Me</h1>
-        <p className="subtitle">UX Designer & Business Analyst</p>
+        <p className="subtitle">Cloud Engineer & Technology Professional</p>
       </div>
       
       <div className="about-content">
         <div className="hero-image">
-          <img src={profileImage} alt="Irfan Syakir - UX Designer & Business Analyst" />
+          <img src={profileImage} alt="Irfan Syakir - Cloud Engineer" />
         </div>
         
         <div className="about-text">
           <p>
-            Hello! I'm Irfan Syakir, a soon-to-be graduate from Nanyang Technological University 
-            with a Bachelor's degree in Information Engineering and Media. I'm passionate about
-            creating user-centered experiences using technology that solve real business problems and drive meaningful engagement.
+            Hello! I'm Irfan Syakir, a Cloud Engineer at ST Engineering with a Bachelor's degree 
+            in Information Engineering and Media from Nanyang Technological University. I'm passionate about
+            creating scalable cloud solutions and leveraging technology to solve complex business problems.
           </p>
           
           <p>
-            My journey in design began during my time at Singapore Polytechnic, 
+            My journey in technology began during my time at Singapore Polytechnic, 
             where I discovered a passion for combining programming, creative problem-solving with analytical thinking. 
-            Since then, I've developed expertise spanning software engineering, devops, UX/UI design, visual communication, and data-driven 
+            Since then, I've developed expertise spanning software engineering, DevOps, cloud infrastructure, UX/UI design, and data-driven 
             business analysis.
           </p>
           
           <p>
             My approach is both creative and analytical—I leverage design thinking methodologies to understand 
-            user needs while applying business analysis skills to ensure solutions deliver measurable value. 
-            This hybrid perspective allows me to bridge the gap between user needs and business goals.
+            user needs while applying engineering principles to ensure solutions deliver measurable value. 
+            This hybrid perspective allows me to bridge the gap between technical implementation and business goals.
           </p>
           
           <p>
-            When I'm not designing or analyzing data, you might find me exploring photography, staying updated 
-            on design trends, or hiking to find inspiration in nature!
+            When I'm not working on cloud architectures or exploring new technologies, you might find me exploring photography, 
+            staying updated on tech trends, or hiking to find inspiration in nature!
           </p>
         </div>
       </div>
@@ -75,15 +75,15 @@ const About = () => {
               <FontAwesomeIcon icon={faUser} />
             </div>
             <h3>User-Centered</h3>
-            <p>I believe great design starts with understanding users deeply—their needs, motivations, and pain points. This empathetic foundation informs all my design decisions.</p>
+            <p>I believe great technology starts with understanding users deeply—their needs, motivations, and pain points. This empathetic foundation informs all my technical decisions.</p>
           </div>
           
           <div className="value-card">
             <div className="value-icon">
               <FontAwesomeIcon icon={faPalette} />
             </div>
-            <h3>Purposeful Aesthetics</h3>
-            <p>Visual design isn't just about beauty—it's about creating intuitive experiences where every element serves a purpose in guiding users and communicating effectively.</p>
+            <h3>Purposeful Design</h3>
+            <p>Visual design isn't just about aesthetics—it's about creating intuitive experiences where every element serves a purpose in guiding users and communicating effectively.</p>
           </div>
           
           <div className="value-card">
@@ -91,15 +91,15 @@ const About = () => {
               <FontAwesomeIcon icon={faChartLine} />
             </div>
             <h3>Business Impact</h3>
-            <p>I focus on creating designs that not only delight users but also deliver measurable business value through increased engagement, retention, and conversion.</p>
+            <p>I focus on creating solutions that not only delight users but also deliver measurable business value through increased efficiency, reliability, and scalability.</p>
           </div>
           
           <div className="value-card">
             <div className="value-icon">
               <FontAwesomeIcon icon={faLightbulb} />
             </div>
-            <h3>Continuous Iteration</h3>
-            <p>Design is never "done"—I embrace an iterative approach driven by user feedback, data analysis, and evolving business needs to continuously improve experiences.</p>
+            <h3>Continuous Learning</h3>
+            <p>Technology evolves rapidly—I embrace continuous learning and iteration, staying current with cloud technologies and best practices to deliver cutting-edge solutions.</p>
           </div>
         </div>
       </div>
@@ -107,21 +107,34 @@ const About = () => {
       <div className="experience-section">
         <h2>Professional Experience</h2>
         <div className="timeline">
-          {/* ST Engineering Experience */}
+          {/* Current ST Engineering Role */}
+          <div className="timeline-item current-role">
+            <div className="timeline-dot current"></div>
+            <div className="timeline-content">
+              <div className="timeline-logo">
+                <img src={steLogo} alt="ST Engineering" />
+              </div>
+              <h3 className="timeline-title">Cloud Engineer</h3>
+              <p className="timeline-date">Jun 2025 – Present</p>
+              <p className="timeline-company">ST Engineering</p>
+            </div>
+          </div>
+
+          {/* ST Engineering Internship */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <div className="timeline-logo">
                 <img src={steLogo} alt="ST Engineering" />
               </div>
-              <h3 className="timeline-title">UX/UI Designer & Automation Specialist</h3>
+              <h3 className="timeline-title">DevOps Intern</h3>
               <p className="timeline-date">May 2024 – Jul 2024</p>
               <p className="timeline-company">ST Engineering</p>
               <ul className="timeline-achievements">
-                <li>Conducted user research to identify pain points in existing automation workflows, resulting in a 40% improvement in user satisfaction</li>
-                <li>Created intuitive interface designs for technical systems, making complex operations more accessible to non-technical stakeholders</li>
-                <li>Designed visual documentation and workflow diagrams that improved cross-team communication and collaboration</li>
-                <li>Applied design thinking methodologies to translate user needs into practical automation solutions</li>
+                <li>Implemented CI/CD pipelines using GitHub Actions and GitLab CI, reducing release cycles and improving deployment reliability</li>
+                <li>Created infrastructure-as-code solutions using Terraform for cloud resource management</li>
+                <li>Designed monitoring and alerting systems that improved incident response times</li>
+                <li>Developed comprehensive technical documentation for DevOps workflows</li>
               </ul>
             </div>
           </div>
@@ -152,14 +165,14 @@ const About = () => {
               <div className="timeline-logo">
                 <img src={accentureLogo} alt="Accenture" />
               </div>
-              <h3 className="timeline-title">User Experience Analyst</h3>
+              <h3 className="timeline-title">Test Analyst Intern</h3>
               <p className="timeline-date">Sep 2019 – Feb 2020</p>
               <p className="timeline-company">Accenture</p>
               <ul className="timeline-achievements">
-                <li>Conducted usability testing on government client systems to identify user experience issues and opportunities</li>
+                <li>Developed automated testing solutions using RPA techniques for government client systems</li>
                 <li>Created wireframes and low-fidelity prototypes to demonstrate improved user flows and interfaces</li>
-                <li>Collaborated with visual designers to ensure consistent brand application across digital interfaces</li>
-                <li>Produced user experience documentation including persona profiles and interaction patterns</li>
+                <li>Collaborated with cross-functional teams to improve system reliability and user experience</li>
+                <li>Produced documentation including test cases and process improvement recommendations</li>
               </ul>
             </div>
           </div>
@@ -177,10 +190,10 @@ const About = () => {
                 <img src={ntuLogo} alt="Nanyang Technological University" />
               </div>
               <h3 className="timeline-title">Nanyang Technological University (NTU)</h3>
-              <p className="timeline-date">Aug 2022 – May 2025 (Expected)</p>
+              <p className="timeline-date">Aug 2022 – May 2025</p>
               <p className="timeline-degree">Bachelor of Engineering,<br />Information Engineering and Media</p>
               <p className="timeline-details">
-                <li>Specialized in Software Engineering, UX/UI Design, Digital Media, and Branding & Marketing</li>
+                <li>Specialised in Software Engineering, UX/UI Design, Digital Media, and Branding & Marketing</li>
                 <li>Member of various Branding and Marketing Roles in Student Organisations</li>
                 <br/>
                 Relevant coursework: 
@@ -225,21 +238,21 @@ const About = () => {
       </div>
 
       <div className="design-philosophy-section">
-        <h2>Design Philosophy</h2>
+        <h2>Professional Philosophy</h2>
         <div className="philosophy-content">
           <p>
-            I believe that exceptional design exists at the intersection of user needs, business goals, and technological possibilities. 
-            My approach is rooted in empathy—understanding the people who will use the product—combined with analytical rigor to ensure 
+            I believe that exceptional technology solutions exist at the intersection of user needs, business goals, and technical excellence. 
+            My approach is rooted in understanding the people who will use the systems—combined with analytical rigor to ensure 
             solutions deliver measurable business impact.
           </p>
           <p>
-            Good design should feel intuitive and effortless to users while strategically advancing business objectives. Whether I'm designing 
-            a mobile app interface, visualizing complex data, or mapping user journeys, I focus on creating experiences that are both purposeful 
-            and delightful.
+            Good technology should feel intuitive and effortless to users while strategically advancing business objectives. Whether I'm designing 
+            cloud architectures, building automation pipelines, or creating user interfaces, I focus on creating experiences that are both purposeful 
+            and efficient.
           </p>
           <p>
-            My process involves continuous iteration informed by user feedback, analytics, and business metrics. I'm driven by the belief that 
-            design is never truly "finished"—there's always an opportunity to learn, refine, and improve based on real-world usage and evolving needs.
+            My process involves continuous iteration informed by user feedback, system metrics, and business requirements. I'm driven by the belief that 
+            technology is never truly "finished"—there's always an opportunity to learn, refine, and improve based on real-world usage and evolving needs.
           </p>
         </div>
       </div>
@@ -306,7 +319,7 @@ const About = () => {
       
       <div className="contact-cta">
         <h2>Let's Connect</h2>
-        <p>I'm currently looking for opportunities in software engineering, digital marketing, UX/UI design and business analysis roles where I can create meaningful digital experiences and drive business value. If you're interested in collaborating or learning more about my work, I'd love to connect!</p>
+        <p>I'm always interested in discussing cloud technologies, DevOps practices, and innovative solutions. Whether you're curious about my work at ST Engineering or want to explore potential collaborations, I'd love to connect!</p>
         <a href="mailto:irfansyakir@gmail.com" className="contact-button">Get In Touch</a>
       </div>
     </div>

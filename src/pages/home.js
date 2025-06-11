@@ -47,14 +47,11 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>hello! i'm irfan! 👋</h1>
-          <h2>Digital Innovator</h2>
-          <p>I'm a soon-to-be graduate from NTU with expertise spanning Software Engineering, DevOps, UI/UX, Digital Marketing, and Business Analysis.</p> 
+          <h2>Cloud Engineer at ST Engineering</h2>
+          <p>I'm a technology professional with expertise spanning Cloud Computing, DevOps, Software Engineering, UI/UX, and Business Analysis.</p> 
             
-          <p>I combine technical problem-solving with creative thinking to build efficient solutions that deliver measurable business impact.</p>
+          <p>I combine technical problem-solving with creative thinking to build scalable cloud solutions that deliver measurable business impact.</p>
           <div className="hero-social-links">
-            {/* <a href="/irfan_syakir_resume.pdf" className="hero-social-link" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFileDownload} /> Resume
-            </a> */}
             <a href="https://github.com/irfansyakir" className="hero-social-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
@@ -67,7 +64,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={profileImage} alt="Irfan Syakir - Digital Innovator" />
+          <img src={profileImage} alt="Irfan Syakir - Cloud Engineer" />
         </div>
       </section>
 
@@ -94,7 +91,19 @@ const Home = () => {
           {/* Work Experience */}
           {activeTab === 'work' && (
             <div className="work-experience">
-              {/* ST Engineering */}
+              {/* Current ST Engineering Role */}
+              <div className="work-entry current-position">
+                <div className="work-logo">
+                  <img src={steLogo} alt="ST Engineering" />
+                </div>
+                <div className="work-details">
+                  <div className="work-date">Jun 2025 – Present</div>
+                  <div className="work-title">ST Engineering</div>
+                  <div className="work-position">Cloud Engineer</div>
+                </div>
+              </div>
+
+              {/* ST Engineering Internship */}
               <div className="work-entry">
                 <div className="work-logo">
                   <img src={steLogo} alt="ST Engineering" />
@@ -103,11 +112,6 @@ const Home = () => {
                   <div className="work-date">May 2024 – Jul 2024</div>
                   <div className="work-title">ST Engineering</div>
                   <div className="work-position">DevOps Intern</div>
-                  {/* <ul className="work-description">
-                    <li>Implemented CI/CD pipelines and infrastructure-as-code using Terraform across cloud platforms, reducing deployment times by 40%</li>
-                    <li>Designed and documented automation workflows that improved cross-team collaboration and stakeholder visibility</li>
-                    <li>Created cloud monitoring solutions for system reliability and presented performance metrics to key stakeholders</li>
-                  </ul> */}
                 </div>
               </div>
               
@@ -120,11 +124,6 @@ const Home = () => {
                   <div className="work-date">Mar 2020 - Jun 2020</div>
                   <div className="work-title">Accenture</div>
                   <div className="work-position">Business Analyst</div>
-                  {/* <ul className="work-description">
-                    <li>Applied automation techniques to streamline processes and improve operational efficiency for a government client.</li>
-                    <li>Analyzed business requirements and translated them into technical specifications</li>
-                    <li>Created data visualizations to communicate insights to stakeholders</li>
-                  </ul> */}
                 </div>
               </div>
               
@@ -137,11 +136,6 @@ const Home = () => {
                   <div className="work-date">Sep 2019 - Feb 2020</div>
                   <div className="work-title">Accenture</div>
                   <div className="work-position">Test Analyst</div>
-                  {/* <ul className="work-description">
-                    <li>Developed automated testing solutions using RPA for a government client, reducing testing time by 40%</li>
-                    <li>Evaluated system functionality against business requirements</li>
-                    <li>Collaborated with cross-functional teams to improve system reliability</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -156,11 +150,11 @@ const Home = () => {
                   <img src={ntuLogo} alt="Nanyang Technological University" />
                 </div>
                 <div className="work-details">
-                  <div className="work-date">Aug 2022 - May 2025 (Expected)</div>
+                  <div className="work-date">Aug 2022 - May 2025</div>
                   <div className="work-title">Nanyang Technological University (NTU)</div>
                   <div className="work-position">Bachelor of Engineering, Information Engineering and Media</div>
                   <ul className="work-description">
-                    <li>Specialized in Software Engineering, UI/UX Design, Digital Media</li>
+                    <li>Specialised in Software Engineering, UI/UX Design, Digital Media</li>
                     <li>Member of various Branding and Marketing Roles in Student Organisations</li>
                   </ul>
                 </div>
@@ -264,10 +258,6 @@ const Home = () => {
         <Link to="/projects" className="view-all">View All Projects →</Link>
       </section>
 
-      
-
-      
-
       <section>
       <div className="leadership-showcase">
           <h2>Leadership Experience</h2>
@@ -335,6 +325,17 @@ const Home = () => {
         <h2>Core Competencies</h2>
         <div className="skills-grid">
           <div className="skill-category">
+            <h3>Cloud & Infrastructure</h3>
+            <ul>
+              <li>Cloud Architecture Design</li>
+              <li>Infrastructure as Code</li>
+              <li>Terraform & Docker</li>
+              <li>CI/CD Pipelines</li>
+              <li>System Monitoring</li>
+              <li>Cloud Security</li>
+            </ul>
+          </div>
+          <div className="skill-category">
             <h3>Software Engineering</h3>
             <ul>
               <li>Java, Python, JavaScript</li>
@@ -342,19 +343,7 @@ const Home = () => {
               <li>Flutter & React</li>
               <li>Mobile & Web Development</li>
               <li>Object-Oriented Programming</li>
-              <li>Data Structures & Algorithms</li>
               <li>REST APIs</li>
-            </ul>
-          </div>
-          <div className="skill-category">
-            <h3>DevOps & Cloud</h3>
-            <ul>
-              <li>CI/CD Pipelines</li>
-              <li>Infrastructure as Code</li>
-              <li>Terraform & Docker</li>
-              <li>Version Control (Git)</li>
-              <li>Cloud Services</li>
-              <li>System Monitoring</li>
             </ul>
           </div>
           <div className="skill-category">
@@ -387,11 +376,11 @@ const Home = () => {
       <section className="about-preview">
         <h2>About Me</h2>
         <p>
-        I'm a design-focused problem solver with a passion for creating intuitive, user-centered digital experiences that drive business value.
+        I'm a Cloud Engineer at ST Engineering with a passion for creating scalable, efficient cloud solutions that drive business value.
         <br/><br/>
-        My background in Information Engineering and Media at NTU has equipped me with a unique blend of design thinking, software engineering, marketing, and business analysis skills, allowing me to bridge the gap between user needs and organizational goals.
+        My background in Information Engineering and Media at NTU has equipped me with a unique blend of cloud computing, software engineering, design thinking, and business analysis skills, allowing me to bridge the gap between technical implementation and organizational goals.
         <br/><br/>
-        I'm particularly interested in the intersection of technology, design and business strategy, where thoughtful UX solutions can transform complex challenges into engaging experiences that deliver measurable results.
+        I'm particularly interested in the intersection of cloud technology, automation, and business strategy, where innovative technical solutions can transform complex challenges into scalable, reliable systems that deliver measurable results.
         </p>
         <Link to="/about" className="view-all">Learn More About Me →</Link>
       </section>

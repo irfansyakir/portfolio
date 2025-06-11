@@ -493,6 +493,25 @@
   border-bottom: none;
 }
 
+/* Current position styling */
+.work-entry.current-position {
+  background-color: var(--color-primary-light);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--color-primary);
+  margin-bottom: 40px;
+}
+
+.work-entry.current-position .work-title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.work-entry.current-position .work-position {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .work-logo {
   flex: 0 0 70px;
   height: 70px;
