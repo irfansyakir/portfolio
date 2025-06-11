@@ -56,16 +56,7 @@ const Contact = () => {
         </div>
       </div>
       
-      <div className="availability-section">
-        <h2>Current Availability</h2>
-        <div className="availability-status available">
-          <span className="status-indicator"></span>
-          <p>I'm currently available for new opportunities starting August 2025.</p>
-        </div>
-        <p className="availability-note">
-          My expertise spans software engineering, DevOps, UI/UX design, digital marketing, and business analysis. I'm looking for roles that leverage my multidisciplinary skill set to create impactful digital solutions.
-        </p>
-      </div>
+      
     </div>
   );
 };
